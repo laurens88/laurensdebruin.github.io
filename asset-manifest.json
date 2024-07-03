@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/laurensdebruin.github.io/static/css/main.f855e6bc.css",
-    "main.js": "/laurensdebruin.github.io/static/js/main.c5fc2d3c.js",
-    "static/js/453.ed3810f9.chunk.js": "/laurensdebruin.github.io/static/js/453.ed3810f9.chunk.js",
-    "static/media/logo.svg": "/laurensdebruin.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/laurensdebruin.github.io/index.html",
-    "main.f855e6bc.css.map": "/laurensdebruin.github.io/static/css/main.f855e6bc.css.map",
-    "main.c5fc2d3c.js.map": "/laurensdebruin.github.io/static/js/main.c5fc2d3c.js.map",
-    "453.ed3810f9.chunk.js.map": "/laurensdebruin.github.io/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/laurensdebruin.me/static/css/main.f855e6bc.css",
+    "main.js": "/laurensdebruin.me/static/js/main.825fb844.js",
+    "static/js/453.ed3810f9.chunk.js": "/laurensdebruin.me/static/js/453.ed3810f9.chunk.js",
+    "static/media/logo.svg": "/laurensdebruin.me/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/laurensdebruin.me/index.html",
+    "main.f855e6bc.css.map": "/laurensdebruin.me/static/css/main.f855e6bc.css.map",
+    "main.825fb844.js.map": "/laurensdebruin.me/static/js/main.825fb844.js.map",
+    "453.ed3810f9.chunk.js.map": "/laurensdebruin.me/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.c5fc2d3c.js"
+    "static/js/main.825fb844.js"
   ]
 }
