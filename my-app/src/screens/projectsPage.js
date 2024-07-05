@@ -1,7 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import Navbar from '../components/navbar';
 
 function Projects() {
-    return <h1>Projects</h1>;
+    return (
+        <div>
+            <Navbar />
+        </div>)
     }
 
 export default Projects;
