@@ -6,6 +6,7 @@ function Projects() {
     return (
         <div>
             <Navbar />
+            <h2>List of projects</h2>
         </div>)
     }
 

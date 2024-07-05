@@ -6,6 +6,7 @@ function Photography() {
     return (
         <div>
             <Navbar />
+            <p>There will be pictures here.</p>
         </div>)
     }
 

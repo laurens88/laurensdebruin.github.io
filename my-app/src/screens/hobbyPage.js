@@ -7,6 +7,7 @@ function Hobby() {
     return (
         <div>
             <Navbar />
+            <p>My hobbies here.</p>
         </div>)
     }
 

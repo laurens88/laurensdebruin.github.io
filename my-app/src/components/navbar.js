@@ -4,6 +4,9 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import styles from '../styles/navbar.module.css';
 
+import ghlogo from '../assets/logos/github.png';
+import lilogo from '../assets/logos/linkedin.png';
+
 function Navbar() {
     let navigate = useNavigate();
 
@@ -18,7 +21,12 @@ function Navbar() {
                 <Button onClick={() => navigate('/hobby')}>Hobby</Button>
             </Stack>
             <Stack direction="row" spacing={{ xs: 0, sm: 1, md: 6 }}>
-                
+                <a href="https://www.github.com/laurens88" target="_blank" rel="noopener noreferrer">
+                    <img src={ghlogo} alt='GitHub' className={styles.icon} style={{ width: '30px', height: '30px' }}/>
+                </a>
+                <a href="https://www.linkedin.com/in/laurens-debruin/" target="_blank" rel="noopener noreferrer">
+                    <img src={lilogo} alt='LinkedIn' className={styles.icon} style={{width: '30px', height: '30px'}}/>
+                </a>
             </Stack>
             </Stack>
         </div>
