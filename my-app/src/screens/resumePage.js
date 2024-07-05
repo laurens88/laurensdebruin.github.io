@@ -1,7 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import Navbar from '../components/navbar';
 
 function Resume() {
-    return <h1>Resume</h1>;
+    return (
+        <div>
+            <Navbar />
+        </div>)
     }
 
 export default Resume;
