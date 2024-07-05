@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Roboto Mono", monospace;
+  src: url("fonts/RobotoMono-VariableFont_wght.ttf") format("truetype");
+}
+
 .App {
   text-align: center;
 }
