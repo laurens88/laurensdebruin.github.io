@@ -13,9 +13,9 @@ function Home() {
             <Navbar />
             <div className={styles.summary}>
                 <Grid container spacing={2} direction='row'>
-                <Grid item xs={0} md={2}>
+                <Grid item xs={2} md={2}>
                 </Grid>
-                <Grid item xs={6} md={6}>
+                <Grid item xs={7} md={6}>
                 <h1>Laurens de Bruin</h1>
                 <h2>Software Developer</h2>
                 <p>
