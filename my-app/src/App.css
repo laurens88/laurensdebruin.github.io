@@ -3,6 +3,24 @@
   src: url("fonts/RobotoMono-VariableFont_wght.ttf") format("truetype");
 }
 
+.desktop-nav {
+  display: none;
+}
+
+.mobile-nav {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+}
+
 .App {
   text-align: center;
 }

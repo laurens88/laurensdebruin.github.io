@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/navbar';
+import HamburgerMenu from '../components/hamburgermenu';
 import styles from '../styles/homePage.module.css';
 import Grid from "@mui/material/Grid";
 import Portrait from '../assets/images/portrait.jpg';
@@ -11,6 +12,7 @@ function Home() {
     return (
         <div>
             <Navbar />
+            <HamburgerMenu />
             <div className={styles.summary}>
                 <Grid container spacing={2} direction='row'>
                 <Grid item xs={2} md={2}>
