@@ -3,6 +3,10 @@
   src: url("fonts/RobotoMono-VariableFont_wght.ttf") format("truetype");
 }
 
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
 .desktop-nav {
   display: none;
 }
