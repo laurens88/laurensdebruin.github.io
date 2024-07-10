@@ -17,7 +17,7 @@ function Projects() {
       </div>
       <div className={pagestyles.summaryContainer}>
       <div className={pagestyles.summary}>
-      <h2>List of projects</h2>
+      <h1>List of projects</h1>
       <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
               nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
