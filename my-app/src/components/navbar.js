@@ -30,7 +30,7 @@ function Navbar() {
               src={ghlogo}
               alt="GitHub"
               className={styles.icon}
-              style={{ width: "30px", height: "30px" }}
+              style={{ width: "30px", height: "30px"}}
             />
           </a>
           <a
@@ -42,7 +42,7 @@ function Navbar() {
               src={lilogo}
               alt="LinkedIn"
               className={styles.icon}
-              style={{ width: "30px", height: "30px" }}
+              style={{ width: "28px", height: "28px", paddingTop: "0.7rem"}}
             />
           </a>
         </Stack>
