@@ -30,8 +30,8 @@ function Projects() {
       </div>
       </div>
       <div className={pagestyles.projects}>
-      <div className={cardstyles.cardcontainers} style={{width: "100%"}}>
-      <Card width="750px">
+      <div className={cardstyles.cardcontainers}>
+      <Card >
         <h2>Project 1</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
@@ -42,7 +42,7 @@ function Projects() {
           litora torquent per conubia nostra, per inceptos himenaeos.
         </p>
       </Card>
-      <Card width="750px">
+      <Card >
       <h2>Project 2</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
@@ -53,7 +53,7 @@ function Projects() {
           litora torquent per conubia nostra, per inceptos himenaeos.
         </p>
       </Card>
-      <Card width="750px">
+      <Card >
       <h2>Project 3</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
