@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/navbar";
 import NavDrawer from "../components/drawer";
+import styles from "../styles/resumePage.module.css";
 import "../App.css";
 
 function Resume() {
@@ -12,11 +13,20 @@ function Resume() {
       <div className="mobile-nav">
         <NavDrawer activeItems={["Resume"]} />
       </div>
-      <h2>Experience</h2>
-      <h2>Education</h2>
-      <h2>Projects</h2>
-      <h2>Presentations / Workshops</h2>
-      <h2>Certifications / Awards</h2>
+      <div className={styles.container}>
+      <div className={styles.content}>
+        <h2>Experience</h2>
+        <p>A</p>
+        <h2>Education</h2>
+        <p>B</p>
+        <h2>Projects</h2>
+        <p>C</p>
+        <h2>Presentations / Workshops</h2>
+        <p>D</p>
+        <h2>Certifications / Awards</h2>
+        <p>E</p>
+      </div>
+    </div>
     </div>
   );
 }
