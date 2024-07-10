@@ -1,0 +1,24 @@
+.cardcontainers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    .card {
+      width: 100%;
+    }
+  }
+  

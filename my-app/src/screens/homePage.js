@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import Navbar from "../components/navbar";
 import NavDrawer from "../components/drawer";
 import styles from "../styles/homePage.module.css";
@@ -8,7 +7,6 @@ import Portrait from "../assets/images/portrait.jpg";
 import "../App.css";
 
 function Home() {
-  let navigate = useNavigate();
 
   return (
     <div>
