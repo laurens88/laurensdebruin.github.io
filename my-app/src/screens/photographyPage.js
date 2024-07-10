@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/navbar";
 import NavDrawer from "../components/drawer";
+import "../App.css";
 
 function Photography() {
   return (
@@ -11,7 +12,7 @@ function Photography() {
       <div className="mobile-nav">
         <NavDrawer activeItems={["Photography"]} />
       </div>
-      <p>There will be pictures here.</p>
+      <p style={{textAlign: "center"}}>There will be pictures here.</p>
     </div>
   );
 }

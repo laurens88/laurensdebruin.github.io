@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/navbar";
 import NavDrawer from "../components/drawer";
+import "../App.css";
 
 function Hobby() {
   return (
@@ -11,7 +12,7 @@ function Hobby() {
       <div className="mobile-nav">
         <NavDrawer activeItems={["Hobby"]} />
       </div>
-      <p>My hobbies here.</p>
+      <p style={{textAlign: "center"}}>My hobbies here.</p>
     </div>
   );
 }

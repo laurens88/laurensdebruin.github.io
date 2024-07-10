@@ -12,11 +12,11 @@ function Resume() {
       <div className="mobile-nav">
         <NavDrawer activeItems={["Resume"]} />
       </div>
-      <h1>Experience</h1>
-      <h1>Education</h1>
-      <h1>Projects</h1>
-      <h1>Presentations / Workshops</h1>
-      <h1>Certifications / Awards</h1>
+      <h2>Experience</h2>
+      <h2>Education</h2>
+      <h2>Projects</h2>
+      <h2>Presentations / Workshops</h2>
+      <h2>Certifications / Awards</h2>
     </div>
   );
 }
