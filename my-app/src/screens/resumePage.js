@@ -23,13 +23,22 @@ function Resume() {
             title="Software Engineer"
             company="ASReview"
             dates="10/2023 - Present"
-            description="Lorem ipsum dolor sit amet"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
             logo={ASReview}
+          />
+
+          <ResumeItem
+            title="Project Intern"
+            company="Philips"
+            dates="4/2023 - 7/2023"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            // logo={ASReview}
           />
 
           <h1>Education</h1>
           <ResumeItem
             title="Master's in Artificial Intelligence"
+            company="Radboud University"
             dates="Dates"
             description="Description"
             logo={Radboud}
@@ -37,9 +46,10 @@ function Resume() {
 
           <ResumeItem
             title="Bachelor's in Artificial Intelligence"
+            company="Radboud University"
             dates="Dates"
             description="Description"
-            // logo={Radboud}
+            logo={Radboud}
           />
 
           <h1>Projects</h1>
