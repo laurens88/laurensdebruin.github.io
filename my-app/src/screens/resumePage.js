@@ -7,6 +7,14 @@ import "../App.css";
 import ASReview from "../assets/logos/ASReview.png";
 import Radboud from "../assets/logos/Radboud.png";
 import Philips from "../assets/logos/Philips.png";
+import UMC from "../assets/logos/UMC.jpg";
+import Pierson from "../assets/logos/Pierson.png";
+import Easyway from "../assets/logos/easyway.jpg";
+import Sandd from "../assets/logos/sandd.jpg";
+import Mediamarkt from "../assets/logos/mediamarkt.png";
+import codecademy from "../assets/logos/codecademy.png";
+import Twente from "../assets/logos/university-of-twente.jpg";
+import UU from "../assets/logos/UU.jpg";
 
 function Resume() {
   return (
@@ -36,6 +44,38 @@ function Resume() {
             logo={Philips}
           />
 
+          <ResumeItem
+            title="Student Assistant Data Science"
+            company="Radboud UMC"
+            dates="2/2023 - 6/2023"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            logo={UMC}
+          />
+
+          <ResumeItem
+            title="Hiker"
+            company="Easy Way B.V."
+            dates="7/2021 - 6/2023"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            logo={Easyway}
+          />
+
+          <ResumeItem
+            title="Delivery Driver"
+            company="Sandd"
+            dates="7/2017 - 6/2021"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            logo={Sandd}
+          />
+
+          <ResumeItem
+            title="Sales Employee"
+            company="MediaMarkt"
+            dates="7/2016 - 6/2017"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            logo={Mediamarkt}
+          />
+
           <h1>Education</h1>
           <ResumeItem
             title="Master's in Artificial Intelligence"
@@ -53,10 +93,51 @@ function Resume() {
             logo={Radboud}
           />
 
-          <h1>Projects</h1>
+          <ResumeItem
+            title="High School"
+            company="DS. Pierson College"
+            dates="Dates"
+            description="Description"
+            logo={Pierson}
+          />
+
           <h1>Presentations / Workshops</h1>
 
+
+          <ResumeItem
+            title="TM Inhouse Day"
+            company="@University of Twente"
+            dates="Date"
+            description="Description"
+            logo={Twente}
+          />
+
+          <ResumeItem
+            title="User's Meeting"
+            company="@ASReview"
+            dates="Date"
+            description="Description"
+            logo={ASReview}
+          />
+
+          <ResumeItem
+            title="Poster Presentation"
+            company="@Utrecht AI labs event"
+            dates="Date"
+            description="Description"
+            logo={UU}
+          />
+
           <h1>Certifications / Awards</h1>
+          <ResumeItem
+            title="Learn React Course"
+            company="Codecademy"
+            dates="4/2024"
+            description="Description"
+            logo={codecademy}
+          />
+
+
         </div>
       </div>
     </div>
