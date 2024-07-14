@@ -4,6 +4,9 @@ import NavDrawer from "../components/drawer";
 import styles from "../styles/homePage.module.css";
 import Grid from "@mui/material/Grid";
 import Portrait from "../assets/images/portrait.jpg";
+import Button from '@mui/material/Button';
+import Send from '@mui/icons-material/Send';
+import Download from '@mui/icons-material/Download';
 import "../App.css";
 
 function Home() {
@@ -31,6 +34,13 @@ function Home() {
               sociosqu ad litora torquent per conubia nostra, per inceptos
               himenaeos.
             </p>
+            <Button variant="contained" endIcon={<Send/>} style={{margin: '10px', backgroundColor: '#1011F5'}}>
+              Contact
+            </Button>
+
+            <Button variant="contained" endIcon={<Download/>} style={{margin: '10px', backgroundColor: '#1011F5'}}>
+              Resume
+            </Button>
           </Grid>
 
           <Grid item xs={12} md={4}>
