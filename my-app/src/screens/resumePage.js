@@ -6,6 +6,7 @@ import styles from "../styles/resumePage.module.css";
 import "../App.css";
 import ASReview from "../assets/logos/ASReview.png";
 import Radboud from "../assets/logos/Radboud.png";
+import Philips from "../assets/logos/Philips.png";
 
 function Resume() {
   return (
@@ -32,7 +33,7 @@ function Resume() {
             company="Philips"
             dates="4/2023 - 7/2023"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-            // logo={ASReview}
+            logo={Philips}
           />
 
           <h1>Education</h1>
