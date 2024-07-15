@@ -20,3 +20,23 @@
     margin: 0 auto;
     margin-top: 1.5rem;
 }
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .blinkingCursor::after {
+    content: "|";
+    animation: blink 1.2s step-start infinite;
+    /* font-weight: bold; */
+    margin-left: 0px; /* Adjust as needed */
+    vertical-align:text-bottom;
+  }
