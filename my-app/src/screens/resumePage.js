@@ -29,10 +29,16 @@ function Resume() {
         <div className={styles.content}>
           <h1>Experience</h1>
           <ResumeItem
-            title="Software Engineer"
+            title="Software Developer"
             company="ASReview"
             dates="10/2023 - Present"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
+              Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+              Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
+              massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
+              sociosqu ad litora torquent per conubia nostra, per inceptos
+              himenaeos."
             logo={ASReview}
           />
 
@@ -63,7 +69,7 @@ function Resume() {
           <ResumeItem
             title="Delivery Driver"
             company="Sandd"
-            dates="7/2017 - 6/2021"
+            dates="3/2018 - 9/2018"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
             logo={Sandd}
           />
@@ -71,7 +77,7 @@ function Resume() {
           <ResumeItem
             title="Sales Employee"
             company="MediaMarkt"
-            dates="7/2016 - 6/2017"
+            dates="9/2017 - 2/2018"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
             logo={Mediamarkt}
           />
@@ -80,7 +86,7 @@ function Resume() {
           <ResumeItem
             title="Master's in Artificial Intelligence"
             company="Radboud University"
-            dates="Dates"
+            dates="9/2022 - ?/2025"
             description="Description"
             logo={Radboud}
           />
@@ -88,7 +94,7 @@ function Resume() {
           <ResumeItem
             title="Bachelor's in Artificial Intelligence"
             company="Radboud University"
-            dates="Dates"
+            dates="9/2017 - 6/2022"
             description="Description"
             logo={Radboud}
           />
@@ -96,7 +102,7 @@ function Resume() {
           <ResumeItem
             title="High School"
             company="DS. Pierson College"
-            dates="Dates"
+            dates="9/2011 - 6/2017"
             description="Description"
             logo={Pierson}
           />

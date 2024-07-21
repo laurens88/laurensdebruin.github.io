@@ -5,6 +5,8 @@ import Card from "../components/card";
 import pagestyles from "../styles/projectsPage.module.css";
 import "../App.css";
 import cardstyles from "../styles/card.module.css";
+import FileDownloadButton from "../components/downloadbutton";
+import APK from "../assets/downloads/car_collection.apk";
 
 function Projects() {
   return (
@@ -54,7 +56,7 @@ function Projects() {
         </p>
       </Card>
       <Card >
-      <h2>Project 3</h2>
+      <h2>Car Collection</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
           odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
@@ -63,6 +65,7 @@ function Projects() {
           Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad
           litora torquent per conubia nostra, per inceptos himenaeos.
         </p>
+        <FileDownloadButton text="Download App" file={APK} filename="car_collection.apk"/>
       </Card>
       </div>
       </div>

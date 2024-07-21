@@ -10,7 +10,7 @@ function Hobby() {
         <Navbar />
       </div>
       <div className="mobile-nav">
-        <NavDrawer activeItems={["Hobby"]} />
+        <NavDrawer activeItems={["Hobbies"]} />
       </div>
       <p style={{textAlign: "center"}}>My hobbies here.</p>
     </div>
