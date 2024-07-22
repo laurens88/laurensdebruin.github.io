@@ -5,8 +5,9 @@ import styles from "../styles/homePage.module.css";
 import Grid from "@mui/material/Grid";
 import Portrait from "../assets/images/portrait.jpg";
 import Button from '@mui/material/Button';
+import FileDownloadButton from "../components/downloadbutton";
 import Send from '@mui/icons-material/Send';
-import Download from '@mui/icons-material/Download';
+import Resume_english from "../assets/downloads/Resume_LaurensdeBruin.pdf";
 import "../App.css";
 
 function Home() {
@@ -38,9 +39,7 @@ function Home() {
               Contact
             </Button>
 
-            <Button variant="contained" endIcon={<Download/>} style={{margin: '10px', backgroundColor: '#1011F5'}}>
-              Resume
-            </Button>
+            <FileDownloadButton text="Resume" file={Resume_english} filename="Resume_LaurensdeBruin.pdf" />
           </Grid>
 
           <Grid item xs={12} md={4}>
