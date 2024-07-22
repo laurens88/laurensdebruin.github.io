@@ -91,7 +91,15 @@ function Resume() {
             title="Master's in Artificial Intelligence"
             company="Radboud University"
             dates="9/2022 - 5/2025"
-            description="Description"
+            description="My master's in Artificial Intelligence is focused on the application of AI in the professional workfield. 
+            I chose the specialization 'Intelligent Technologies' which is focused more on the 
+            technical side of AI opposed to cognition and behavior or ethics.
+            I followed courses in machine learning, deep learning, database technology, information retrieval, Human-Robot Interaction, and more.
+            To prepare for my future career I followed a course in professional skills, attended career events and grew eager to expand my skillset 
+            by following online courses and working on personal projects. 
+            The personal projects, my job as developer at ASReview and some course projects during my studies helped me to discover my passion for software development.
+            I will combine my background in AI and my passion for software development to complete my master's thesis at Info Support which combines both fields.
+            The project involves the automatic quality assessment of datasets for machine learning."
             logo={Radboud}
           />
 
@@ -127,7 +135,7 @@ Twitter data when combined with an intelligent pre-processor.' which was awarded
           <ResumeItem
             title="TM Inhouse Day"
             company="@University of Twente"
-            dates="Date"
+            dates="3/2024"
             description="Description"
             logo={Twente}
           />
@@ -135,7 +143,7 @@ Twitter data when combined with an intelligent pre-processor.' which was awarded
           <ResumeItem
             title="User's Meeting"
             company="@ASReview"
-            dates="Date"
+            dates="3/2024"
             description="Description"
             logo={ASReview}
           />
@@ -143,7 +151,7 @@ Twitter data when combined with an intelligent pre-processor.' which was awarded
           <ResumeItem
             title="Poster Presentation"
             company="@Utrecht AI labs event"
-            dates="Date"
+            dates="5/2023"
             description="Description"
             logo={UU}
           />
