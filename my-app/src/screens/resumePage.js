@@ -32,13 +32,9 @@ function Resume() {
             title="Software Developer"
             company="ASReview"
             dates="10/2023 - Present"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
-              Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
-              Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
-              massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
-              sociosqu ad litora torquent per conubia nostra, per inceptos
-              himenaeos."
+            description="ASReview is the largest open-source software project of the University of Utrecht. The software is used to automate the screening of scientific literature for systematic reviews. As a software developer I am responsible for the development of new features, bug fixes and the maintenance of the software. 
+            I have been involved in both the front-end and back-end development of the software. I have added a new datatool and improved existing ones. I have been involved in multiple large scale scientific projects headed for publication such as FORAS and IMPROVE. For the FORAS project I have developed a range of python scripts that helped me with the data engineering of the dataset for the project, including pre-processing, merging, deduplicating and distributing the data. 
+            For both the FORAS and IMPROVE projects I have worked on data visualization to present our results in the upcoming publications or to give insight in the progress of the project so far."
             logo={ASReview}
           />
 
@@ -46,7 +42,9 @@ function Resume() {
             title="Project Intern"
             company="Philips"
             dates="4/2023 - 7/2023"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            description="During the course 'AI in the professional workfield' I succesfully completed a project at Philips together with two other students. 
+            We were tasked to perform data analysis on product reviews of Philips products and some of their competitors to gain insights in the customer satisfaction.
+            Using clustering and sentiment analysis we attempted to find patterns in the data and presented our findings to the stakeholders at Philips in the form of a report and a presentation."
             logo={Philips}
           />
 
@@ -54,7 +52,9 @@ function Resume() {
             title="Student Assistant Data Science"
             company="Radboud UMC"
             dates="2/2023 - 6/2023"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            description="During this short project I used my data science expertise to help medical professionals at the Dutch Child Formulary (Kinderformularium) to improve their data managent. 
+            I helped them with the data engineering of their dataset to prepare it for analysis and I developed a range of python scripts to automate the data processing. During this project I connected with the team at ASReview 
+            and presented my work at the Utrecht AI labs event."
             logo={UMC}
           />
 
@@ -62,7 +62,9 @@ function Resume() {
             title="Hiker"
             company="Easy Way B.V."
             dates="7/2021 - 6/2023"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            description="As a Hiker I was responsible for the transportation and timely delivery of lease cars. 
+            I checked the cars for damages, fueled them and drove them accross the country to their destination. 
+            I learned to work independently, under a tight schedule, whilst interacting politely with clients and professionals."
             logo={Easyway}
           />
 
@@ -70,7 +72,8 @@ function Resume() {
             title="Delivery Driver"
             company="Sandd"
             dates="3/2018 - 9/2018"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            description="Carried out the delivery of mail and packages. 
+            Learned to work under a tight schedule by planning my own efficient routes to deliver the mail in a timely manner."
             logo={Sandd}
           />
 
@@ -78,7 +81,8 @@ function Resume() {
             title="Sales Employee"
             company="MediaMarkt"
             dates="9/2017 - 2/2018"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            description="As a sales employee I was responsible for selling mobile phones to customers. 
+            I learned to communicate with customers and use my tech knowledge to help them make the right choice."
             logo={Mediamarkt}
           />
 
@@ -86,7 +90,7 @@ function Resume() {
           <ResumeItem
             title="Master's in Artificial Intelligence"
             company="Radboud University"
-            dates="9/2022 - ?/2025"
+            dates="9/2022 - 5/2025"
             description="Description"
             logo={Radboud}
           />
@@ -95,7 +99,16 @@ function Resume() {
             title="Bachelor's in Artificial Intelligence"
             company="Radboud University"
             dates="9/2017 - 6/2022"
-            description="Description"
+            description="During my bachelor's in Artificial Intelligence I learning the foundations of AI. I learned to program in Java, Python, C# and more. 
+            I improved my critical thinking and gained knowledge in machine learning, data science, 
+            but also in cognitive psychology and brain anatomy. 
+            I learned to set up experiments, analyze data, and present my findings. 
+            I learned to work in a team and to communicate my ideas effectively. 
+            I learned to work independently and to manage my time efficiently, getting used to working under tight deadlines.
+            As a member of the study association CognAC I attended multiple workshops and social events together with friends 
+            (my favorite being 'Levend Monopoly' where we travelled across the country in teams to complete fun quests).
+            In my final year I wrote my thesis titled 'Exploring the sentiment analysis performance of BERT models on domain specific
+Twitter data when combined with an intelligent pre-processor.' which was awarded with an 8.5."
             logo={Radboud}
           />
 
@@ -103,7 +116,8 @@ function Resume() {
             title="High School"
             company="DS. Pierson College"
             dates="9/2011 - 6/2017"
-            description="Description"
+            description="Completed my Atheneum program with a focus on science and technology. 
+            My favorite subjects were biology and informatics, which together contributed to my choice to study Artificial Intelligence."
             logo={Pierson}
           />
 
