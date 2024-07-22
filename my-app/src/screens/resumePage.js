@@ -32,9 +32,16 @@ function Resume() {
             title="Software Developer"
             company="ASReview"
             dates="10/2023 - Present"
-            description="ASReview is the largest open-source software project of the University of Utrecht. The software is used to automate the screening of scientific literature for systematic reviews. As a software developer I am responsible for the development of new features, bug fixes and the maintenance of the software. 
-            I have been involved in both the front-end and back-end development of the software. I have added a new datatool and improved existing ones. I have been involved in multiple large scale scientific projects headed for publication such as FORAS and IMPROVE. For the FORAS project I have developed a range of python scripts that helped me with the data engineering of the dataset for the project, including pre-processing, merging, deduplicating and distributing the data. 
-            For both the FORAS and IMPROVE projects I have worked on data visualization to present our results in the upcoming publications or to give insight in the progress of the project so far."
+            description="ASReview is the largest open-source software project of the University of Utrecht. 
+            The software is used to speed up the process of screening scientific literature for systematic reviews using active learning. 
+            As a software developer I am responsible for the development of new features, bug fixes and the maintenance of the software. 
+            I have been involved in both the front-end and back-end development of the software and worked on expanding the classification models and feature extractors that is used for the active learning. 
+            I have added a new datatool and improved existing ones. 
+            I have been involved in multiple large scale scientific projects headed for publication such as FORAS and IMPROVE. 
+            For the FORAS project I have developed a range of python scripts that helped me with the data engineering of the dataset for the project, 
+            including pre-processing, merging, deduplicating and distributing the data. 
+            For both the FORAS and IMPROVE projects I have worked on data visualization to present our results in 
+            the upcoming publications or to give insight in the progress of the project so far."
             logo={ASReview}
           />
 
@@ -131,12 +138,13 @@ Twitter data when combined with an intelligent pre-processor.' which was awarded
 
           <h1>Presentations / Workshops</h1>
 
-
           <ResumeItem
             title="TM Inhouse Day"
             company="@University of Twente"
             dates="3/2024"
-            description="Description"
+            description="Presented at the TM Inhouse Day of the University of Twente the benefits of ASReview
+             software for clinical technology and technical medicine students, focusing
+            on its use in writing systematic reviews."
             logo={Twente}
           />
 
@@ -144,7 +152,8 @@ Twitter data when combined with an intelligent pre-processor.' which was awarded
             title="User's Meeting"
             company="@ASReview"
             dates="3/2024"
-            description="Description"
+            description="Presented my contribution to the FORAS project to the team and some users at the ASReview User's Meeting. 
+            This included talking about the scripts I developed for the data engineering of the dataset and showing the resulting dataset itself."
             logo={ASReview}
           />
 
@@ -152,7 +161,8 @@ Twitter data when combined with an intelligent pre-processor.' which was awarded
             title="Poster Presentation"
             company="@Utrecht AI labs event"
             dates="5/2023"
-            description="Description"
+            description="Presented the data pipeline that I developed for the Dutch Child Formulary (Kinderformularium) 
+            that helped them prepare their data for ASReview in the form of a poster at the Utrecht AI labs event."
             logo={UU}
           />
 
@@ -161,11 +171,12 @@ Twitter data when combined with an intelligent pre-processor.' which was awarded
             title="Learn React Course"
             company="Codecademy"
             dates="4/2024"
-            description="Description"
+            description="Completed the 'Learn React' course at Codecademy, where I learned about JSX, 
+            JavaScript, and CSS for building and styling React components. 
+            Additionally I learned about state management with hooks and how you can apply programming patterns to create dynamic
+            and maintainable web applications. I liked the course so much that I decided to use React for this website."
             logo={codecademy}
           />
-
-
         </div>
       </div>
     </div>
