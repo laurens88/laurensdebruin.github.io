@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/navbar";
 import NavDrawer from "../components/drawer";
 import "../App.css";
+import WorldMap from "../components/worldmap";
 
 function Hobby() {
   return (
@@ -13,6 +14,7 @@ function Hobby() {
         <NavDrawer activeItems={["Hobbies"]} />
       </div>
       <p style={{textAlign: "center"}}>My hobbies here.</p>
+      <WorldMap />
     </div>
   );
 }
