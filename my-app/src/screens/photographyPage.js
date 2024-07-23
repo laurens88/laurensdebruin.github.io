@@ -3,15 +3,10 @@ import Navbar from "../components/navbar";
 import NavDrawer from "../components/drawer";
 import Photo from "../components/Photo";
 import "../App.css";
-import styles from "../styles/photographyPage.module.css";
 import Grid from "@mui/material/Grid";
 
 import lac_low from "../assets/images/photography/IMG_5692_low.jpg";
 import lac from "../assets/images/photography/IMG_5692.jpg";
-import guardian_low from "../assets/images/photography/IMG_7632_low.jpg";
-import guardian from "../assets/images/photography/IMG_7632.jpg";
-import dragonfly_low from "../assets/images/photography/IMG_7925-Enhanced-NR_low.jpg";
-import dragonfly from "../assets/images/photography/IMG_7925-Enhanced-NR.jpg";
 import flower_low from "../assets/images/photography/flower_low.jpg";
 import flower from "../assets/images/photography/flower.jpg";
 import plane_low from "../assets/images/photography/plane_low.jpg";
