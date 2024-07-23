@@ -69,4 +69,8 @@
     .resumeContent {
         padding: 0 5px;
     }
+
+    .resumeContent p {
+        text-align: left;
+    }
 }
