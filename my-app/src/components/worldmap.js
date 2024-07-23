@@ -1,16 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   ComposableMap,
   Geographies,
-  Geography
+  Geography,
 } from 'react-simple-maps';
 import styled from 'styled-components';
-import { geoPath, geoEqualEarth } from 'd3-geo';
-import worldMapData from '../assets/data/50m.json';
+import worldMapData from '../assets/data/countries.geo.json';
 
-const countries = {
-  USA: { id: 'USA', flag: '../assets/images/flags/usa.png' },
-  CAN: { id: 'CAN', flag: '../assets/images/flags/canada.png' },
+// List of countries to be displayed in green
+const greenCountries = {
+  THA: true,
+  CAN: true,
+  USA: true,
+  
+  // Add more country codes here
 };
 
 const StyledGeography = styled(Geography)`
@@ -21,63 +24,35 @@ const StyledGeography = styled(Geography)`
 `;
 
 const WorldMap = () => {
-  const [selectedCountries, setSelectedCountries] = useState({});
-
-  const toggleCountry = (countryId) => {
-    setSelectedCountries((prev) => ({
-      ...prev,
-      [countryId]: !prev[countryId],
-    }));
-  };
-
   return (
-    <ComposableMap projection={geoEqualEarth()} width={800} height={450}>
+    <ComposableMap projection="geoEqualEarth" width={1000} height={500}>
       <Geographies geography={worldMapData}>
         {({ geographies }) =>
           geographies.map((geo) => {
-            const countryCode = geo.properties.ISO_A3;
-            const country = countries[countryCode];
-            const isSelected = selectedCountries[countryCode];
-            const fillStyle = isSelected
-              ? `url(#${countryCode}-flag)`
-              : '#000';
+            // Log the geo.properties object to understand its structure
+            console.log('Geo properties:', geo);
+
+            // Access the country code from geo.properties
+            const countryCode = geo.id; // Adjust this property if needed
+            console.log('Country Code:', countryCode);
+
+            // Determine the fill style
+            const fillStyle = greenCountries[countryCode] ? 'green' : 'black';
 
             return (
               <StyledGeography
                 key={geo.rsmKey}
                 geography={geo}
-                onClick={() => country && toggleCountry(countryCode)}
                 style={{
                   default: { fill: fillStyle, stroke: '#FFF' },
                   hover: { fill: fillStyle, stroke: '#FFF' },
-                  pressed: { fill: fillStyle, stroke: '#FFF' }
+                  pressed: { fill: fillStyle, stroke: '#FFF' },
                 }}
               />
             );
           })
         }
       </Geographies>
-      {Object.keys(countries).map((countryCode) => {
-        const country = countries[countryCode];
-        return (
-          <pattern
-            key={countryCode}
-            id={`${countryCode}-flag`}
-            patternUnits="userSpaceOnUse"
-            width={800}
-            height={450}
-          >
-            <image
-              href={country.flag}
-              x="0"
-              y="0"
-              width="800"
-              height="450"
-              preserveAspectRatio="xMidYMid slice"
-            />
-          </pattern>
-        );
-      })}
     </ComposableMap>
   );
 };
