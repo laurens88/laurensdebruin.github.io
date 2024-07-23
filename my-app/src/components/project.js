@@ -1,4 +1,3 @@
-import react from "react";
 import Card from "../components/card";
 import styles from "../styles/project.module.css";
 import Button from '@mui/material/Button';

@@ -1,13 +1,10 @@
 import React from "react";
 import Navbar from "../components/navbar";
 import NavDrawer from "../components/drawer";
-import Card from "../components/card";
 import pagestyles from "../styles/projectsPage.module.css";
 import "../App.css";
 import cardstyles from "../styles/card.module.css";
-import FileDownloadButton from "../components/downloadbutton";
 import APK from "../assets/downloads/car_collection.apk";
-import CarCollection from "../assets/logos/carcollection.webp";
 import Project from "../components/project";
 
 function Projects() {
