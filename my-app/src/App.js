@@ -5,6 +5,7 @@ import Resume from "./screens/resumePage";
 import Hobby from "./screens/hobbyPage";
 import Photography from "./screens/photographyPage";
 import Projects from "./screens/projectsPage";
+import Placeholder from "./screens/placeholderPage";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/photography" element={<Photography />} />
         <Route path="/hobbies" element={<Hobby />} />
+        <Route path="/projects/carcollection" element={<Placeholder />} />
+        <Route path="/projects/bert" element={<Placeholder />} />
       </Routes>
     </div>
   );
