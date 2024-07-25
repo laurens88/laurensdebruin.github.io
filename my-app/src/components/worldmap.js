@@ -1,58 +1,37 @@
+// src/WorldMap.js
 import React from 'react';
-import {
-  ComposableMap,
-  Geographies,
-  Geography,
-} from 'react-simple-maps';
-import styled from 'styled-components';
-import worldMapData from '../assets/data/countries.geo.json';
+import { ComposableMap, ZoomableGroup, Geographies, Geography } from 'react-simple-maps';
+import { geoCentroid } from 'd3-geo';
+import worldData from '../assets/data/50m.json';
 
-// List of countries to be displayed in green
-const greenCountries = {
-  THA: true,
-  CAN: true,
-  USA: true,
-  
-  // Add more country codes here
-};
-
-const StyledGeography = styled(Geography)`
-  cursor: pointer;
-  &:hover {
-    fill: #999;
-  }
-`;
+const visitedCountries = [1, 100, 200]; // Add your visited countries' ISO codes here
 
 const WorldMap = () => {
   return (
-    <ComposableMap projection="geoEqualEarth" width={1000} height={500}>
-      <Geographies geography={worldMapData}>
-        {({ geographies }) =>
-          geographies.map((geo) => {
-            // Log the geo.properties object to understand its structure
-            console.log('Geo properties:', geo);
-
-            // Access the country code from geo.properties
-            const countryCode = geo.id; // Adjust this property if needed
-            console.log('Country Code:', countryCode);
-
-            // Determine the fill style
-            const fillStyle = greenCountries[countryCode] ? 'green' : 'black';
-
-            return (
-              <StyledGeography
-                key={geo.rsmKey}
-                geography={geo}
-                style={{
-                  default: { fill: fillStyle, stroke: '#FFF' },
-                  hover: { fill: fillStyle, stroke: '#FFF' },
-                  pressed: { fill: fillStyle, stroke: '#FFF' },
-                }}
-              />
-            );
-          })
-        }
-      </Geographies>
+    <ComposableMap projection="geoMercator" projectionConfig={{ scale: 147 }}>
+      <ZoomableGroup>
+        <Geographies geography={worldData}>
+          {({ geographies }) =>
+            geographies.map((geo) => {
+              const centroid = geoCentroid(geo);
+              const isVisited = visitedCountries.includes(geo.properties.ISO_A3);
+              return (
+                <Geography
+                  key={geo.rsmKey}
+                  geography={geo}
+                  fill={isVisited ? '#FF5733' : '#FFF'}
+                  stroke="#000"
+                  style={{
+                    default: { outline: 'none' },
+                    hover: { outline: 'none' },
+                    pressed: { outline: 'none' },
+                  }}
+                />
+              );
+            })
+          }
+        </Geographies>
+      </ZoomableGroup>
     </ComposableMap>
   );
 };
