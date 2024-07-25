@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b5956c45.css",
-    "main.js": "/static/js/main.f6a68cb3.js",
+    "main.js": "/static/js/main.2c62ffa1.js",
     "static/js/453.68693753.chunk.js": "/static/js/453.68693753.chunk.js",
     "static/media/IMG_5692.jpg": "/static/media/IMG_5692.cb91861ef7f90744a6c7.jpg",
     "static/media/crab.jpg": "/static/media/crab.fc25b1f806620829b6df.jpg",
@@ -25,6 +25,7 @@
     "static/media/plane_low.jpg": "/static/media/plane_low.94adcec010951f643fce.jpg",
     "static/media/Philips.png": "/static/media/Philips.5d0e6f6d1296a0feec2a.png",
     "static/media/portrait.jpg": "/static/media/portrait.30e6b7e464aac82eebf2.jpg",
+    "static/media/worldmap-svg.svg": "/static/media/worldmap-svg.e98ceb6fa0b54f9db89b843f287cb1b5.svg",
     "static/media/sky_low.jpg": "/static/media/sky_low.673e6c17f984c6fc3271.jpg",
     "static/media/RobotoMono-VariableFont_wght.ttf": "/static/media/RobotoMono-VariableFont_wght.e14e25b7c497634efdfe.ttf",
     "static/media/UMC.jpg": "/static/media/UMC.fdd45cfc2070582547d3.jpg",
@@ -40,11 +41,11 @@
     "static/media/easyway.jpg": "/static/media/easyway.da5dc54479a4450ea83a.jpg",
     "index.html": "/index.html",
     "main.b5956c45.css.map": "/static/css/main.b5956c45.css.map",
-    "main.f6a68cb3.js.map": "/static/js/main.f6a68cb3.js.map",
+    "main.2c62ffa1.js.map": "/static/js/main.2c62ffa1.js.map",
     "453.68693753.chunk.js.map": "/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b5956c45.css",
-    "static/js/main.f6a68cb3.js"
+    "static/js/main.2c62ffa1.js"
   ]
 }
