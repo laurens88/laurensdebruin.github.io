@@ -21,7 +21,11 @@ function Travel() {
       <img src={Map} alt="map" style={{ width: "100%", height: "auto" }} />
 
         <h2 style={{ textAlign: "center" }}>More interesting stats:</h2>
+        {/* 4/10 world regions?? 4/7 continents */}
         {/* Pie chart with visited progress world + for each continent. */}
+        {/* capitals visited */}
+        {/* languages spoken */}
+        {/* flags collected */}
     </div>
   );
 }
