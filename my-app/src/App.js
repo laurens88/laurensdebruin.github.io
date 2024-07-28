@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./screens/homePage";
 import Resume from "./screens/resumePage";
-import Hobby from "./screens/hobbyPage";
 import Travel from "./screens/travelPage";
 import Photography from "./screens/photographyPage";
 import Projects from "./screens/projectsPage";
@@ -16,8 +15,7 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/photography" element={<Photography />} />
-        <Route path="/hobbies" element={<Hobby />} />
-        <Route path="/hobbies/travel" element={<Travel />} />
+        <Route path="/travel" element={<Travel />} />
         <Route path="/projects/carcollection" element={<Placeholder />} />
         <Route path="/projects/bert" element={<Placeholder />} />
       </Routes>

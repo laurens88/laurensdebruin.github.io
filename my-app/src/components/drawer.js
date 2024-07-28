@@ -126,7 +126,7 @@ const NavDrawer = ({ activeItems }) => {
           height="100%"
         >
           <List>
-            {["Home", "Resume", "Projects", "Photography", "Hobbies"].map(
+            {["Home", "Resume", "Projects", "Photography", "Travel"].map(
               (item) => (
                 <ListItem
                   button
