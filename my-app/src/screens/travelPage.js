@@ -19,6 +19,9 @@ function Travel() {
       <h2 style={{ textAlign: "center" }}>I've visited 20 countries so far:</h2>
 
       <img src={Map} alt="map" style={{ width: "100%", height: "auto" }} />
+
+        <h2 style={{ textAlign: "center" }}>More interesting stats:</h2>
+        {/* Pie chart with visited progress world + for each continent. */}
     </div>
   );
 }
