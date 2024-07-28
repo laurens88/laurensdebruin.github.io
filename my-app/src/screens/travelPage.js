@@ -4,6 +4,9 @@ import NavDrawer from "../components/drawer";
 import "../App.css";
 import Map from "../assets/images/worldmap.svg";
 
+//https://www.amcharts.com/visited_countries/index.php#AT,BE,CY,DK,FR,DE,GR,IT,LU,NL,NO,PT,ES,SE,CH,GB,CA,US,QA,TH
+//https://www.vectorpea.com/
+
 function Travel() {
   return (
     <div>
@@ -11,9 +14,10 @@ function Travel() {
         <Navbar />
       </div>
       <div className="mobile-nav">
-        <NavDrawer activeItems={["Hobbies"]} />
+        <NavDrawer activeItems={["Travel"]} />
       </div>
-      <h2 style={{ textAlign: "center" }}>Countries I've visited so far:</h2>
+      <h2 style={{ textAlign: "center" }}>I've visited 20 countries so far:</h2>
+
       <img src={Map} alt="map" style={{ width: "100%", height: "auto" }} />
     </div>
   );
