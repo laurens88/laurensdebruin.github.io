@@ -167,8 +167,20 @@ Twitter data when combined with an intelligent pre-processor.' which was awarded
           />
 
           <h1>Certifications / Awards</h1>
+
           <ResumeItem
-            title="Learn React Course"
+           title="Advanced Java Course"
+           company="Codecademy"
+           dates="7/2024"
+           description="Completed the 'Advanced Java' course at Codecademy, 
+           where I learned about <strong>parallel and concurrent programming</strong>,
+           using <strong>servlets and sockets</strong>, the Java Native Interface, 
+           and how to implement <strong>Java Database Connectivity (JDBC)</strong>."
+          logo={codecademy}
+          />
+
+          <ResumeItem
+            title="React Course"
             company="Codecademy"
             dates="4/2024"
             description="Completed the 'Learn React' course at Codecademy, where I learned about <strong>JSX, 
