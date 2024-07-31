@@ -31,10 +31,10 @@ function Travel() {
       <Country name="Spain" abbreviation="es" />
       <Country name="Portugal" abbreviation="pt" />
       <Country name="Cyprus" abbreviation="cy" />
-      <Country name="Greece" abbreviation="gr" />
       <Country name="Switzerland" abbreviation="ch" />
-      <Country name="Austria" abbreviation="at" />
+      <Country name="Greece" abbreviation="gr" />
       <Country name="Luxembourg" abbreviation="lu" />
+      <Country name="Austria" abbreviation="at" />
       <Country name="Denmark" abbreviation="dk" />
       <Country name="Sweden" abbreviation="se" />
       <Country name="Norway" abbreviation="no" />
