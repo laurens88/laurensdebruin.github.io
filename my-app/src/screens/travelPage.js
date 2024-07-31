@@ -37,12 +37,12 @@ function Travel() {
       <Country name="Sweden" abbreviation="se" />
       <Country name="Norway" abbreviation="no" />
       <Country name="England" abbreviation="gb" />
-      <Country name="United States" abbreviation="us" />
+      <Country name="U.S.A" abbreviation="us" />
       <Country name="Canada" abbreviation="ca" />
       <Country name="Qatar" abbreviation="qa" />
       <Country name="Thailand" abbreviation="th" />
       <Country name="Cyprus" abbreviation="cy" />
-      
+
       </div>
         {/* 4/10 world regions?? 4/7 continents */}
         {/* Pie chart with visited progress world + for each continent. */}
