@@ -21,6 +21,7 @@ function Travel() {
       <h2 style={{ textAlign: "center" }}>I've visited 20 countries so far:</h2>
 
       <img src={Map} alt="map" style={{ width: "100%", height: "auto" }} />
+      <h2 style={{ textAlign: "center" }}>My flag collection:</h2>
       <div className={styles.countries}>
       <Country name="The Netherlands" abbreviation="nl" />
       <Country name="Belgium" abbreviation="be" />
@@ -29,6 +30,7 @@ function Travel() {
       <Country name="Italy" abbreviation="it" />
       <Country name="Spain" abbreviation="es" />
       <Country name="Portugal" abbreviation="pt" />
+      <Country name="Cyprus" abbreviation="cy" />
       <Country name="Greece" abbreviation="gr" />
       <Country name="Switzerland" abbreviation="ch" />
       <Country name="Austria" abbreviation="at" />
@@ -36,12 +38,12 @@ function Travel() {
       <Country name="Denmark" abbreviation="dk" />
       <Country name="Sweden" abbreviation="se" />
       <Country name="Norway" abbreviation="no" />
-      <Country name="England" abbreviation="gb" />
+      <Country name="England" abbreviation="gb-eng" />
       <Country name="U.S.A" abbreviation="us" />
       <Country name="Canada" abbreviation="ca" />
-      <Country name="Qatar" abbreviation="qa" />
       <Country name="Thailand" abbreviation="th" />
-      <Country name="Cyprus" abbreviation="cy" />
+      <Country name="Qatar" abbreviation="qa" />
+
 
       </div>
         {/* 4/10 world regions?? 4/7 continents */}
