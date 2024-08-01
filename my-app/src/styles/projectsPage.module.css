@@ -20,6 +20,10 @@
   text-align: justify;
 }
 
+[data-theme="dark"] .summary {
+  color: white;
+}
+
 @media (min-width: 768px) {
   .summary {
     width: 45%;
