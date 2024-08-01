@@ -28,51 +28,22 @@
     position: relative;
     overflow: hidden;
     transition: color 0.3s ease;
-    padding: 5px 10px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.navbar button::before,
-.navbar button::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    box-sizing: border-box;
-    border: 2px solid #1011F5;
 }
 
 .navbar button::before {
-    top: 0;
-    left: 0;
-    border-top: none;
-    border-left: none;
-}
-
-.navbar button::after {
-    bottom: 0;
-    right: 0;
-    border-bottom: none;
-    border-right: none;
-}
-
-.navbar button:hover::before,
-.navbar button:hover::after {
+    content: "";
+    position: absolute;
     width: 100%;
-    height: 100%;
-    transition: width 0.3s ease, height 0.3s ease;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #1011F5;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar button:hover::before {
-    transition: width 0.3s ease 0.3s, height 0.3s ease;
-}
-
-.navbar button:hover::after {
-    transition: width 0.3s ease, height 0.3s ease 0.3s;
-}
-
-.navbar button:hover {
-    color: #0d0fb8;
+    visibility: visible;
+    transform: scaleX(1);
 }
