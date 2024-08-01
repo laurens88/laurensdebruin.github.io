@@ -3,6 +3,10 @@
     text-align: justify;
 }
 
+[data-theme="dark"] .summary {
+    color: white;
+}
+
 .summary h1 {
     font-size: 2.3rem;
     font-weight: 700;
