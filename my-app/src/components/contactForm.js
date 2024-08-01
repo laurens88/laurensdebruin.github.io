@@ -6,6 +6,8 @@ import Typography from "@mui/material/Typography";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
+const theme = localStorage.getItem('theme')
+
 const modalStyle = {
   display: "flex",
   alignItems: "center",
@@ -16,7 +18,7 @@ const modalStyle = {
   transform: "translate(-50%, -50%)",
   width: "80%",
   maxWidth: "400px",
-  background: "white",
+  background: theme === "light" ? "white" : "rgb(0,1,35)",
   boxShadow: "0 4px 20px rgba(0, 0, 0, 0.3)",
   p: 4,
   borderRadius: "12px",
