@@ -4,7 +4,7 @@ import NavDrawer from "../components/drawer";
 import "../App.css";
 import Map from "../assets/images/worldmap.svg";
 import Country from "../components/country";
-import styles from "../styles/travel.module.css";
+import styles from "../styles/travelPage.module.css";
 import PChart from "../components/piechart";
 import { Typography } from "@mui/material";
 import Grid from '@mui/material/Grid';
@@ -50,6 +50,7 @@ function Travel() {
       <div className="mobile-nav">
         <NavDrawer activeItems={["Travel"]} />
       </div>
+      <div className={styles.container}>
       <h2 style={{ textAlign: "center" }}>I've visited 20 countries:</h2>
 
       <img src={Map} alt="map" style={{ width: "100%", height: "auto" }} />
@@ -140,6 +141,7 @@ function Travel() {
       
         {/* capitals visited */}
         {/* languages spoken */}
+    </div>
     </div>
   );
 }
