@@ -31,6 +31,9 @@ function Travel() {
   const OceaniaVisited = 0;
   const OceaniaTotal = 14;
 
+  const currentTheme = localStorage.getItem('theme');
+  console.log(currentTheme);
+
   function percentage(part, total) {
     return ((part / total) * 100).toFixed(0) + '%';
   }
@@ -39,8 +42,6 @@ function Travel() {
     // Having some fun with js type coercion
     return !!NAVisited + !!SAVisited + !!EuropeVisited + !!AsiaVisited + !!AfricaVisited + !!OceaniaVisited;
   }
-
-  console.log(!!2);
 
   return (
     <div>

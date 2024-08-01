@@ -1,0 +1,9 @@
+.chart {
+    --color-1: #1011FA;
+    --color-2: #f0f0f0;
+}
+
+[data-theme="dark"] .chart {
+    --color-1: #1011FA;
+    --color-2: #000040;
+}
