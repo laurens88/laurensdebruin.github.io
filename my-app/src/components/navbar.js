@@ -6,6 +6,8 @@ import styles from "../styles/navbar.module.css";
 
 import ghlogo from "../assets/logos/github.png";
 import lilogo from "../assets/logos/linkedin.png";
+import ghlogo_dark from "../assets/logos/github_dark.png";
+import lilogo_dark from "../assets/logos/linkedin_dark.png";
 
 function Navbar() {
   let navigate = useNavigate();
@@ -40,10 +42,10 @@ function Navbar() {
             rel="noopener noreferrer"
           >
             <img
-              src={ghlogo}
+              src={theme === 'light' ? ghlogo : ghlogo_dark}
               alt="GitHub"
               className={styles.icon}
-              style={{ width: "30px", height: "30px"}}
+              style={{ width: "30px", height: "30px" }}
             />
           </a>
           <a
@@ -52,10 +54,10 @@ function Navbar() {
             rel="noopener noreferrer"
           >
             <img
-              src={lilogo}
+              src={theme === 'light' ? lilogo : lilogo_dark}
               alt="LinkedIn"
               className={styles.icon}
-              style={{ width: "28px", height: "28px", paddingTop: "0.7rem"}}
+              style={{ width: "28px", height: "28px", paddingTop: "0.7rem" }}
             />
           </a>
           <Button onClick={toggleTheme}>mode</Button>
