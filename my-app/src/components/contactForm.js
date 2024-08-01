@@ -16,8 +16,8 @@ const modalStyle = {
   transform: "translate(-50%, -50%)",
   width: "80%",
   maxWidth: "400px",
-  background: "linear-gradient(135deg, #f5f7fa, #c3cfe2)",
-  boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
+  background: "white",
+  boxShadow: "0 4px 20px rgba(0, 0, 0, 0.3)",
   p: 4,
   borderRadius: "12px",
 };

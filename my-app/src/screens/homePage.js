@@ -32,13 +32,11 @@ function Home() {
             <h1 className={styles.blinkingCursor}>Laurens de Bruin</h1>
             <h2>Software Developer</h2>
             <p>
-              Welcome to my personal website. Here, you will find an overview of
-              my professional experience, including an extensive version of my
-              resume and various coding projects I’ve worked on, reflecting my
-              background in AI and my passion for software development.
-              Additionally, I have included a page dedicated to showcasing my
-              photography hobby and another focused on my travels. Feel free to
-              explore and learn more about my work and interests.
+            Welcome to my personal website. Here, you will find an overview of my professional experience, 
+            including a comprehensive resume and various coding projects I've worked on. 
+            These projects reflect my background in AI and my passion for software development. 
+            Additionally, I have included a page dedicated to showcasing my photography hobby and another page focused on my travels. 
+            Feel free to explore and learn more about my work and interests.
             </p>
             <Button
               variant="contained"
