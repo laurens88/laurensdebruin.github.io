@@ -6,8 +6,7 @@ import Map from "../assets/images/worldmap.svg";
 import Country from "../components/country";
 import styles from "../styles/travel.module.css";
 import PChart from "../components/piechart";
-import { Stack, Typography } from "@mui/material";
-import Box from '@mui/material/Box';
+import { Typography } from "@mui/material";
 import Grid from '@mui/material/Grid';
 
 //https://www.amcharts.com/visited_countries/index.php#AT,BE,CY,DK,FR,DE,GR,IT,LU,NL,NO,PT,ES,SE,CH,GB,CA,US,QA,TH

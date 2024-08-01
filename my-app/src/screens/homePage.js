@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Navbar from "../components/navbar";
 import NavDrawer from "../components/drawer";
 import styles from "../styles/homePage.module.css";
@@ -8,9 +8,14 @@ import Button from '@mui/material/Button';
 import FileDownloadButton from "../components/downloadbutton";
 import Send from '@mui/icons-material/Send';
 import Resume_english from "../assets/downloads/Resume_LaurensdeBruin.pdf";
+import ContactForm from "../components/contactForm";
 import "../App.css";
 
 function Home() {
+  const [contactOpen, setContactOpen] = useState(false);
+
+  const handleContactOpen = () => setContactOpen(true);
+  const handleContactClose = () => setContactOpen(false);
 
   return (
     <div>
@@ -27,15 +32,13 @@ function Home() {
             <h1 className={styles.blinkingCursor}>Laurens de Bruin</h1>
             <h2>Software Developer</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
-              Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
-              Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
-              massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
-              sociosqu ad litora torquent per conubia nostra, per inceptos
-              himenaeos.
+            Welcome to my personal website. Here, you will find an overview of my professional experience, 
+            including an extensive version of my resume and various coding projects I’ve worked on, 
+            reflecting my background in AI and my passion for software development. Additionally, 
+            I have included a page dedicated to showcasing my photography hobby and another focused on my travels. 
+            Feel free to explore and learn more about my work and interests.
             </p>
-            <Button variant="contained" endIcon={<Send/>} style={{margin: '10px', backgroundColor: '#1011F5'}}>
+            <Button variant="contained" endIcon={<Send/>} style={{margin: '10px', backgroundColor: '#1011F5'}} onClick={handleContactOpen}>
               Contact
             </Button>
 
@@ -47,6 +50,7 @@ function Home() {
           </Grid>
         </Grid>
       </div>
+      <ContactForm open={contactOpen} handleClose={handleContactClose} />
     </div>
   );
 }
