@@ -10,6 +10,7 @@ import lilogo from "../assets/logos/linkedin.png";
 import ghlogo_dark from "../assets/logos/github_dark.png";
 import lilogo_dark from "../assets/logos/linkedin_dark.png";
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import { red } from "@mui/material/colors";
 
 function Navbar() {
   let navigate = useNavigate();
@@ -62,7 +63,9 @@ function Navbar() {
               style={{ width: "28px", height: "28px", paddingTop: "0.7rem" }}
             />
           </a>
-          <IconButton onClick={toggleTheme}> <DarkModeIcon /> </IconButton>
+          <div className={styles.theme}>
+          <IconButton onClick={toggleTheme} style={{borderColor: "transparent", color: red}}> <DarkModeIcon /> </IconButton>
+          </div>
         </Stack>
       </Stack>
     </div>
