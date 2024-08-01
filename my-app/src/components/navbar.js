@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
+import { IconButton } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import styles from "../styles/navbar.module.css";
 
@@ -8,6 +9,7 @@ import ghlogo from "../assets/logos/github.png";
 import lilogo from "../assets/logos/linkedin.png";
 import ghlogo_dark from "../assets/logos/github_dark.png";
 import lilogo_dark from "../assets/logos/linkedin_dark.png";
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 function Navbar() {
   let navigate = useNavigate();
@@ -60,7 +62,7 @@ function Navbar() {
               style={{ width: "28px", height: "28px", paddingTop: "0.7rem" }}
             />
           </a>
-          <Button onClick={toggleTheme}>mode</Button>
+          <IconButton onClick={toggleTheme}> <DarkModeIcon /> </IconButton>
         </Stack>
       </Stack>
     </div>
