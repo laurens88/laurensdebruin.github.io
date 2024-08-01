@@ -7,6 +7,10 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+[data-theme="dark"] .navbar {
+    background-color: #000123;
+}   
+
 .navbar button {
     font-family: "Roboto Mono", monospace;
     font-size: 1.2rem;

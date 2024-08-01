@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
@@ -9,6 +9,19 @@ import lilogo from "../assets/logos/linkedin.png";
 
 function Navbar() {
   let navigate = useNavigate();
+
+  const storedTheme = localStorage.getItem('theme') || 'light';
+  const [theme, setTheme] = useState(storedTheme);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+  };
 
   return (
     <div className={styles.navbar}>
@@ -45,6 +58,7 @@ function Navbar() {
               style={{ width: "28px", height: "28px", paddingTop: "0.7rem"}}
             />
           </a>
+          <Button onClick={toggleTheme}>mode</Button>
         </Stack>
       </Stack>
     </div>
