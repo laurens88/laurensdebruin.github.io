@@ -2,6 +2,19 @@
     color: white;
 }
 
+:root {
+    --map-light: url('../assets/images/worldmap.svg');
+    --map-dark: url('../assets/images/worldmap_dark.svg');
+  }
+  
+  [data-theme="light"] {
+    --map-image: var(--map-light);
+  }
+  
+  [data-theme="dark"] {
+    --map-image: var(--map-dark);
+  }
+
 .countries {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
