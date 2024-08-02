@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6a37bb33.css",
-    "main.js": "/static/js/main.9e06b451.js",
+    "main.css": "/static/css/main.15b5553c.css",
+    "main.js": "/static/js/main.14958612.js",
     "static/js/453.68693753.chunk.js": "/static/js/453.68693753.chunk.js",
     "static/media/IMG_5692.jpg": "/static/media/IMG_5692.cb91861ef7f90744a6c7.jpg",
     "static/media/crab.jpg": "/static/media/crab.fc25b1f806620829b6df.jpg",
@@ -25,15 +25,18 @@
     "static/media/plane_low.jpg": "/static/media/plane_low.94adcec010951f643fce.jpg",
     "static/media/Philips.png": "/static/media/Philips.5d0e6f6d1296a0feec2a.png",
     "static/media/portrait.jpg": "/static/media/portrait.30e6b7e464aac82eebf2.jpg",
-    "static/media/worldmap.svg": "/static/media/worldmap.5ce88c8a1691000bc7c0d21a5e0a7125.svg",
+    "static/media/worldmap.svg": "/static/media/worldmap.5ce88c8a1691000bc7c0.svg",
+    "static/media/worldmap_dark.svg": "/static/media/worldmap_dark.5cd79b487ebed4b12bfc.svg",
     "static/media/sky_low.jpg": "/static/media/sky_low.673e6c17f984c6fc3271.jpg",
     "static/media/RobotoMono-VariableFont_wght.ttf": "/static/media/RobotoMono-VariableFont_wght.e14e25b7c497634efdfe.ttf",
     "static/media/UMC.jpg": "/static/media/UMC.fdd45cfc2070582547d3.jpg",
     "static/media/Pierson.png": "/static/media/Pierson.f7c23755a650f46b413d.png",
     "static/media/ASReview.png": "/static/media/ASReview.72dad6e300f785032f2b.png",
+    "static/media/github_dark.png": "/static/media/github_dark.c95b6275cece42c6384b.png",
     "static/media/Radboud.png": "/static/media/Radboud.a8fc67e46afbb6eb20d5.png",
     "static/media/mediamarkt.png": "/static/media/mediamarkt.518560baf1bf5d84af68.png",
     "static/media/sandd.jpg": "/static/media/sandd.7b9a3711ed6ce1a63ae3.jpg",
+    "static/media/linkedin_dark.png": "/static/media/linkedin_dark.53b7822a8073c0079f68.png",
     "static/media/linkedin.png": "/static/media/linkedin.cbaa79687b29c981cb1e.png",
     "static/media/university-of-twente.jpg": "/static/media/university-of-twente.44c44413178edfbb1eb2.jpg",
     "static/media/github.png": "/static/media/github.1ff6d9646165b7f34af9.png",
@@ -41,12 +44,13 @@
     "static/media/easyway.jpg": "/static/media/easyway.da5dc54479a4450ea83a.jpg",
     "index.html": "/index.html",
     "static/media/pattern.svg": "/static/media/pattern.5e444b952b7663525cb8.svg",
-    "main.6a37bb33.css.map": "/static/css/main.6a37bb33.css.map",
-    "main.9e06b451.js.map": "/static/js/main.9e06b451.js.map",
+    "static/media/pattern_dark.svg": "/static/media/pattern_dark.12261c6123b153c43745.svg",
+    "main.15b5553c.css.map": "/static/css/main.15b5553c.css.map",
+    "main.14958612.js.map": "/static/js/main.14958612.js.map",
     "453.68693753.chunk.js.map": "/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a37bb33.css",
-    "static/js/main.9e06b451.js"
+    "static/css/main.15b5553c.css",
+    "static/js/main.14958612.js"
   ]
 }
