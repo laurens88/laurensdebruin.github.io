@@ -1,14 +1,33 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
+import { IconButton } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import styles from "../styles/navbar.module.css";
 
 import ghlogo from "../assets/logos/github.png";
 import lilogo from "../assets/logos/linkedin.png";
+import ghlogo_dark from "../assets/logos/github_dark.png";
+import lilogo_dark from "../assets/logos/linkedin_dark.png";
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import { red } from "@mui/material/colors";
 
 function Navbar() {
   let navigate = useNavigate();
+
+  const storedTheme = localStorage.getItem('theme') || 'light';
+  const [theme, setTheme] = useState(storedTheme);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+  };
 
   return (
     <div className={styles.navbar}>
@@ -27,10 +46,10 @@ function Navbar() {
             rel="noopener noreferrer"
           >
             <img
-              src={ghlogo}
+              src={theme === 'light' ? ghlogo : ghlogo_dark}
               alt="GitHub"
               className={styles.icon}
-              style={{ width: "30px", height: "30px"}}
+              style={{ width: "30px", height: "30px" }}
             />
           </a>
           <a
@@ -39,12 +58,15 @@ function Navbar() {
             rel="noopener noreferrer"
           >
             <img
-              src={lilogo}
+              src={theme === 'light' ? lilogo : lilogo_dark}
               alt="LinkedIn"
               className={styles.icon}
-              style={{ width: "28px", height: "28px", paddingTop: "0.7rem"}}
+              style={{ width: "28px", height: "28px", paddingTop: "0.7rem" }}
             />
           </a>
+          <div className={styles.theme}>
+          <IconButton onClick={toggleTheme} style={{borderColor: "transparent", color: red}}> {theme === "light" ? <DarkModeIcon /> : <LightModeIcon />} </IconButton>
+          </div>
         </Stack>
       </Stack>
     </div>

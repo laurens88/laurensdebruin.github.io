@@ -3,9 +3,18 @@
   src: url("fonts/RobotoMono-VariableFont_wght.ttf") format("truetype");
 }
 
+:root{
+  --background-image: url('assets/images/pattern.svg');
+}
+
+[data-theme="dark"] {
+  --background-image: url('assets/images/pattern_dark.svg');
+  --text-color: white;
+}
+
 body {
   font-family: "Roboto Mono", monospace;
-  background-image: url('assets/images/pattern.svg');
+  background-image: var(--background-image);
   background-repeat: repeat;
   background-size: auto;
 }
