@@ -3,6 +3,7 @@ import Navbar from "../components/navbar";
 import NavDrawer from "../components/drawer";
 import "../App.css";
 import Map from "../assets/images/worldmap.svg";
+import Map_dark from "../assets/images/worldmap_dark.svg";
 import Country from "../components/country";
 import styles from "../styles/travelPage.module.css";
 import PChart from "../components/piechart";
