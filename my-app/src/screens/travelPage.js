@@ -66,7 +66,7 @@ function Travel() {
         <NavDrawer activeItems={["Travel"]} />
       </div>
       <div className={styles.container}>
-        <h2 style={{ textAlign: "center" }}>I've visited 20 countries:</h2>
+        <h2 style={{ textAlign: "center"}}>I've visited 20 countries:</h2>
 
         <img src={mapSrc} alt="map" style={{ width: "100%", height: "auto" }} />
         <div className={styles.countries}>
@@ -101,8 +101,6 @@ function Travel() {
               <p>North America: {percentage(NAVisited, NATotal)}</p>
               <PChart 
                 data={[{id: "Visited", value: NAVisited, label: "Visited"}, {id: "Not visited", value: NATotal-NAVisited, label: "Not Visited"}]} 
-                width={400}
-                height={200}
               />
             </Grid>
 
@@ -110,8 +108,6 @@ function Travel() {
               <Typography>Europe: {percentage(EuropeVisited, EuropeTotal)}</Typography>
               <PChart 
                 data={[{id: "Visited", value: EuropeVisited, label: "Visited"}, {id: "Not visited", value: EuropeTotal-EuropeVisited, label: "Not Visited"}]} 
-                width={400}
-                height={200}
               />
             </Grid>
 
@@ -119,8 +115,6 @@ function Travel() {
               <Typography>Asia: {percentage(AsiaVisited, AsiaTotal)}</Typography>
               <PChart 
                 data={[{id: "Visited", value: AsiaVisited, label: "Visited"}, {id: "Not visited", value: AsiaTotal-AsiaVisited, label: "Not Visited"}]} 
-                width={400}
-                height={200}
               />
             </Grid>
 
@@ -128,8 +122,6 @@ function Travel() {
               <Typography>South America: {percentage(SAVisited, SATotal)}</Typography>
               <PChart 
                 data={[{id: "Visited", value: SAVisited, label: "Visited"}, {id: "Not visited", value: SATotal-SAVisited, label: "Not Visited"}]} 
-                width={400}
-                height={200}
               />
             </Grid>
 
@@ -137,8 +129,6 @@ function Travel() {
               <Typography>Africa: {percentage(AfricaVisited, AfricaTotal)}</Typography>
               <PChart 
                 data={[{id: "Visited", value: AfricaVisited, label: "Visited"}, {id: "Not visited", value: AfricaTotal-AfricaVisited, label: "Not Visited"}]} 
-                width={400}
-                height={200}
               />
             </Grid>
 
@@ -146,8 +136,6 @@ function Travel() {
               <Typography>Oceania: {percentage(OceaniaVisited, OceaniaTotal)}</Typography>
               <PChart 
                 data={[{id: "Visited", value: OceaniaVisited, label: "Visited"}, {id: "Not visited", value: OceaniaTotal-OceaniaVisited, label: "Not Visited"}]} 
-                width={400}
-                height={200}
               />
             </Grid>
 

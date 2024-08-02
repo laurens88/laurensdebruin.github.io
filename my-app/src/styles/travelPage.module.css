@@ -35,9 +35,6 @@
     .countries {
         grid-template-columns: repeat(2, 1fr);
         padding-left: 1rem;
-    }
-
-    .continents {
-        padding-left: 3.25rem;
+        padding-right: 1rem;
     }
 }

@@ -3,6 +3,8 @@ import { PieChart } from "@mui/x-charts/PieChart";
 import styles from "../styles/pchart.module.css";
 
 function PChart({ data, width, height }) {
+  const [chartWidth, setChartWidth] = useState(width || 400);
+  const [chartHeight, setChartHeight] = useState(height || 200);
   const [chartColors, setChartColors] = useState([]);
 
   const updateColors = () => {
@@ -16,7 +18,21 @@ function PChart({ data, width, height }) {
   };
 
   useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 768) {
+        setChartWidth(width || screenWidth * 0.7);
+        setChartHeight(height || screenWidth * 0.35);
+      } else {
+        setChartWidth(width || 400);
+        setChartHeight(height || 200);
+      }
+    };
+
+    handleResize();
+
     updateColors();
+    window.addEventListener('resize', handleResize);
 
     const observer = new MutationObserver(updateColors);
     observer.observe(document.documentElement, {
@@ -25,9 +41,10 @@ function PChart({ data, width, height }) {
     });
 
     return () => {
+      window.removeEventListener('resize', handleResize);
       observer.disconnect();
     };
-  }, []);
+  }, [width, height]);
 
   return (
     <div className={styles.chart}>
@@ -40,8 +57,8 @@ function PChart({ data, width, height }) {
             valueKey: "value",
           },
         ]}
-        width={width}
-        height={height}
+        width={chartWidth}
+        height={chartHeight}
         slotProps={{
           legend: { hidden: true },
         }}
