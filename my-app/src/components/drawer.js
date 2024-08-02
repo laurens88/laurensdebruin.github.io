@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   AppBar,
   Toolbar,
@@ -13,7 +13,12 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { styled } from "@mui/system";
 import ghlogo from "../assets/logos/github.png";
+import ghlogo_dark from "../assets/logos/github_dark.png";
 import lilogo from "../assets/logos/linkedin.png";
+import lilogo_dark from "../assets/logos/linkedin_dark.png";
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import styles from "../styles/navbar.module.css";
 
 const StyledAppBar = styled(AppBar)({
   backgroundColor: "transparent",
@@ -45,11 +50,11 @@ const CloseButton = styled(IconButton)({
   right: 20,
 });
 
-const ListItemTextStyled = styled(ListItemText)(({ isActive }) => ({
+const ListItemTextStyled = styled(ListItemText)(({ isActive, theme }) => ({
   "& .MuiListItemText-primary": {
     fontSize: "2rem",
     fontFamily: "Roboto Mono, monospace",
-    color: isActive ? "#1011F5" : "inherit",
+    color: isActive ? "#1011F5" : theme === "light" ? "black" : "white",
   },
   textAlign: "left",
 }));
@@ -71,8 +76,21 @@ const NavDrawer = ({ activeItems }) => {
     setIsOpen(!isOpen);
   };
 
+  const storedTheme = localStorage.getItem('theme') || 'light';
+  const [theme, setTheme] = useState(storedTheme);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+  };
+
   return (
-    <div>
+    <div className={styles.container}>
       <StyledAppBar position="static">
         <Toolbar>
           <IconContainer>
@@ -82,7 +100,7 @@ const NavDrawer = ({ activeItems }) => {
               rel="noopener noreferrer"
             >
               <img
-                src={ghlogo}
+                src={theme === "light" ? ghlogo : ghlogo_dark}
                 alt="GitHub"
                 style={{ width: "30px", height: "30px" }}
               />
@@ -93,11 +111,12 @@ const NavDrawer = ({ activeItems }) => {
               rel="noopener noreferrer"
             >
               <img
-                src={lilogo}
+                src={theme === "light" ? lilogo : lilogo_dark}
                 alt="LinkedIn"
                 style={{ width: "30px", height: "30px" }}
               />
             </IconLink>
+          <IconButton onClick={toggleTheme} style={{color: "#1011FA"}}> {theme === "light" ? <DarkModeIcon /> : <LightModeIcon />} </IconButton>
           </IconContainer>
           <StyledIconButton
             edge="end"
@@ -105,7 +124,7 @@ const NavDrawer = ({ activeItems }) => {
             aria-label="menu"
             onClick={toggleDrawer}
           >
-            <StyledMenuIcon />
+            <StyledMenuIcon style={theme === "light" ? {color: "black"} : {color: "white"}}/>
           </StyledIconButton>
         </Toolbar>
       </StyledAppBar>
@@ -116,7 +135,7 @@ const NavDrawer = ({ activeItems }) => {
           aria-label="close"
           onClick={toggleDrawer}
         >
-          <CloseIcon />
+          <CloseIcon style={theme === "light" ? {color: "black"} : {color: "white"}}/>
         </CloseButton>
         <Box
           display="flex"
@@ -124,6 +143,7 @@ const NavDrawer = ({ activeItems }) => {
           alignItems="center"
           justifyContent="center"
           height="100%"
+          bgcolor={theme === "light" ? "#fff" : "rgb(0, 1, 35)"}
         >
           <List>
             {["Home", "Resume", "Projects", "Photography", "Travel"].map(
@@ -137,6 +157,7 @@ const NavDrawer = ({ activeItems }) => {
                   <ListItemTextStyled
                     primary={item}
                     isActive={activeItems.includes(item)}
+                    theme={theme}
                   />
                 </ListItem>
               )
