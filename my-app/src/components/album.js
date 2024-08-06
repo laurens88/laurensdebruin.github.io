@@ -1,97 +1,38 @@
 import React from "react";
-import Navbar from "../components/navbar";
-import NavDrawer from "../components/drawer";
-import Photo from "../components/Photo";
+import Photo from "../components/photo";
 import "../App.css";
 import Grid from "@mui/material/Grid";
+import PropTypes from "prop-types";
 
-function Album() {
+function Album({ imageList }) {
   return (
     <div>
-      <div className="desktop-nav">
-        <Navbar />
-      </div>
-      <div className="mobile-nav">
-        <NavDrawer activeItems={["Photography"]} />
-      </div>
-
-        <Grid container spacing={2} direction="row">
-
-          <Grid item xs={12} md={4}>
-            <Photo
-              lowRes={plane_low}
-              highRes={plane}
-              alt="Description of the photo"
-            />
-          </Grid>
-
-          <Grid item xs={12} md={4}>
-            <Photo
-              lowRes={sky_low}
-              highRes={sky}
-              alt="Description of the photo"
-            />
-          </Grid>
-
-          <Grid item xs={12} md={4}>
-            <Photo
-              lowRes={peacock_low}
-              highRes={peacock}
-              alt="Description of the photo"
-            />
-          </Grid>
-          
-          <Grid item xs={12} md={4}>
-            <Photo
-              lowRes={lake_low}
-              highRes={lake}
-              alt="Description of the photo"
-            />
-          </Grid>
-
-          <Grid item xs={12} md={4}>
-            <Photo
-              lowRes={crab_low}
-              highRes={crab}
-              alt="Description of the photo"
-            />
-          </Grid>
-
-          <Grid item xs={12} md={4}>
-            <Photo
-              lowRes={beach_low}
-              highRes={beach}
-              alt="Description of the photo"
-            />
-          </Grid>
-
-          <Grid item xs={12} md={4}>
-            <Photo
-              lowRes={flower_low}
-              highRes={flower}
-              alt="Description of the photo"
-            />
-          </Grid>
-
-          <Grid item xs={12} md={4}>
-            <Photo
-              lowRes={bubble_low}
-              highRes={bubble}
-              alt="Description of the photo"
-            />
-          </Grid>
-
-          <Grid item xs={12} md={4}>
-            <Photo
-              lowRes={lac_low}
-              highRes={lac}
-              alt="Description of the photo"
-            />
-          </Grid>
-          
+      <Grid container spacing={2} direction="row">
+        {imageList.map((image) => {
+          const { lowRes, highRes, alt } = image;
+          return (
+            <Grid item xs={12} md={4} key={highRes}>
+              <Photo
+                lowRes={lowRes}
+                highRes={highRes}
+                alt={alt}
+              />
+            </Grid>
+          );
+        })}
       </Grid>
     </div>
   );
 }
+
+Album.propTypes = {
+  imageList: PropTypes.arrayOf(
+    PropTypes.shape({
+      lowRes: PropTypes.string.isRequired,
+      highRes: PropTypes.string.isRequired,
+      alt: PropTypes.string
+    })
+  ).isRequired
+};
 
 export default Album;
