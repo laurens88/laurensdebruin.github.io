@@ -8,6 +8,7 @@ function Photography() {
 
 const wildlife_images = ["peacock.jpg", "crab.jpg"];
 const abstract_images = ["bubble.png"];
+const travel_images = ["chewlan.jpg", "thai_guard.jpg", "canyon.jpg", "canyon.jpg"];
 
 
   return (
