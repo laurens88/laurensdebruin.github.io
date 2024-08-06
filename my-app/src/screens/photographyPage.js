@@ -8,7 +8,9 @@ function Photography() {
 
 const wildlife_images = ["peacock.jpg", "crab.jpg"];
 const abstract_images = ["bubble.png"];
-const travel_images = ["chewlan.jpg", "thai_guard.jpg", "canyon.jpg", "canyon.jpg"];
+const travel_images = ["chewlan.jpg", "thai_guard.jpg", "canyon.jpg", "canyon.jpg","chewlan.jpg", "thai_guard.jpg", "canyon.jpg", "canyon.jpg",
+  "chewlan.jpg", "thai_guard.jpg", "canyon.jpg", "canyon.jpg"
+];
 
 
   return (
@@ -19,7 +21,7 @@ const travel_images = ["chewlan.jpg", "thai_guard.jpg", "canyon.jpg", "canyon.jp
       <div className="mobile-nav">
         <NavDrawer activeItems={["Photography"]} />
       </div>
-      <Album imageList={wildlife_images} dir={"wildlife"}/>
+      <Album imageList={travel_images} dir={"travel"}/>
     </div>
   );
 }
