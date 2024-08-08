@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import styles from '../styles/photo.module.css'; // Create this CSS file for styling
+import styles from '../styles/photo.module.css';
 
 const Photo = ({ lowRes, highRes, alt, width, height }) => {
   const [isHighResVisible, setIsHighResVisible] = useState(false);
@@ -37,8 +37,8 @@ Photo.propTypes = {
 };
 
 Photo.defaultProps = {
-  width: '100%',
-  height: 'auto',
+  // width: 'auto',
+  // height: 'auto',
 };
 
 export default Photo;
