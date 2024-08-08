@@ -1,33 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.8a3a6d8b.css",
-    "main.js": "/static/js/main.6c91cdd5.js",
+    "main.css": "/static/css/main.f9867c94.css",
+    "main.js": "/static/js/main.c29f2abf.js",
     "static/js/453.68693753.chunk.js": "/static/js/453.68693753.chunk.js",
-    "static/media/IMG_5692.jpg": "/static/media/IMG_5692.cb91861ef7f90744a6c7.jpg",
-    "static/media/crab.jpg": "/static/media/crab.fc25b1f806620829b6df.jpg",
-    "static/media/flower.jpg": "/static/media/flower.8e3d895dee2ccff37745.jpg",
-    "static/media/chewlan.jpg": "/static/media/chewlan.105fb678bf20e3e9f1af.jpg",
-    "static/media/bubble.png": "/static/media/bubble.42c351a4b80284b60bc5.png",
-    "static/media/sky.jpg": "/static/media/sky.9ce720c5c3dadf597a28.jpg",
-    "static/media/beach.jpg": "/static/media/beach.ad93dbdcd52fa0043867.jpg",
-    "static/media/plane.jpg": "/static/media/plane.4fad923a82c5549d24a1.jpg",
-    "static/media/peacock.jpg": "/static/media/peacock.9614660326a3c02649a1.jpg",
     "static/media/car_collection.apk": "/static/media/car_collection.5577a22fb1d1b40e4e99.apk",
-    "static/media/bubble_low.png": "/static/media/bubble_low.9ef54108f96fdf23bd38.png",
-    "static/media/chewlan_low.jpg": "/static/media/chewlan_low.5ed4a08ed092b5f4cf81.jpg",
-    "static/media/crab_low.jpg": "/static/media/crab_low.31474f8d05f98f909ac4.jpg",
-    "static/media/flower_low.jpg": "/static/media/flower_low.a7b65745065b00b81337.jpg",
-    "static/media/IMG_5692_low.jpg": "/static/media/IMG_5692_low.8da4fae2231b29f89fa7.jpg",
-    "static/media/beach_low.jpg": "/static/media/beach_low.5f548359c97f13932fb5.jpg",
     "static/media/UU.jpg": "/static/media/UU.2580aeefecf6631dc422.jpg",
-    "static/media/peacock_low.jpg": "/static/media/peacock_low.a8504566bac3d66c121a.jpg",
     "static/media/Resume_LaurensdeBruin.pdf": "/static/media/Resume_LaurensdeBruin.12ed47175ec1e7a2910c.pdf",
-    "static/media/plane_low.jpg": "/static/media/plane_low.94adcec010951f643fce.jpg",
     "static/media/Philips.png": "/static/media/Philips.5d0e6f6d1296a0feec2a.png",
     "static/media/portrait.jpg": "/static/media/portrait.30e6b7e464aac82eebf2.jpg",
     "static/media/worldmap.svg": "/static/media/worldmap.5ce88c8a1691000bc7c0.svg",
     "static/media/worldmap_dark.svg": "/static/media/worldmap_dark.8ca9d7413cbbfedcad5f.svg",
-    "static/media/sky_low.jpg": "/static/media/sky_low.673e6c17f984c6fc3271.jpg",
     "static/media/RobotoMono-VariableFont_wght.ttf": "/static/media/RobotoMono-VariableFont_wght.e14e25b7c497634efdfe.ttf",
     "static/media/UMC.jpg": "/static/media/UMC.fdd45cfc2070582547d3.jpg",
     "static/media/Pierson.png": "/static/media/Pierson.f7c23755a650f46b413d.png",
@@ -45,12 +27,12 @@
     "index.html": "/index.html",
     "static/media/pattern.svg": "/static/media/pattern.5e444b952b7663525cb8.svg",
     "static/media/pattern_dark.svg": "/static/media/pattern_dark.12261c6123b153c43745.svg",
-    "main.8a3a6d8b.css.map": "/static/css/main.8a3a6d8b.css.map",
-    "main.6c91cdd5.js.map": "/static/js/main.6c91cdd5.js.map",
+    "main.f9867c94.css.map": "/static/css/main.f9867c94.css.map",
+    "main.c29f2abf.js.map": "/static/js/main.c29f2abf.js.map",
     "453.68693753.chunk.js.map": "/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a3a6d8b.css",
-    "static/js/main.6c91cdd5.js"
+    "static/css/main.f9867c94.css",
+    "static/js/main.c29f2abf.js"
   ]
 }
