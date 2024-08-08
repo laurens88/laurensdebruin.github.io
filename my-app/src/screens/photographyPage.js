@@ -13,7 +13,7 @@ function Photography() {
     <div>
       <div className="desktop-nav">
         <Navbar />
-        <PhotoPreview photolist={["/photography/still_life/beach.jpg", "/photography/still_life/plane.jpg", "/photography/still_life/sky.jpg", "/photography/travel/thai_guard.jpg"]} />
+        <PhotoPreview photolist={["/photography/still_life/beach.jpg", "/photography/still_life/plane.jpg", "/photography/still_life/sky.jpg", "/photography/travel/thai_guard.jpg", "/photography/abstract/bubble.png"]} />
       </div>
       <div className="mobile-nav">
         <NavDrawer activeItems={["Photography"]} />
