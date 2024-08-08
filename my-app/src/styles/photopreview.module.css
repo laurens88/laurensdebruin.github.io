@@ -15,6 +15,14 @@ h1 {
     width: 100%;
 }
 
+.buttonOverlay {
+    position: relative;
+    left: 90%;
+    bottom: 125px;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
 .linedHeader {
     display: inline-block;
     position: relative;

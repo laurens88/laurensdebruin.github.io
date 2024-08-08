@@ -1,34 +1,31 @@
 import React from "react";
 import Navbar from "../components/navbar";
 import NavDrawer from "../components/drawer";
-import { useNavigate } from "react-router-dom";
 import "../App.css";
 import styles from "../styles/photographyPage.module.css";
 import PhotoPreview from "../components/photopreview";
 
 function Photography() {
-  let navigate = useNavigate();
-
   const still_life_photos = [
-    'beach.jpg',
-    'plane.jpg',
-    'sky.jpg',
+    'beach_low.jpg',
+    'plane_low.jpg',
+    'sky_low.jpg',
   ];
 
   const travel_photos = [
-    'thai_guard.jpg',
-    'canyon.jpg',
-    'chewlan.jpg',
+    'thai_guard_low.jpg',
+    'canyon_low.jpg',
+    'chewlan_low.jpg',
   ];
 
   const abstract_photos = [
-    'bubble.png',
+    'bubble_low.png',
   ];
 
   const wildlife_photos = [
-    'peacock.jpg',
-    'dragonfly.jpg',
-    'crab.jpg',
+    'peacock_low.jpg',
+    'dragonfly_low.jpg',
+    'crab_low.jpg',
   ];
 
   return (

@@ -16,7 +16,9 @@ function PhotoPreview({ photolist, category, title }) {
                 <img key={index} src={path} alt="preview" />
             ))}
         </div>
-        <Button variant="contained" onClick={() => navigate("/photography/"+category)}>See more</Button>
+        <div className={styles.buttonOverlay}>
+        <Button variant="contained" onClick={() => navigate("/photography/"+category)} style={{backgroundColor: "#1011F5"}}>See more</Button>
+        </div>
         </div>
     );
 }
