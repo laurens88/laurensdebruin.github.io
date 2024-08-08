@@ -12,12 +12,14 @@ function AbstractPhotosPage() {
     <div>
       <div className="desktop-nav">
         <Navbar />
+        <h1>Abstract Photos</h1>
+        <PhotoGallery photos={filenamesToArray(abstract_photos, 'abstract')} />
       </div>
       <div className="mobile-nav">
         <NavDrawer activeItems={["Photography"]} />
+        <h1>Abstract Photos</h1>
+        <PhotoGallery photos={filenamesToArray(abstract_photos, 'abstract')} />
       </div>
-      <h1>Abstract Photos</h1>
-      <PhotoGallery photos={filenamesToArray(abstract_photos, 'abstract')} />
     </div>
   );
 }

@@ -13,11 +13,15 @@ function TravelPhotosPage() {
     <div>
       <div className="desktop-nav">
         <Navbar />
+        <h1 style={{paddingLeft: "15px"}}>Travel photos</h1>
+        <PhotoGallery photos={filenamesToArray(travel_photos, 'travel')} mobile={false}/>
       </div>
       <div className="mobile-nav">
         <NavDrawer activeItems={["Photography"]} />
+        <h1>Travel photos</h1>
+        <PhotoGallery photos={filenamesToArray(travel_photos, 'travel')} mobile={true}/>
       </div>
-      <PhotoGallery photos={filenamesToArray(travel_photos, 'travel')}/>
+      
     </div>
   );
 }

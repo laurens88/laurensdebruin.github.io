@@ -2,13 +2,15 @@
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
-    padding-left: 2%;
+    padding-left: 15px;
+    padding-top: 10px;
   }
 
   @media (max-width: 768px) {
     .photoGrid {
       padding-left: 0px;
       justify-content: center;
+      padding-top: 2px;
     }
     
   }

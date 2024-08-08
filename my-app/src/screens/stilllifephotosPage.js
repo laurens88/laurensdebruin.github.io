@@ -15,11 +15,14 @@ function StillLifePhotosPage() {
     <div>
     <div className="desktop-nav">
         <Navbar />
+        <h1 style={{paddingLeft: "15px"}}>Still lives </h1>
+        <PhotoGallery photos={filenamesToArray(still_life_photos, 'still_life')} mobile={false}/>
       </div>
       <div className="mobile-nav">
         <NavDrawer activeItems={["Photography"]} />
+        <h1>Still lives</h1>
+        <PhotoGallery photos={filenamesToArray(still_life_photos, 'still_life')} mobile={true}/>
       </div>
-        <PhotoGallery photos={filenamesToArray(still_life_photos, 'still_life')}/>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../styles/photogallery.module.css';
 import Photo from '../components/photo';
 
-const PhotoGallery = ({ photos }) => {
+const PhotoGallery = ({ photos, mobile }) => {
   return (
     <div className={styles.photoGrid}>
       {photos.map(({ lowRes, highRes, alt, height}, index) => (
@@ -11,7 +11,8 @@ const PhotoGallery = ({ photos }) => {
           lowRes={lowRes}
           highRes={highRes}
           alt={alt}
-          height={height}
+          height={mobile ? 'auto' : height}
+          width={mobile ? '100%' : 'auto'}
         />
       ))}
     </div>

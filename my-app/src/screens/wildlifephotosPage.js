@@ -15,11 +15,15 @@ function WildlifePhotosPage() {
     <div>
         <div className="desktop-nav">
         <Navbar />
+        <h1 style={{paddingLeft: "15px"}}>Wildlife photos</h1>
+        <PhotoGallery photos={filenamesToArray(wildlife_photos, 'wildlife')} mobile={false}/>
       </div>
       <div className="mobile-nav">
         <NavDrawer activeItems={["Photography"]} />
+        <h1>Wildlife photos</h1>
+        <PhotoGallery photos={filenamesToArray(wildlife_photos, 'wildlife')} mobile={true}/>
       </div>
-        <PhotoGallery photos={filenamesToArray(wildlife_photos, 'wildlife')}/>
+        
     </div>
   );
 }
