@@ -7,25 +7,25 @@ import PhotoPreview from "../components/photopreview";
 
 function Photography() {
   const still_life_photos = [
-    'beach_low.jpg',
-    'plane_low.jpg',
-    'sky_low.jpg',
+    'beach.jpg',
+    'plane.jpg',
+    'sky.jpg',
   ];
 
   const travel_photos = [
-    'thai_guard_low.jpg',
-    'canyon_low.jpg',
-    'chewlan_low.jpg',
+    'thai_guard.jpg',
+    'canyon.jpg',
+    'chewlan.jpg',
   ];
 
   const abstract_photos = [
-    'bubble_low.png',
+    'bubble.png',
   ];
 
   const wildlife_photos = [
-    'peacock_low.jpg',
-    'dragonfly_low.jpg',
-    'crab_low.jpg',
+    'peacock.jpg',
+    'dragonfly.jpg',
+    'crab.jpg',
   ];
 
   return (
