@@ -3,6 +3,7 @@ import Navbar from "../components/navbar";
 import NavDrawer from "../components/drawer";
 import "../App.css";
 import PhotoGallery from "../components/photogallery";
+import styles from "../styles/photographyPage.module.css";
 
 function Photography() {
 
@@ -36,6 +37,7 @@ function Photography() {
       <div className="mobile-nav">
         <NavDrawer activeItems={["Photography"]} />
       </div>
+      <div className={styles.page}>
       <h1>Abstract</h1>
       <PhotoGallery photos={abstract_photos} />
       <h1>Travel</h1>
@@ -44,6 +46,7 @@ function Photography() {
       <PhotoGallery photos={wildlife_photos} />
       <h1>Still Life</h1>
       <PhotoGallery photos={still_life_photos} />
+      </div>
 
     </div>
   );
