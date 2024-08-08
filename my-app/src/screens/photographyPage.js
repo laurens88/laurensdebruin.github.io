@@ -4,8 +4,12 @@ import NavDrawer from "../components/drawer";
 import "../App.css";
 import styles from "../styles/photographyPage.module.css";
 import PhotoPreview from "../components/photopreview";
+import MobilePreview from "../components/mobilepreview";
+import { useNavigate } from "react-router-dom";
 
 function Photography() {
+  let navigate = useNavigate();
+
   const still_life_photos = [
     'beach.jpg',
     'plane.jpg',
@@ -40,6 +44,10 @@ function Photography() {
       </div>
       <div className="mobile-nav">
         <NavDrawer activeItems={["Photography"]} />
+        <MobilePreview image="/photography/wildlife/peacock.jpg" title="Wildlife" action={() => navigate("/photography/wildlife")}/>
+        <MobilePreview image="/photography/travel/canyon.jpg" title="Travel" action={() => navigate("/photography/travel")}/>
+        <MobilePreview image="/photography/still_life/beach.jpg" title="Still Life" action={() => navigate("/photography/still_life")}/>
+        <MobilePreview image="/photography/abstract/bubble.png" title="Abstract" action={() => navigate("/photography/abstract")}/>
       </div>
       <div className={styles.page}>
       </div>

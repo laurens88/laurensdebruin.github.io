@@ -1,0 +1,24 @@
+.mobilePreview {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .mobilePreview img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .mobilePreview h2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
