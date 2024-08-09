@@ -7,8 +7,32 @@ import PhotoPreview from "../components/photopreview";
 import MobilePreview from "../components/mobilepreview";
 import { useNavigate } from "react-router-dom";
 
+//https://imageresizer.com/image-compressor/
+
 function Photography() {
   let navigate = useNavigate();
+
+  const architecture_photos = [
+    'building1.jpg',
+    'building2.jpg',
+    'building3.jpg',
+    'building4.jpg',
+    'building5.jpg',
+    'building6.jpg',
+    'building7.jpg',
+    'building8.jpg',
+    'building9.jpg',
+    'building10.jpg',
+    'building11.jpg',
+    'building12.jpg',
+    'building13.jpg',
+    'building14.jpg',
+    'building15.jpg',
+    'church.jpg',
+    'indoor.jpg',
+    'observatory.jpg',
+    'panorama.jpg',
+  ];
 
   const still_life_photos = [
     'beach.jpg',
