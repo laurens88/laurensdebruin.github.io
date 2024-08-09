@@ -34,6 +34,20 @@ function Photography() {
     'panorama.jpg',
   ];
 
+  const astro_photos = [
+    'trails0.jpg',
+    'moon50.jpg',
+    'milkyway0.jpg',
+    'milkyway1.jpg',
+    'moon80.jpg',
+    'milkyway2.jpg',
+    'milkyway3.jpg',
+    'moon100.jpg',
+    'milkyway4.jpg',
+    'milkyway5.jpg',
+    'bloodmoon100.jpg',
+  ];
+
   const still_life_photos = [
     'beach.jpg',
     'plane.jpg',
@@ -61,14 +75,18 @@ function Photography() {
         <PhotoPreview photolist={wildlife_photos} category="wildlife" title={"Wildlife"}/>
         <PhotoPreview photolist={travel_photos} category="travel" title={"Travel"}/>
         <PhotoPreview photolist={still_life_photos} category="still_life" title={"Still Life"}/>
+        <PhotoPreview photolist={astro_photos} category="astro" title={"Astrophotography"}/>
+        <PhotoPreview photolist={architecture_photos} category="architecture" title={"Architecture"}/>
         <PhotoPreview photolist={abstract_photos} category="abstract" title={"Abstract"}/>
 
       </div>
       <div className="mobile-nav">
         <NavDrawer activeItems={["Photography"]} />
         <MobilePreview image="/photography/wildlife/peacock.jpg" title="Wildlife" action={() => navigate("/photography/wildlife")}/>
-        <MobilePreview image="/photography/travel/canyon.jpg" title="Travel" action={() => navigate("/photography/travel")}/>
+        <MobilePreview image="/photography/travel/thai_guard.jpg" title="Travel" action={() => navigate("/photography/travel")}/>
         <MobilePreview image="/photography/still_life/beach.jpg" title="Still Life" action={() => navigate("/photography/still_life")}/>
+        <MobilePreview image="/photography/astro/milkyway2.jpg" title="Astrophotography" action={() => navigate("/photography/astro")}/>
+        <MobilePreview image="/photography/architecture/building1.jpg" title="Architecture" action={() => navigate("/photography/architecture")}/>
         <MobilePreview image="/photography/abstract/bubble.png" title="Abstract" action={() => navigate("/photography/abstract")}/>
       </div>
       <div className={styles.page}>

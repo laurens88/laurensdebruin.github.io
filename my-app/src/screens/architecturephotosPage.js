@@ -5,6 +5,7 @@ import filenamesToArray from "../auxilaryFunctions/filenameToArray";
 
 function ArchitecturePhotosPage() {
   const architecture_photos = [
+    'building0.jpg',
     'building1.jpg',
     'building2.jpg',
     'building3.jpg',
@@ -21,10 +22,12 @@ function ArchitecturePhotosPage() {
     'building14.jpg',
     'building15.jpg',
     'church.jpg',
+    'arch.jpg',
     'indoor.jpg',
     'observatory.jpg',
     'panorama.jpg',
   ];
+
   return (
     <div>
       <div className="desktop-nav">

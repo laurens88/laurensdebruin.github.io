@@ -5,8 +5,19 @@ import filenamesToArray from "../auxilaryFunctions/filenameToArray";
 
 function AstroPhotosPage() {
   const astro_photos = [
-
+    'trails0.jpg',
+    'moon50.jpg',
+    'milkyway0.jpg',
+    'milkyway1.jpg',
+    'moon80.jpg',
+    'milkyway2.jpg',
+    'milkyway3.jpg',
+    'moon100.jpg',
+    'milkyway4.jpg',
+    'milkyway5.jpg',
+    'bloodmoon100.jpg',
   ];
+  
   return (
     <div>
       <div className="desktop-nav">
