@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
+import ReactGA from 'react-ga4'; // Note the change to react-ga4
 import Home from "./screens/homePage";
 import Resume from "./screens/resumePage";
 import Travel from "./screens/travelPage";
@@ -10,7 +11,6 @@ import TravelPhotos from "./screens/travelphotosPage";
 import WildlifePhotos from "./screens/wildlifephotosPage";
 import Projects from "./screens/projectsPage";
 import Placeholder from "./screens/placeholderPage";
-import ReactGA from 'react-ga';
 
 ReactGA.initialize('G-VHK3J7BSQX');
 
@@ -18,7 +18,7 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    ReactGA.pageview(location.pathname + location.search);
+    ReactGA.send({ hitType: 'pageview', page: location.pathname + location.search });
   }, [location]);
 
   return (

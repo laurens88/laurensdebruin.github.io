@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/photogallery.module.css';
-import Photo from '../components/photo';
+import Photo from './photo';
 
 const PhotoGallery = ({ photos, mobile }) => {
   return (
