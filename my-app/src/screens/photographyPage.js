@@ -18,8 +18,6 @@ function Photography() {
 
   const travel_photos = [
     'thai_guard.jpg',
-    'canyon.jpg',
-    'chewlan.jpg',
   ];
 
   const abstract_photos = [

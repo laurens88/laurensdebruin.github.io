@@ -6,6 +6,8 @@ import filenamesToArray from "../auxilaryFunctions/filenameToArray";
 function TravelPhotosPage() {
   const travel_photos = [
     'thai_guard.jpg',
+    'canyon.jpg',
+    'chewlan.jpg',
   ];
   return (
     <div>
