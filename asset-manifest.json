@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f9867c94.css",
-    "main.js": "/static/js/main.edd2f2e6.js",
+    "main.js": "/static/js/main.4b1d5f60.js",
     "static/js/453.68693753.chunk.js": "/static/js/453.68693753.chunk.js",
     "static/media/car_collection.apk": "/static/media/car_collection.5577a22fb1d1b40e4e99.apk",
     "static/media/UU.jpg": "/static/media/UU.2580aeefecf6631dc422.jpg",
@@ -28,11 +28,11 @@
     "static/media/pattern.svg": "/static/media/pattern.5e444b952b7663525cb8.svg",
     "static/media/pattern_dark.svg": "/static/media/pattern_dark.12261c6123b153c43745.svg",
     "main.f9867c94.css.map": "/static/css/main.f9867c94.css.map",
-    "main.edd2f2e6.js.map": "/static/js/main.edd2f2e6.js.map",
+    "main.4b1d5f60.js.map": "/static/js/main.4b1d5f60.js.map",
     "453.68693753.chunk.js.map": "/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f9867c94.css",
-    "static/js/main.edd2f2e6.js"
+    "static/js/main.4b1d5f60.js"
   ]
 }
