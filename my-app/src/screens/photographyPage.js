@@ -55,7 +55,24 @@ function Photography() {
   ];
 
   const travel_photos = [
+    'temple0.jpg',
     'thai_guard.jpg',
+    'temple1.jpg',
+    'temple2.jpg',
+    'thai_guard1.jpg',
+    'temple3.jpg',
+    'temple4.jpg',
+    'ruin.jpg',
+    'gold.jpg',
+    'buddha.jpg',
+    'ggb.jpg',
+    'misty_ggb.jpg',
+    'tram.jpg',
+    'villa.jpg',
+    'tower.jpg',
+    'acropolis0.jpg',
+    'acropolis1.jpg',
+    'lighthouse.jpg',
   ];
 
   const abstract_photos = [
@@ -83,7 +100,7 @@ function Photography() {
       <div className="mobile-nav">
         <NavDrawer activeItems={["Photography"]} />
         <MobilePreview image="/photography/wildlife/peacock.jpg" title="Wildlife" action={() => navigate("/photography/wildlife")}/>
-        <MobilePreview image="/photography/travel/thai_guard.jpg" title="Travel" action={() => navigate("/photography/travel")}/>
+        <MobilePreview image="/photography/travel/ruin.jpg" title="Travel" action={() => navigate("/photography/travel")}/>
         <MobilePreview image="/photography/still_life/beach.jpg" title="Still Life" action={() => navigate("/photography/still_life")}/>
         <MobilePreview image="/photography/astro/milkyway2.jpg" title="Astrophotography" action={() => navigate("/photography/astro")}/>
         <MobilePreview image="/photography/architecture/building1.jpg" title="Architecture" action={() => navigate("/photography/architecture")}/>
