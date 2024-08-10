@@ -55,7 +55,9 @@ function Home() {
           </Grid>
 
           <Grid item xs={12} md={4}>
-            <img src={Portrait} alt="Portrait" className={styles.portrait} />
+            <div className={styles.portrait}> 
+            <img src={Portrait} alt="Portrait"/>
+            </div>
           </Grid>
         </Grid>
       </div>
