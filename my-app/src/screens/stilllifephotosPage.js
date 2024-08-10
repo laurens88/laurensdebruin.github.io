@@ -9,6 +9,7 @@ function StillLifePhotosPage() {
         'beach.jpg',
         'plane.jpg',
         'sky.jpg',
+        'plane1.jpg',
       ];
 
   return (
