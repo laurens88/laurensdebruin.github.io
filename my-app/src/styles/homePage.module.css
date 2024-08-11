@@ -3,6 +3,10 @@
     text-align: justify;
 }
 
+.summary h2 {
+  text-align: left;
+}
+
 [data-theme="dark"] .summary {
     color: white;
 }
@@ -13,18 +17,71 @@
     margin-bottom: 1rem;
     color: #1011F5;
     text-align: left;
+    padding-left: 0;
 }
 
 .portrait {
-    width: 60%;
-    height: auto;
-    border-radius: 18%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+  width: 60%;
+  height: auto;
+  border-radius: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.portrait img {
+  width: 100%;
+  height: auto;
+  border-radius: 18%;
+}
+
+.portrait::after {
+content: "";
+position: absolute;
+height: 100%;
+width: 100%;
+border-radius: 18%;
+background-image: conic-gradient(from var(--angle), #1101fa,#ffffff, #1101fa);
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: -1;
+padding: 3px;
+animation: 3s spin linear infinite;
+}
+
+.portrait::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 18%;
+  background-image: conic-gradient(from var(--angle), #1101fa,#ffffff, #1101fa);
+  top: 0;
+  left: 0;
+  filter: blur(1rem);
+  opacity: 0.7;
+  z-index: -1;
+  animation: 3s spin linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --angle: 0deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
 @keyframes blink {

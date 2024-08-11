@@ -6,6 +6,9 @@ import filenamesToArray from "../auxilaryFunctions/filenameToArray";
 function AbstractPhotosPage() {
   const abstract_photos = [
     'bubble.png',
+    'exposure.jpg',
+    'rust.jpg',
+    'vinyl.jpg',
   ];
 
   return (

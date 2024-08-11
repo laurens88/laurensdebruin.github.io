@@ -30,7 +30,7 @@ function Home() {
           <Grid item xs={2} md={2}></Grid>
           <Grid item xs={7} md={6}>
             <h1 className={styles.blinkingCursor}>Laurens de Bruin</h1>
-            <h2>Software Developer</h2>
+            <h2>AI Graduate Student / Software Developer</h2>
             <p>
             Welcome to my personal website. Here, you will find an overview of my professional experience, 
             including a comprehensive resume and various coding projects I've worked on. 
@@ -55,7 +55,9 @@ function Home() {
           </Grid>
 
           <Grid item xs={12} md={4}>
-            <img src={Portrait} alt="Portrait" className={styles.portrait} />
+            <div className={styles.portrait}> 
+            <img src={Portrait} alt="Portrait"/>
+            </div>
           </Grid>
         </Grid>
       </div>

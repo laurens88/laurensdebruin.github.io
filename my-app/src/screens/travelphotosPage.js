@@ -5,10 +5,26 @@ import filenamesToArray from "../auxilaryFunctions/filenameToArray";
 
 function TravelPhotosPage() {
   const travel_photos = [
+    'temple0.jpg',
     'thai_guard.jpg',
-    'canyon.jpg',
-    'chewlan.jpg',
+    'temple1.jpg',
+    'temple2.jpg',
+    'thai_guard1.jpg',
+    'temple3.jpg',
+    'temple4.jpg',
+    'ruin.jpg',
+    'gold.jpg',
+    'buddha.jpg',
+    'ggb.jpg',
+    'misty_ggb.jpg',
+    'tram.jpg',
+    'villa.jpg',
+    'tower.jpg',
+    'acropolis0.jpg',
+    'acropolis1.jpg',
+    'lighthouse.jpg',
   ];
+  
   return (
     <div>
       <div className="desktop-nav">
