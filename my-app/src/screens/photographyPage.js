@@ -114,12 +114,10 @@ function Photography() {
     "bird13.jpg",
     "dragonfly2.jpg",
     "horse.JPG",
-    "butterfly3.jpg",
     "lizard4.jpg",
     "bear.jpg",
     "bird14.jpg",
     "beetle0.JPG",
-    "butterfly2.jpg",
     "fox0.jpg",
     "swine.JPG",
     "crab.jpg",
@@ -148,7 +146,9 @@ function Photography() {
     "bird6.jpg",
     "duck.JPG",
     "whale2.jpg",
-    "bird8.JPG"
+    "bird8.JPG",
+    "butterfly2.jpg",
+    "butterfly3.jpg",
 ];
 
   return (
