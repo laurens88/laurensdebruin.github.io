@@ -5,7 +5,30 @@ import filenamesToArray from "../auxilaryFunctions/filenameToArray";
 
 function NaturePhotosPage() {
   const nature_photos = [
-
+    "yosemite.jpg",
+    "canyon.jpg",
+    "chewlan.jpg",
+    "canyon2.jpg",
+    "jungle.jpg",
+    "gc0.jpg",
+    "canyon3.jpg",
+    "gc1.jpg",
+    "gc2.jpg",
+    "gc3.jpg",
+    "gc4.jpg",
+    "gc5.jpg",
+    "bryce.jpg",
+    "bryce1.jpg",
+    "chewlan1.jpg",
+    "flower.jpg",
+    "leaf.png",
+    "algue.jpg",
+    "joshua0.jpg",
+    "joshua1.jpg",
+    "skull.jpg",
+    "rhodes.jpg",
+    "sequoia.jpg",
+    "yosemite1.jpg",
   ];
   return (
     <div>

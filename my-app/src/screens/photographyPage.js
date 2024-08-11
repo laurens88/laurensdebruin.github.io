@@ -106,11 +106,39 @@ function Photography() {
     "jay.jpg",
 ];
 
+  const nature_photos = [
+    "yosemite.jpg",
+    "canyon.jpg",
+    "chewlan.jpg",
+    "canyon2.jpg",
+    "jungle.jpg",
+    "gc0.jpg",
+    "canyon3.jpg",
+    "gc1.jpg",
+    "gc2.jpg",
+    "gc3.jpg",
+    "gc4.jpg",
+    "gc5.jpg",
+    "bryce.jpg",
+    "bryce1.jpg",
+    "chewlan1.jpg",
+    "flower.jpg",
+    "leaf.png",
+    "algue.jpg",
+    "joshua0.jpg",
+    "joshua1.jpg",
+    "skull.jpg",
+    "rhodes.jpg",
+    "sequoia.jpg",
+    "yosemite1.jpg",
+  ];
+
   return (
     <div>
       <div className="desktop-nav">
         <Navbar />
         <PhotoPreview photolist={wildlife_photos} category="wildlife" title={"Wildlife"}/>
+        <PhotoPreview photolist={nature_photos} category="nature" title={"Nature"}/>
         <PhotoPreview photolist={travel_photos} category="travel" title={"Travel"}/>
         <PhotoPreview photolist={still_life_photos} category="still_life" title={"Still Life"}/>
         <PhotoPreview photolist={astro_photos} category="astro" title={"Astrophotography"}/>
@@ -121,6 +149,7 @@ function Photography() {
       <div className="mobile-nav">
         <NavDrawer activeItems={["Photography"]} />
         <MobilePreview image="/photography/wildlife/peacock.jpg" title="Wildlife" action={() => navigate("/photography/wildlife")}/>
+        <MobilePreview image="/photography/nature/canyon.jpg" title="Nature" action={() => navigate("/photography/nature")}/>
         <MobilePreview image="/photography/travel/ruin.jpg" title="Travel" action={() => navigate("/photography/travel")}/>
         <MobilePreview image="/photography/still_life/beach.jpg" title="Still Life" action={() => navigate("/photography/still_life")}/>
         <MobilePreview image="/photography/astro/milkyway2.jpg" title="Astrophotography" action={() => navigate("/photography/astro")}/>
