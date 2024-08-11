@@ -8,8 +8,12 @@ function StillLifePhotosPage() {
     const still_life_photos = [
         'beach.jpg',
         'plane.jpg',
+        'landing.jpg',
         'sky.jpg',
         'plane1.jpg',
+        'ball.jpg',
+        'wheel.jpg',
+        'snow.jpg',
       ];
 
   return (
