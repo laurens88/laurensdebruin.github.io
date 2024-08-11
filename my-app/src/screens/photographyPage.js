@@ -77,6 +77,9 @@ function Photography() {
 
   const abstract_photos = [
     'bubble.png',
+    'exposure.jpg',
+    'rust.jpg',
+    'vinyl.jpg',
   ];
 
   const wildlife_photos = [
