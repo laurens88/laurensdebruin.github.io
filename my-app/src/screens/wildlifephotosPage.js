@@ -15,7 +15,7 @@ function WildlifePhotosPage() {
     "lizard5.jpg",
     "lizard6.jpg",
     "monitor0.jpg",
-    "duck.JPG",
+    "duck.jpg",
     "dragonfly1.jpg",
     "dragonfly0.jpg",
     "lizard1.jpg",

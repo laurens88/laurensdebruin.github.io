@@ -97,7 +97,7 @@ function Photography() {
     "lizard5.jpg",
     "lizard6.jpg",
     "monitor0.jpg",
-    "duck.JPG",
+    "duck.jpg",
     "lizard1.jpg",
     "dragonfly4.jpg",
     "beetle1.JPG",
