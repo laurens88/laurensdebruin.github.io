@@ -42,7 +42,7 @@ function WildlifePhotosPage() {
     "bird6.jpg",
     "bear.jpg",
     "horse.jpg",
-    "cow.JPG",
+    "cow.jpg",
     "bird0.jpg",
     "fox0.jpg",
     "swine.jpg",
