@@ -37,7 +37,6 @@ function WildlifePhotosPage() {
     "whale0.jpg",
     "bird13.jpg",
     "butterfly1.jpg",
-
     "prairiedog0.jpg",
     "bird11.JPG",
     "bird6.jpg",
