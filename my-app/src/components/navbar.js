@@ -12,6 +12,12 @@ import lilogo_dark from "../assets/logos/linkedin_dark.png";
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 
+import { SocialIcon } from 'react-social-icons/component'
+import 'react-social-icons/github'
+import 'react-social-icons/linkedin'
+import { SiGithub } from "react-icons/si";
+import { IoLogoLinkedin } from "react-icons/io5";
+
 function Navbar() {
   let navigate = useNavigate();
 
@@ -38,31 +44,24 @@ function Navbar() {
           <Button onClick={() => navigate("/photography")}>Photography</Button>
           <Button onClick={() => navigate("/travel")}>Travel</Button>
         </Stack>
-        <Stack direction="row" spacing={{ xs: 0, sm: 1, md: 6 }}>
+        <Stack direction="row" spacing={{ xs: 0, sm: 1}}>
+
           <a
             href="https://www.github.com/laurens88"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src={theme === 'light' ? ghlogo : ghlogo_dark}
-              alt="GitHub"
-              className={styles.icon}
-              style={{ width: "30px", height: "30px" }}
-            />
+          <SiGithub style={theme === 'light' ? {color: "black"} : {color: "white"}} size={"1.5rem"}/>
           </a>
+
           <a
             href="https://www.linkedin.com/in/laurens-debruin/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src={theme === 'light' ? lilogo : lilogo_dark}
-              alt="LinkedIn"
-              className={styles.icon}
-              style={{ width: "28px", height: "28px", paddingTop: "0.7rem" }}
-            />
+          <IoLogoLinkedin style={theme === 'light' ? {color: "black"} : {color: "white"}} size={"1.5rem"}/>
           </a>
+
           <div className={styles.theme}>
           <IconButton onClick={toggleTheme} style={{borderColor: "transparent"}}> {theme === "light" ? <DarkModeIcon /> : <LightModeIcon />} </IconButton>
           </div>
