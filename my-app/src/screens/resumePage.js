@@ -18,7 +18,8 @@ import UU from "../assets/logos/UU.jpg";
 
 import { FaPython, FaGit, FaJava, FaReact } from "react-icons/fa6";
 import { VscVscode } from "react-icons/vsc";
-import { SiAndroidstudio } from "react-icons/si";
+import { SiAndroidstudio, SiPycharm } from "react-icons/si";
+import { PiFileSqlThin } from "react-icons/pi";
 
 function Resume() {
   return (
@@ -47,7 +48,7 @@ function Resume() {
             For both the FORAS and IMPROVE projects I have worked on <strong>data visualization</strong> to present our results in 
             the upcoming publications or to give insight in the progress of the project so far."
             logo={ASReview}
-            tech_icons={[FaPython, FaReact, FaGit, VscVscode, FaGit, FaJava, FaGit]}
+            tech_icons={[FaPython, FaReact, FaGit, VscVscode,]}
           />
 
           <ResumeItem
@@ -115,7 +116,7 @@ function Resume() {
             I will combine my background in AI and my passion for software development to complete my master's thesis at Info Support which combines both fields.
             The project involves the automatic quality assessment of datasets for machine learning."
             logo={Radboud}
-            tech_icons={[FaJava, FaPython, FaGit, FaReact]}
+            tech_icons={[FaPython, FaReact, FaGit, VscVscode,]}
           />
 
           <ResumeItem
@@ -133,6 +134,7 @@ function Resume() {
             In my final year I wrote my thesis titled 'Exploring the sentiment analysis performance of BERT models on domain specific
 Twitter data when combined with an intelligent pre-processor.' which was awarded with an <strong>8.5</strong>."
             logo={Radboud}
+            tech_icons={[FaJava, FaPython, PiFileSqlThin, FaGit, SiPycharm ]}
           />
 
           <ResumeItem
