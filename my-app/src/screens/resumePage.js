@@ -16,6 +16,10 @@ import codecademy from "../assets/logos/codecademy.png";
 import Twente from "../assets/logos/university-of-twente.jpg";
 import UU from "../assets/logos/UU.jpg";
 
+import { FaPython, FaGit, FaJava, FaReact } from "react-icons/fa6";
+import { VscVscode } from "react-icons/vsc";
+import { SiAndroidstudio } from "react-icons/si";
+
 function Resume() {
   return (
     <div>
@@ -43,6 +47,7 @@ function Resume() {
             For both the FORAS and IMPROVE projects I have worked on <strong>data visualization</strong> to present our results in 
             the upcoming publications or to give insight in the progress of the project so far."
             logo={ASReview}
+            tech_icons={[FaPython, FaReact, FaGit, VscVscode, FaGit, FaJava, FaGit]}
           />
 
           <ResumeItem
@@ -53,6 +58,7 @@ function Resume() {
             We were tasked to perform <strong>data analysis</strong> on product reviews of Philips products and some of their competitors to gain insights in the customer satisfaction.
             Using <strong>clustering</strong> and <strong>sentiment analysis</strong> we attempted to find patterns in the data and presented our findings to the stakeholders at Philips in the form of a report and a presentation."
             logo={Philips}
+            tech_icons={[FaPython]}
           />
 
           <ResumeItem
@@ -63,6 +69,7 @@ function Resume() {
             I helped them with the <strong>data engineering</strong> of their dataset to prepare it for analysis and I developed a range of <strong>python scripts</strong> to perform the <strong>data pre-processing</strong>. During this project I connected with the team at ASReview 
             and presented my work at the Utrecht AI labs event."
             logo={UMC}
+            tech_icons={[FaPython, FaGit]}
           />
 
           <ResumeItem
@@ -108,6 +115,7 @@ function Resume() {
             I will combine my background in AI and my passion for software development to complete my master's thesis at Info Support which combines both fields.
             The project involves the automatic quality assessment of datasets for machine learning."
             logo={Radboud}
+            tech_icons={[FaJava, FaPython, FaGit, FaReact]}
           />
 
           <ResumeItem
