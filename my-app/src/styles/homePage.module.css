@@ -20,6 +20,27 @@
     padding-left: 0;
 }
 
+.mobilePortrait {
+  display: none;
+}
+
+.summary .portrait {
+  display: block;
+}
+
+@media screen and (max-width: 900px) {
+  .summary .portrait {
+    display: none;
+  }
+
+  .mobilePortrait {
+    display: block;
+  }
+  
+}
+
+
+
 .portrait {
   width: 60%;
   height: auto;

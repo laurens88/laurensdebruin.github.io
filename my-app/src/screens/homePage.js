@@ -25,11 +25,18 @@ function Home() {
       <div className="mobile-nav">
         <NavDrawer activeItems={["Home"]} />
       </div>
+      <div className={styles.mobilePortrait}>
+      <Grid item xs={12} md={4}>
+            <div className={styles.portrait}> 
+            <img src={Portrait} alt="Portrait"/>
+            </div>
+          </Grid>
+      </div>
       <div className={styles.summary}>
         <Grid container spacing={2} direction="row">
           <Grid item xs={2} md={2}></Grid>
           <Grid item xs={7} md={6}>
-            <h1 className={styles.blinkingCursor}>Laurens de Bruin</h1>
+            <h1 className={styles.blinkingCursor}>Laurens de&nbsp;Bruin</h1>
             <h2>AI Graduate Student / Software Developer</h2>
             <p>
             Welcome to my personal website. Here, you will find an overview of my professional experience, 
@@ -59,6 +66,7 @@ function Home() {
             <img src={Portrait} alt="Portrait"/>
             </div>
           </Grid>
+
         </Grid>
       </div>
       <ContactForm open={contactOpen} handleClose={handleContactClose} />
