@@ -19,6 +19,8 @@ import lilogo_dark from "../assets/logos/linkedin_dark.png";
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import styles from "../styles/navbar.module.css";
+import { SiGithub } from "react-icons/si";
+import { IoLogoLinkedin } from "react-icons/io5";
 
 const StyledAppBar = styled(AppBar)({
   backgroundColor: "transparent",
@@ -63,6 +65,7 @@ const IconContainer = styled(Box)({
   display: "flex",
   alignItems: "center",
   marginRight: "auto",
+  gap: "5px",
 });
 
 const IconLink = styled("a")({
@@ -94,28 +97,23 @@ const NavDrawer = ({ activeItems }) => {
       <StyledAppBar position="static">
         <Toolbar>
           <IconContainer>
-            <IconLink
-              href="https://www.github.com/laurens88"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={theme === "light" ? ghlogo : ghlogo_dark}
-                alt="GitHub"
-                style={{ width: "30px", height: "30px" }}
-              />
-            </IconLink>
-            <IconLink
-              href="https://www.linkedin.com/in/laurens-debruin/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={theme === "light" ? lilogo : lilogo_dark}
-                alt="LinkedIn"
-                style={{ width: "30px", height: "30px" }}
-              />
-            </IconLink>
+
+          <a
+            href="https://www.github.com/laurens88"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <SiGithub style={theme === 'light' ? {color: "black"} : {color: "white"}} size={"1.35rem"}/>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/laurens-debruin/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <IoLogoLinkedin style={theme === 'light' ? {color: "black"} : {color: "white"}} size={"1.5rem"}/>
+          </a>
+
           <IconButton onClick={toggleTheme} style={{color: "#1011FA"}}> {theme === "light" ? <DarkModeIcon /> : <LightModeIcon />} </IconButton>
           </IconContainer>
           <StyledIconButton

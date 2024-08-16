@@ -51,7 +51,7 @@ function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-          <SiGithub style={theme === 'light' ? {color: "black"} : {color: "white"}} size={"1.5rem"}/>
+          <SiGithub style={theme === 'light' ? {color: "black"} : {color: "white"}} size={"1.35rem"}/>
           </a>
 
           <a

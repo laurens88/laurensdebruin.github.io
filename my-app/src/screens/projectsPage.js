@@ -47,18 +47,6 @@ function Projects() {
           />
 
           <Project
-            title="IMRPOVE 'Screenathon'"
-            type="Scientific Research"
-            content="The 'Screenathon' was an event organized by ASReview to complete the first step of the IHI IMPROVE platform.
-            The goal of the event was to screen a large dataset of articles on the topic of patient generated health data.
-            I was responsible for generating the 125 screening batches for the event
-             and performed real time data analysis during the event to keep track of the progress and motivate the participants."
-            readmore={false}
-            url={"/projects/improve"}
-            downloadable={false}
-          />
-
-          <Project
             title="FORAS"
             type="Scientific Research"
             content="FORAS is a project at ASReview that I contributed to. 
