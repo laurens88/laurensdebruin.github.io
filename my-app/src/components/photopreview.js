@@ -9,11 +9,11 @@ function PhotoPreview({ photolist, category, title }) {
 
     return (
         <div>
-        <h1>{title}</h1>
+        <h1 style={{paddingLeft: 10}}>{title}</h1>
         <div className={styles.preview}>
             {randomPhotos.map((photo, index) => (
                 path = '/photography/' + category + '/' + photo.slice(0, -4)+'_low'+photo.slice(-4),
-                <img key={index} src={path} alt="preview" />
+                <img key={index} src={path} alt="preview"  loading="lazy"/>
             ))}
         </div>
         <div className={styles.buttonOverlay}>

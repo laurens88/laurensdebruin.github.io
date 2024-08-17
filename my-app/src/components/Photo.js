@@ -18,6 +18,7 @@ const Photo = ({ lowRes, highRes, alt, width, height }) => {
         height={height}
         style={{ objectFit: 'cover', cursor: 'pointer' }}
         onClick={toggleHighRes}
+        loading='lazy'
       />
       {isHighResVisible && (
         <div className={styles.overlay} onClick={toggleHighRes}>
