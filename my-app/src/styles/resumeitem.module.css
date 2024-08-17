@@ -4,6 +4,7 @@
     align-items: center;
     padding: 20px;
     margin: 10px 0;
+    margin-bottom: 0;
 }
 
 .resumeContent {
@@ -36,7 +37,6 @@
 .resumeLogo {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     width: 90px;
     height: 90px;
     flex-shrink: 0;
@@ -73,4 +73,12 @@
     .resumeContent p {
         text-align: left;
     }
+}
+
+.techIcons{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    justify-content: left;
+    padding: 28px;
+    gap: 10px;
 }

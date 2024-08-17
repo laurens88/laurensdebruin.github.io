@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "../styles/resumeitem.module.css";
 import parse from 'html-react-parser';
+import Tooltip from '@mui/material/Tooltip';
 
-const ResumeItem = ({ title, company, dates, description, logo }) => {
+const ResumeItem = ({ title, company, dates, description, logo, tech_icons }) => {
   return (
+    <>
     <div className={styles.resumeItem}>
       <div className={styles.resumeContent}>
         <h3>{title}</h3>
@@ -14,7 +16,21 @@ const ResumeItem = ({ title, company, dates, description, logo }) => {
       <div className={styles.resumeLogo}>
       {logo ? <img src={logo} alt="Logo" /> : <div className={styles.placeholderLogo}></div>}
       </div>
+      
     </div>
+    {tech_icons && tech_icons.length > 0 && (
+      <div className={styles.techIcons}>
+      {tech_icons.map((tech, index) => (
+          <Tooltip title={tech.name} key={index} placement="top">
+              <div>
+                  <tech.icon size={50} />
+              </div>
+          </Tooltip>
+      ))}
+  </div>
+      )}
+      <div style={{padding: '20px'}}></div>
+      </>
   );
 };
 
