@@ -16,10 +16,26 @@ import codecademy from "../assets/logos/codecademy.png";
 import Twente from "../assets/logos/university-of-twente.jpg";
 import UU from "../assets/logos/UU.jpg";
 
-import { FaPython, FaGit, FaJava, FaReact } from "react-icons/fa6";
+import { FaPython, FaGit, FaJava, FaReact, FaHtml5 } from "react-icons/fa6";
 import { VscVscode } from "react-icons/vsc";
-import { SiAndroidstudio, SiPycharm } from "react-icons/si";
+import { SiPycharm, SiCisco  } from "react-icons/si";
 import { PiFileSqlThin } from "react-icons/pi";
+import { DiCss3 } from "react-icons/di";
+import { SiMicrosoftexcel } from "react-icons/si";
+import { CgCPlusPlus } from "react-icons/cg";
+
+const Python = {icon: FaPython, name:"Python"}
+const React_ = {icon: FaReact, name: "React"}
+const Git = {icon: FaGit, name: "Git"}
+const VSCode = {icon: VscVscode, name: "VSCode"}
+const PyCharm = {icon: SiPycharm, name: "PyCharm"}
+const Java = {icon: FaJava, name: "Java"}
+const Cplusplus = {icon: CgCPlusPlus, name: "C++"}
+const HTML = {icon: FaHtml5, name: "HTML"}
+const CSS = {icon: DiCss3, name: "CSS"}
+const SQL = {icon: PiFileSqlThin, name: "SQL"}
+const Cisco = {icon: SiCisco, name: "Cisco"}
+const Excel = {icon: SiMicrosoftexcel, name: "Microsoft Excel"}
 
 function Resume() {
   return (
@@ -45,10 +61,10 @@ function Resume() {
             I have been involved in multiple <strong>large scale scientific projects</strong> headed for publication such as FORAS and IMPROVE. 
             For the FORAS project I have developed a range of <strong>python scripts</strong> that helped me with the <strong>data engineering</strong> of the dataset for the project, 
             including pre-processing, merging, deduplicating and distributing the data. 
-            For both the FORAS and IMPROVE projects I have worked on <strong>data visualization</strong> to present our results in 
+            For both the FORAS and IMPROVE projects I have worked on <strong>data visualization</strong> to either present our results in 
             the upcoming publications or to give insight in the progress of the project so far."
             logo={ASReview}
-            tech_icons={[FaPython, FaReact, FaGit, VscVscode,]}
+            tech_icons={[Python, React_, Git, VSCode,]}
           />
 
           <ResumeItem
@@ -59,7 +75,7 @@ function Resume() {
             We were tasked to perform <strong>data analysis</strong> on product reviews of Philips products and some of their competitors to gain insights in the customer satisfaction.
             Using <strong>clustering</strong> and <strong>sentiment analysis</strong> we attempted to find patterns in the data and presented our findings to the stakeholders at Philips in the form of a report and a presentation."
             logo={Philips}
-            tech_icons={[FaPython]}
+            tech_icons={[Python, Excel]}
           />
 
           <ResumeItem
@@ -70,7 +86,7 @@ function Resume() {
             I helped them with the <strong>data engineering</strong> of their dataset to prepare it for analysis and I developed a range of <strong>python scripts</strong> to perform the <strong>data pre-processing</strong>. During this project I connected with the team at ASReview 
             and presented my work at the Utrecht AI labs event."
             logo={UMC}
-            tech_icons={[FaPython, FaGit]}
+            tech_icons={[Python, Git]}
           />
 
           <ResumeItem
@@ -116,7 +132,7 @@ function Resume() {
             I will combine my background in AI and my passion for software development to complete my master's thesis at Info Support which combines both fields.
             The project involves the automatic quality assessment of datasets for machine learning."
             logo={Radboud}
-            tech_icons={[FaPython, FaReact, FaGit, VscVscode,]}
+            tech_icons={[Python, React_, Git, VSCode,]}
           />
 
           <ResumeItem
@@ -134,7 +150,7 @@ function Resume() {
             In my final year I wrote my thesis titled 'Exploring the sentiment analysis performance of BERT models on domain specific
 Twitter data when combined with an intelligent pre-processor.' which was awarded with an <strong>8.5</strong>."
             logo={Radboud}
-            tech_icons={[FaJava, FaPython, PiFileSqlThin, FaGit, SiPycharm ]}
+            tech_icons={[Java, Python, Cplusplus, SQL, Git, PyCharm]}
           />
 
           <ResumeItem
@@ -144,6 +160,7 @@ Twitter data when combined with an intelligent pre-processor.' which was awarded
             description="Completed my Atheneum program with a focus on <strong>science and technology</strong>. 
             My favorite subjects were <strong>biology and informatics</strong>, which together contributed to my choice to study Artificial Intelligence."
             logo={Pierson}
+            tech_icons={[HTML, CSS, SQL, Cisco]}
           />
 
           <h1>Presentations / Workshops</h1>

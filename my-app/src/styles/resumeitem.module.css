@@ -79,6 +79,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
     justify-content: left;
-    padding: 25px;
+    padding: 28px;
     gap: 10px;
 }
