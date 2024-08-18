@@ -62,12 +62,12 @@ const Slideshow = ({ slides }) => {
   return (
     <div className={styles.slideshow}>
       {slides.map((slide, index) => (
-        <a
-          href={slide.link}
+        <div
           className={`${styles.slide} ${index === currentSlide ? styles.active : ''}`}
           key={index}
-          style={{ backgroundImage: `url(${slide.image})` }}
-        />
+        >
+          {slide}
+        </div>
       ))}
       <button className={styles.prev} onClick={prevSlide}>
         &#10094;

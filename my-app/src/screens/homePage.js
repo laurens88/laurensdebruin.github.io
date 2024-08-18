@@ -10,6 +10,7 @@ import Send from "@mui/icons-material/Send";
 import Resume_english from "../assets/downloads/Resume_LaurensdeBruin.pdf";
 import ContactForm from "../components/contactForm";
 import Slideshow from "../components/slideshow";
+import ProjectsSlide from "../components/projectsSlide";
 import "../App.css";
 
 function Home() {
@@ -18,12 +19,7 @@ function Home() {
   const handleContactOpen = () => setContactOpen(true);
   const handleContactClose = () => setContactOpen(false);
 
-  const slides = [
-    {image: "/photography/nature/flower.jpg", link: "google.com"},
-    {image: "/photography/wildlife/crab.jpg", link: "google.com"},
-    {image: "/photography/abstract/bubble.png", link: "google.com"},
-  ];
-
+  const slides = [<ProjectsSlide/>, <ProjectsSlide/>];
   return (
     <div>
       <div className="desktop-nav">
