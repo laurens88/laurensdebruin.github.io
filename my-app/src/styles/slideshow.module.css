@@ -1,12 +1,13 @@
 .slideshow {
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     height: 500px;
     margin: auto;
     overflow: hidden;
     margin: 75px auto;
     border: 30px;
+    border-radius: 3%;
   }
   
   .slide {

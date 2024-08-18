@@ -28,6 +28,7 @@ function Home() {
     <div>
       <div className="desktop-nav">
         <Navbar />
+        <div style={{margin: '5rem'}}></div>
       </div>
       <div className="mobile-nav">
         <NavDrawer activeItems={["Home"]} />
