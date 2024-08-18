@@ -5,7 +5,7 @@ const Slideshow = ({ slides }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [progress, setProgress] = useState(0);
   const timeoutRef = useRef(null);
-  const interval = 8000;
+  const interval = 80000;
 
   const resetTimeout = () => {
     if (timeoutRef.current) {

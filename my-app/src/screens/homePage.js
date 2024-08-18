@@ -11,6 +11,7 @@ import Resume_english from "../assets/downloads/Resume_LaurensdeBruin.pdf";
 import ContactForm from "../components/contactForm";
 import Slideshow from "../components/slideshow";
 import ProjectsSlide from "../components/projectsSlide";
+import PhotographySlide from "../components/photographySlide";
 import "../App.css";
 
 function Home() {
@@ -19,7 +20,7 @@ function Home() {
   const handleContactOpen = () => setContactOpen(true);
   const handleContactClose = () => setContactOpen(false);
 
-  const slides = [<ProjectsSlide/>, <ProjectsSlide/>];
+  const slides = [<ProjectsSlide/>, <PhotographySlide/>];
   return (
     <div>
       <div className="desktop-nav">
