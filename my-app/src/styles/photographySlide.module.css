@@ -1,8 +1,53 @@
-.slide {
+.slide{
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    background-color: #f5f5f5;
+    background-color: #f8f9fa;
     padding: 10% 10px 0 60px;
+}
+
+[data-theme="dark"] .slide {
+    background-color: rgb(0, 1, 35);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0;
+    margin: 0;
+}
+
+[data-theme="dark"] .text {
+    color: white;
+}
+
+.photos {
+    height: 60%;
+    position: relative;
+}
+
+.photo1 {
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(-25deg);
+    z-index: 2;
+}
+
+.photo2 {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    /* transform: rotateX(0deg) rotateY(0deg) rotateZ(-5deg); */
+    z-index: 1;
+}
+
+.photo3 {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(15deg);
+    z-index: 0;
 }

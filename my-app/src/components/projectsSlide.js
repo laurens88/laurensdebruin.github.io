@@ -11,8 +11,9 @@ function ProjectsSlide() {
       <h3>Check out my coding projects such as:</h3>
       <h1>Car Collection: Android App</h1>
         <p>
-            This is a project I did for my Android Development course. It is a simple app that allows users to create a list of tasks and mark them as completed. 
-            The app has a clean and intuitive user interface and is easy to use. The app is built using Java and the Android SDK.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos 
+            dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui 
+            officia deserunt mollitia animi, id est laborum et dolorum fuga.
         </p>
         </div>
         </Grid>

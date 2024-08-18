@@ -58,10 +58,18 @@
     background-color: rgba(255, 255, 255, 0.5);
     overflow: hidden;
   }
+
+  [data-theme="dark"] .progressBar {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
   
   .progress {
     height: 100%;
     background-color: #00000062;
     transition: width 0.1s linear;
   }
+
+[data-theme="dark"] .progress {
+    background-color: #1011fa62;
+}
   

@@ -7,15 +7,18 @@ function PhotographySlide() {
     <Grid container spacing={2} direction="row">
     <Grid item md={6}>
     <div className={styles.text}>
-      <h1>Coding project: Android App</h1>
+      <h1>Discover my photography</h1>
         <p>
-            This is a project I did for my Android Development course. It is a simple app that allows users to create a list of tasks and mark them as completed. 
-            The app has a clean and intuitive user interface and is easy to use. The app is built using Java and the Android SDK.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos 
+            dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui 
+            officia deserunt mollitia animi, id est laborum et dolorum fuga.
         </p>
         </div>
         </Grid>
-        <Grid item md={6} className={styles.logo}>
-        <img src="/photography/wildlife/crab.jpg" alt="Android App" />
+        <Grid item md={6} className={styles.photos}>
+        <img src="/photography/wildlife/crab.jpg" alt="Android App" className={styles.photo1}/>
+        <img src="/photography/travel/ruin.jpg" alt="Android App" className={styles.photo2}/>
+        <img src="/photography/still_life/plane.jpg" alt="Android App" className={styles.photo3}/>
         </Grid>
         </Grid>
     </div>
