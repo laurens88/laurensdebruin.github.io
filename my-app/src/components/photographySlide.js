@@ -5,7 +5,7 @@ function PhotographySlide() {
   return (
     <div className={styles.slide}>
     <Grid container spacing={2} direction="row">
-    <Grid item md={6}>
+    <Grid item md={5}>
     <div className={styles.text}>
       <h1>Discover my photography</h1>
         <p>
@@ -15,10 +15,11 @@ function PhotographySlide() {
         </p>
         </div>
         </Grid>
-        <Grid item md={6} className={styles.photos}>
-        <img src="/photography/wildlife/crab.jpg" alt="Android App" className={styles.photo1}/>
-        <img src="/photography/travel/ruin.jpg" alt="Android App" className={styles.photo2}/>
-        <img src="/photography/still_life/plane.jpg" alt="Android App" className={styles.photo3}/>
+        <Grid item md={7} className={styles.photos}>
+          {/* <img src='/photography/image_layout.png' style={{height: '250px'}}/> */}
+        <img src="/photography/travel/temple0.jpg" alt="Temple" className={styles.photo1}/>
+        <img src="/photography/still_life/sky.jpg" alt="Sky" className={styles.photo2}/>
+        <img src="/photography/still_life/plane.jpg" alt="Plane" className={styles.photo3}/>
         </Grid>
         </Grid>
     </div>

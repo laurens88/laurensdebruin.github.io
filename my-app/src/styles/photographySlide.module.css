@@ -4,7 +4,7 @@
     align-items: center;
     height: 100vh;
     background-color: #f8f9fa;
-    padding: 10% 10px 0 60px;
+    padding: 10% 60px 0 60px;
 }
 
 [data-theme="dark"] .slide {
@@ -24,30 +24,39 @@
 }
 
 .photos {
-    height: 60%;
+    display: flex;
     position: relative;
+    padding: 70px;
 }
 
 .photo1 {
-    position: absolute;
-    bottom: 10%;
-    left: 20%;
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(-25deg);
-    z-index: 2;
+    /* grid-column: 1 / 2; */
+    justify-content: start;
+    object-fit: cover;
+    height: 88%;
+    position: relative;
 }
 
 .photo2 {
-    position: absolute;
-    top: 30%;
-    left: 20%;
-    /* transform: rotateX(0deg) rotateY(0deg) rotateZ(-5deg); */
+    /* grid-column: 2 / 3; */
+    /* grid-row: 1 / 2; */
+    object-fit: fill;
+    height: 42.5%;
+    position: relative;
     z-index: 1;
+    right: 15%;
 }
 
 .photo3 {
-    position: absolute;
-    top: 70%;
-    left: 20%;
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(15deg);
-    z-index: 0;
+    /* grid-column: 2 / 3; */
+    /* grid-row: 2 / 3; */
+    object-fit: fill;
+    height: 42.5%;
+    position: relative;
+    z-index: 1;
+    top: 45.5%;
+    right: 57.5%;
 }
+
+
+
