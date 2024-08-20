@@ -4,7 +4,7 @@
     align-items: center;
     height: 100vh;
     background-color: #f8f9fa;
-    padding: 10% 60px 0 60px;
+    padding: 6% 60px 0 60px;
 }
 
 [data-theme="dark"] .slide {
@@ -14,9 +14,6 @@
 .text {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    padding: 0;
-    margin: 0;
 }
 
 [data-theme="dark"] .text {
@@ -26,7 +23,7 @@
 .photos {
     display: flex;
     position: relative;
-    padding: 70px;
+    padding: 70px 50px 40px 16px;
 }
 
 .photo1 {
@@ -34,6 +31,7 @@
     object-fit: cover;
     height: 88%;
     position: relative;
+    clip-path: polygon(0 0, 66% 0, 90% 100% , 0 100%);
 }
 
 .photo2 {
@@ -41,7 +39,8 @@
     height: 42.5%;
     position: relative;
     z-index: 1;
-    right: 15%;
+    right: 28%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
 }
 
 .photo3 {
@@ -50,7 +49,8 @@
     position: relative;
     z-index: 1;
     top: 45.5%;
-    right: 57.5%;
+    right: 70.5%;
+    clip-path: polygon(26% 0, 100% 0, 100% 100%, 50% 100% );
 }
 
 
