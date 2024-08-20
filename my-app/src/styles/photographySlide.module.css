@@ -30,7 +30,6 @@
 }
 
 .photo1 {
-    /* grid-column: 1 / 2; */
     justify-content: start;
     object-fit: cover;
     height: 88%;
@@ -38,8 +37,6 @@
 }
 
 .photo2 {
-    /* grid-column: 2 / 3; */
-    /* grid-row: 1 / 2; */
     object-fit: fill;
     height: 42.5%;
     position: relative;
@@ -48,8 +45,6 @@
 }
 
 .photo3 {
-    /* grid-column: 2 / 3; */
-    /* grid-row: 2 / 3; */
     object-fit: fill;
     height: 42.5%;
     position: relative;
