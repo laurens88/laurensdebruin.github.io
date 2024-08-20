@@ -1,9 +1,12 @@
 import styles from '../styles/photographySlide.module.css';
 import Grid from "@mui/material/Grid";
+import { useNavigate } from "react-router-dom";
 
 function PhotographySlide() {
+  let navigate = useNavigate();
+
   return (
-    <div className={styles.slide}>
+    <div className={styles.slide} onClick={() => navigate("/photography")}>
     <Grid container spacing={2} direction="row">
     <Grid item md={5}>
     <div className={styles.text}>
