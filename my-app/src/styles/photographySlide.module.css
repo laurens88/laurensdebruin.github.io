@@ -8,12 +8,16 @@
 }
 
 [data-theme="dark"] .slide {
-    background-color: rgb(0, 1, 35);
+    background-color: rgb(0, 10, 65);
 }
 
 .text {
     display: flex;
     flex-direction: column;
+}
+
+.text h1 {
+    margin: 0 0 10px 0;
 }
 
 [data-theme="dark"] .text {
@@ -23,7 +27,7 @@
 .photos {
     display: flex;
     position: relative;
-    padding: 70px 50px 40px 16px;
+    padding: 70px 50px 40px 16px !important
 }
 
 .photo1 {
@@ -49,7 +53,7 @@
     position: relative;
     z-index: 1;
     top: 45.5%;
-    right: 70.5%;
+    right: 72%;
     clip-path: polygon(26% 0, 100% 0, 100% 100%, 50% 100% );
 }
 
