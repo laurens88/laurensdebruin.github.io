@@ -13,11 +13,17 @@
 }
 
 .text h1 {
-    margin: 50px 0 10px 0;
+    margin: 80px 0 10px 0;
+    font-size: 1.6em;
+    color : #1011fa;
 }
 
-[data-theme="dark"] .text {
+[data-theme="dark"] .text p {
     color: white;
+}
+
+[data-theme="dark"] .text h1 {
+    color: #1011fa !important;
 }
 
 .photos {

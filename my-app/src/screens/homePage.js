@@ -12,6 +12,7 @@ import ContactForm from "../components/contactForm";
 import Slideshow from "../components/slideshow";
 import ProjectsSlide from "../components/projectsSlide";
 import PhotographySlide from "../components/photographySlide";
+import TravelSlide from "../components/travelSlide";
 import "../App.css";
 
 function Home() {
@@ -20,7 +21,7 @@ function Home() {
   const handleContactOpen = () => setContactOpen(true);
   const handleContactClose = () => setContactOpen(false);
 
-  const slides = [<ProjectsSlide/>, <PhotographySlide/>];
+  const slides = [<ProjectsSlide/>, <PhotographySlide/>, <TravelSlide/>];
   return (
     <div>
       <div className="desktop-nav">
