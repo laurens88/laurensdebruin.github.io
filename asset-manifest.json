@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.673059cf.css",
-    "main.js": "/static/js/main.b780f1de.js",
+    "main.css": "/static/css/main.f565e48b.css",
+    "main.js": "/static/js/main.9fe29e92.js",
     "static/js/453.68693753.chunk.js": "/static/js/453.68693753.chunk.js",
     "static/media/car_collection.apk": "/static/media/car_collection.5577a22fb1d1b40e4e99.apk",
     "static/media/UU.jpg": "/static/media/UU.2580aeefecf6631dc422.jpg",
@@ -24,15 +24,16 @@
     "static/media/github.png": "/static/media/github.1ff6d9646165b7f34af9.png",
     "static/media/codecademy.png": "/static/media/codecademy.cb79102443659f2e8321.png",
     "static/media/easyway.jpg": "/static/media/easyway.da5dc54479a4450ea83a.jpg",
+    "static/media/carcollection.webp": "/static/media/carcollection.3945157d39088f5c2f5e.webp",
     "index.html": "/index.html",
     "static/media/pattern.svg": "/static/media/pattern.5e444b952b7663525cb8.svg",
     "static/media/pattern_dark.svg": "/static/media/pattern_dark.12261c6123b153c43745.svg",
-    "main.673059cf.css.map": "/static/css/main.673059cf.css.map",
-    "main.b780f1de.js.map": "/static/js/main.b780f1de.js.map",
+    "main.f565e48b.css.map": "/static/css/main.f565e48b.css.map",
+    "main.9fe29e92.js.map": "/static/js/main.9fe29e92.js.map",
     "453.68693753.chunk.js.map": "/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.673059cf.css",
-    "static/js/main.b780f1de.js"
+    "static/css/main.f565e48b.css",
+    "static/js/main.9fe29e92.js"
   ]
 }
