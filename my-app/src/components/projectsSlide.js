@@ -7,7 +7,7 @@ function ProjectsSlide() {
     <div className={styles.slide}>
     <Grid container spacing={2} direction="row">
     <Grid item md={6}>
-    <div className={styles.text}>
+    <div className={styles.text} onClick={() => {window.location.href = 'https://github.com/laurens88/Car-Collection'}}>
       <h3>Check out my coding projects such as:</h3>
       <h1>Car Collection: Android App</h1>
         <p>
@@ -17,7 +17,7 @@ function ProjectsSlide() {
         </p>
         </div>
         </Grid>
-        <Grid item md={6} className={styles.logo}>
+        <Grid item md={6} className={styles.logo} onClick={() => {window.location.href = 'https://github.com/laurens88/Car-Collection'}}>
         <img src={carcollection} alt="Android App" />
         </Grid>
         </Grid>

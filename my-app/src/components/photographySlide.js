@@ -6,10 +6,10 @@ function PhotographySlide() {
   let navigate = useNavigate();
 
   return (
-    <div className={styles.slide} onClick={() => navigate("/photography")}>
+    <div className={styles.slide}>
     <Grid container spacing={2} direction="row">
     <Grid item md={5}>
-    <div className={styles.text}>
+    <div className={styles.text} onClick={() => navigate("/photography")}>
       <h1>Discover my photography</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos 

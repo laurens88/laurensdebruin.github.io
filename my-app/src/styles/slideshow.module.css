@@ -17,10 +17,12 @@
     background-position: center;
     opacity: 0;
     transition: opacity 1s ease;
+    pointer-events: none;
   }
   
   .slide.active {
     opacity: 1;
+    pointer-events: auto;
   }
   
   .prev, .next {
@@ -31,10 +33,10 @@
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    cursor: pointer;
     transform: translateY(-50%);
     z-index: 1;
     transition: background-color 0.3s ease;
+    cursor: pointer;
   }
   
   .prev:hover, .next:hover {
