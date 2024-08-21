@@ -23,7 +23,7 @@ const ResumeItem = ({ title, company, dates, description, logo, tech_icons }) =>
       {tech_icons.map((tech, index) => (
           <Tooltip title={tech.name} key={index} placement="top">
               <div>
-                  <tech.icon size={50} />
+                  <tech.icon size={40} />
               </div>
           </Tooltip>
       ))}

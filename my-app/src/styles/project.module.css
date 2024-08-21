@@ -22,7 +22,6 @@
   grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
   justify-content: left;
   padding: 25px;
-  gap: 10px;
 }
 
 .techIcons div {

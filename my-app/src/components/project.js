@@ -22,7 +22,7 @@ const Project = ({ title, type, content, readmore, url, downloadable, downloadte
                         {tech_icons.map((tech, index) => (
                             <Tooltip title={tech.name} key={index} placement="top">
                                 <div>
-                                    <tech.icon size={50} />
+                                    <tech.icon size={40} />
                                 </div>
                             </Tooltip>
                         ))}

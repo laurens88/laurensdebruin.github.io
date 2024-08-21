@@ -1,0 +1,41 @@
+.slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 10% 60px 0 60px;
+    cursor: pointer;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0;
+    margin: 0;
+}
+
+.text h1 {
+    color: #1011fa;
+    margin: 40px 0 10px 0;
+    font-size: 1.5rem;
+}
+
+[data-theme="dark"] .text h1 {
+    color: #1011fa !important;
+}
+
+.text h4 {
+    margin: 0 0 10px 0;
+}
+
+[data-theme="dark"] .text {
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
