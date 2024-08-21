@@ -2,6 +2,7 @@ import Navbar from "../components/navbar";
 import NavDrawer from "../components/drawer";
 import PhotoGallery from "../components/photogallery";
 import filenamesToArray from "../auxilaryFunctions/filenameToArray";
+import ScrollButton from "../components/scrollButton";
 
 function WildlifePhotosPage() {
 
@@ -57,6 +58,7 @@ function WildlifePhotosPage() {
         <PhotoGallery photos={filenamesToArray(wildlife_photos, 'wildlife')} mobile={false}/>
       </div>
       <div className="mobile-nav">
+        <ScrollButton />
         <NavDrawer activeItems={["Photography"]} />
         <h1>Wildlife photos</h1>
         <PhotoGallery photos={filenamesToArray(wildlife_photos, 'wildlife')} mobile={true}/>

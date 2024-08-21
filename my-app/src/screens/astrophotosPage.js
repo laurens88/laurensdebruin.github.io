@@ -2,6 +2,7 @@ import Navbar from "../components/navbar";
 import NavDrawer from "../components/drawer";
 import PhotoGallery from "../components/photogallery";
 import filenamesToArray from "../auxilaryFunctions/filenameToArray";
+import ScrollButton from "../components/scrollButton";
 
 function AstroPhotosPage() {
   const astro_photos = [
@@ -26,6 +27,7 @@ function AstroPhotosPage() {
         <PhotoGallery photos={filenamesToArray(astro_photos, 'astro')} mobile={false}/>
       </div>
       <div className="mobile-nav">
+        <ScrollButton />
         <NavDrawer activeItems={["Photography"]} />
         <h1>Astrophotography</h1>
         <PhotoGallery photos={filenamesToArray(astro_photos, 'astro')} mobile={true}/>

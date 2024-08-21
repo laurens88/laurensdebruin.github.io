@@ -2,6 +2,7 @@ import Navbar from "../components/navbar";
 import NavDrawer from "../components/drawer";
 import PhotoGallery from "../components/photogallery";
 import filenamesToArray from "../auxilaryFunctions/filenameToArray";
+import ScrollButton from '../components/scrollButton';
 
 function ArchitecturePhotosPage() {
   const architecture_photos = [
@@ -36,6 +37,7 @@ function ArchitecturePhotosPage() {
         <PhotoGallery photos={filenamesToArray(architecture_photos, 'architecture')} mobile={false}/>
       </div>
       <div className="mobile-nav">
+        <ScrollButton />
         <NavDrawer activeItems={["Photography"]} />
         <h1>Architecture photos</h1>
         <PhotoGallery photos={filenamesToArray(architecture_photos, 'architecture')} mobile={true}/>
