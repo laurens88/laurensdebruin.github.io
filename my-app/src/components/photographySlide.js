@@ -5,16 +5,23 @@ import { useNavigate } from "react-router-dom";
 function PhotographySlide() {
   let navigate = useNavigate();
 
+  const handleNavigate = () => {
+    navigate("/photography");
+
+    setTimeout(() => {
+      window.scrollTo(0, 0, 'smooth');
+    }, 100);
+  };
+
   return (
-    <div className={styles.slide}>
+    <div className={styles.slide} onClick={handleNavigate}>
     <Grid container spacing={2} direction="row">
     <Grid item md={5}>
-    <div className={styles.text} onClick={() => navigate("/photography")}>
+    <div className={styles.text}>
       <h1>Discover my photography</h1>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos 
-            dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui 
-            officia deserunt mollitia animi, id est laborum et dolorum fuga.
+            I have always liked taking pictures, but since 2024 I have upgraded to a Canon DSLR with a range of lenses.
+            Now I take my camera with me on every trip, taking pictures of landscapes, architecture, nature, and my favorite subject: wild animals.
         </p>
     </div>
         </Grid>

@@ -1,15 +1,26 @@
 import styles from '../styles/projectsSlide.module.css';
 import carcollection from "../assets/logos/carcollection.webp";
 import Grid from "@mui/material/Grid";
+import { useNavigate } from "react-router-dom";
 
 function ProjectsSlide() {
+  let navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate("/projects");
+
+    setTimeout(() => {
+      window.scrollTo(0, 1250, 'smooth');
+    }, 100);
+  };
+
   return (
-    <div className={styles.slide}>
+    <div className={styles.slide} onClick={handleNavigate}>
     <Grid container spacing={2} direction="row">
-    <Grid item md={6}>
-    <div className={styles.text} onClick={() => {window.location.href = 'https://github.com/laurens88/Car-Collection'}}>
-      <h3>Check out my coding projects such as:</h3>
-      <h1>Car Collection: Android App</h1>
+    <Grid item md={7}>
+    <div className={styles.text}>
+      <h4>Check out my coding projects such as:</h4>
+      <h1>Car Collection (Android App)</h1>
         <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos 
             dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui 
@@ -17,7 +28,7 @@ function ProjectsSlide() {
         </p>
         </div>
         </Grid>
-        <Grid item md={6} className={styles.logo} onClick={() => {window.location.href = 'https://github.com/laurens88/Car-Collection'}}>
+        <Grid item md={5} className={styles.logo}>
         <img src={carcollection} alt="Android App" />
         </Grid>
         </Grid>

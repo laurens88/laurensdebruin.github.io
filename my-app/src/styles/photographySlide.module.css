@@ -5,6 +5,7 @@
     height: 100vh;
     background-color: #f8f9fa;
     padding: 6% 60px 0 60px;
+    cursor: pointer;
 }
 
 [data-theme="dark"] .slide {
@@ -14,11 +15,10 @@
 .text {
     display: flex;
     flex-direction: column;
-    cursor: pointer;
 }
 
 .text h1 {
-    margin: 0 0 10px 0;
+    margin: 50px 0 10px 0;
 }
 
 [data-theme="dark"] .text {
@@ -29,7 +29,6 @@
     display: flex;
     position: relative;
     padding: 70px 50px 40px 16px !important;
-    cursor: pointer;
 }
 
 .photo1 {

@@ -5,6 +5,7 @@
     height: 100vh;
     background-color: #f8f9fa;
     padding: 10% 10px 0 60px;
+    cursor: pointer;
 }
 
 [data-theme="dark"] .slide {
@@ -20,7 +21,13 @@
 }
 
 .text h1 {
-    color: #1011fa
+    color: #1011fa;
+    margin: 0 0 10px 0;
+    font-size: 1.8em;
+}
+
+.text h4 {
+    margin: 0 0 10px 0;
 }
 
 [data-theme="dark"] .text {
