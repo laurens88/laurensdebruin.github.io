@@ -22,9 +22,9 @@ function ProjectsSlide() {
       <h4>Check out my coding projects such as:</h4>
       <h1>Car Collection (Android App)</h1>
         <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos 
-            dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui 
-            officia deserunt mollitia animi, id est laborum et dolorum fuga.
+        This is an app that I created to allow me to look up cars details and keep track of a list of cars that I have driven. 
+        It uses webscraping to collect the data about dutch vehicles based on their license plate and stores the data in a local SQLite database.
+        The code was written in Java and the app was built using Android Studio.
         </p>
         </div>
         </Grid>

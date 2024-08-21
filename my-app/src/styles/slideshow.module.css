@@ -7,7 +7,12 @@
     overflow: hidden;
     margin: 75px auto;
     border-radius: 3%;
+    background-color: #f8f9fa;
   }
+
+  [data-theme="dark"] .slideshow {
+    background-color: rgb(0, 3, 51);
+}
   
   .slide {
     position: absolute;
