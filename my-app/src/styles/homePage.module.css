@@ -64,18 +64,18 @@
 }
 
 .portrait::after {
-content: "";
-position: absolute;
-height: 100%;
-width: 100%;
-border-radius: 18%;
-background-image: conic-gradient(from var(--angle), #1101fa,#ffffff, #1101fa);
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-z-index: -1;
-padding: 3px;
-animation: 3s spin linear infinite;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 18%;
+  background-image: conic-gradient(from var(--angle), #1101fa,#ffffff, #1101fa);
+  top: 49.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  padding: 0.15rem;
+  animation: 3s spin linear infinite;
 }
 
 .portrait::before {
