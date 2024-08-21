@@ -1,0 +1,28 @@
+.button {
+    position: fixed !important;
+    height: 50px !important;
+    width: 50px !important;
+    bottom: 50px !important;
+    right: 50px !important;
+    z-index: 4;
+    background-color: #1011fa !important;
+    box-shadow: 0 0 5px #000000;
+    color: white !important;
+    border-radius: 20% !important;
+}
+
+@media screen and (max-width: 768px) {
+    .button {
+        bottom: 20px !important;
+        right: 20px  !important;
+    }
+    
+}
+
+.show {
+    display: block !important;
+}
+
+.hidden {
+    display: none !important;
+}

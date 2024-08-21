@@ -2,8 +2,10 @@ import React from "react";
 import Navbar from "../components/navbar";
 import NavDrawer from "../components/drawer";
 import ResumeItem from "../components/resumeitem";
+import ScrollButton from "../components/scrollButton";
 import styles from "../styles/resumePage.module.css";
 import "../App.css";
+
 import ASReview from "../assets/logos/ASReview.png";
 import Radboud from "../assets/logos/Radboud.png";
 import Philips from "../assets/logos/Philips.png";
@@ -46,7 +48,9 @@ function Resume() {
       <div className="mobile-nav">
         <NavDrawer activeItems={["Resume"]} />
       </div>
+      
       <div className={styles.container}>
+      <ScrollButton />
         <div className={styles.content}>
           <h1>Experience</h1>
           <ResumeItem

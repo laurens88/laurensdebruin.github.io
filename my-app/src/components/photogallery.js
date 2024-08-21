@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from '../styles/photogallery.module.css';
 import Photo from './photo';
+import ScrollButton from './scrollButton';
 
 const PhotoGallery = ({ photos, mobile }) => {
   return (
+    <div>
+    <ScrollButton />
     <div className={styles.photoGrid}>
       {photos.map(({ lowRes, highRes, alt, height}, index) => (
         <Photo
@@ -15,6 +18,7 @@ const PhotoGallery = ({ photos, mobile }) => {
           width={mobile ? '100%' : 'auto'}
         />
       ))}
+    </div>
     </div>
   );
 };
