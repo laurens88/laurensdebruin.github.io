@@ -69,6 +69,7 @@ function Resume() {
             the upcoming publications or to give insight in the progress of the project so far."
             logo={ASReview}
             tech_icons={[Python, React_, Git, VSCode,]}
+            url="https://asreview.ai/"
           />
 
           <ResumeItem
@@ -80,6 +81,7 @@ function Resume() {
             Using <strong>clustering</strong> and <strong>sentiment analysis</strong> we attempted to find patterns in the data and presented our findings to the stakeholders at Philips in the form of a report and a presentation."
             logo={Philips}
             tech_icons={[Python, Excel]}
+            url="https://www.philips.nl/"
           />
 
           <ResumeItem
@@ -91,6 +93,7 @@ function Resume() {
             and presented my work at the Utrecht AI labs event."
             logo={UMC}
             tech_icons={[Python, Git]}
+            url="https://www.radboudumc.nl/"
           />
 
           <ResumeItem
@@ -101,6 +104,7 @@ function Resume() {
             I checked the cars for damages, fueled them and drove them accross the country to their destination. 
             I learned to <strong>work independently</strong>, under a tight schedule which required careful <strong>planning</strong>, whilst <strong>interacting politely</strong> with clients and professionals."
             logo={Easyway}
+            url="https://www.easyway.nl/"
           />
 
           <ResumeItem
@@ -119,6 +123,7 @@ function Resume() {
             description="As a sales employee I was responsible for selling mobile phones to customers. 
             I learned to <strong>communicate with customers</strong> and use my tech knowledge to help them make the right choice."
             logo={Mediamarkt}
+            url="https://www.mediamarkt.nl/"
           />
 
           <h1>Education</h1>
@@ -137,6 +142,7 @@ function Resume() {
             The project involves the automatic quality assessment of datasets for machine learning."
             logo={Radboud}
             tech_icons={[Python, React_, Git, VSCode,]}
+            url="https://www.ru.nl/en/education/masters/artificial-intelligence-intelligent-technology"
           />
 
           <ResumeItem
@@ -155,6 +161,7 @@ function Resume() {
 Twitter data when combined with an intelligent pre-processor.' which was awarded with an <strong>8.5</strong>."
             logo={Radboud}
             tech_icons={[Java, Python, Cplusplus, SQL, Git, PyCharm]}
+            url="https://www.ru.nl/en/education/bachelors/artificial-intelligence"
           />
 
           <ResumeItem
@@ -165,6 +172,7 @@ Twitter data when combined with an intelligent pre-processor.' which was awarded
             My favorite subjects were <strong>biology and informatics</strong>, which together contributed to my choice to study Artificial Intelligence."
             logo={Pierson}
             tech_icons={[HTML, CSS, SQL, Cisco]}
+            url="https://www.pierson.nl/"
           />
 
           <h1>Presentations / Workshops</h1>
@@ -177,6 +185,7 @@ Twitter data when combined with an intelligent pre-processor.' which was awarded
              software for clinical technology and technical medicine students, focusing
             on its use in writing systematic reviews."
             logo={Twente}
+            url="https://www.linkedin.com/in/tm-inhouseday/"
           />
 
           <ResumeItem
@@ -186,6 +195,7 @@ Twitter data when combined with an intelligent pre-processor.' which was awarded
             description="Presented my contribution to the FORAS project to the team and some users at the ASReview User's Meeting. 
             This included talking about the scripts I developed for the <strong>data engineering</strong> of the dataset and showing the resulting dataset itself."
             logo={ASReview}
+            url="https://asreview.ai/"
           />
 
           <ResumeItem
@@ -208,6 +218,7 @@ Twitter data when combined with an intelligent pre-processor.' which was awarded
            using <strong>servlets and sockets</strong>, the Java Native Interface, 
            and how to implement <strong>Java Database Connectivity (JDBC)</strong>."
           logo={codecademy}
+          url="https://www.codecademy.com/"
           />
 
           <ResumeItem
@@ -219,6 +230,7 @@ Twitter data when combined with an intelligent pre-processor.' which was awarded
             Additionally I learned about state management with hooks and how you can apply <strong>programming patterns</strong> to create <strong>dynamic</strong>
             and <strong>maintainable</strong> web applications. I liked React so much that I decided to use React for <strong>this website!</strong>."
             logo={codecademy}
+            url="https://www.codecademy.com/"
           />
         </div>
       </div>

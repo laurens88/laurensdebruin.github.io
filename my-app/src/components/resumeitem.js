@@ -3,7 +3,7 @@ import styles from "../styles/resumeitem.module.css";
 import parse from 'html-react-parser';
 import Tooltip from '@mui/material/Tooltip';
 
-const ResumeItem = ({ title, company, dates, description, logo, tech_icons }) => {
+const ResumeItem = ({ title, company, dates, description, logo, tech_icons, url}) => {
   return (
     <>
     <div className={styles.resumeItem}>
@@ -14,9 +14,17 @@ const ResumeItem = ({ title, company, dates, description, logo, tech_icons }) =>
         <p>{parse(description)}</p>
       </div>
       <div className={styles.resumeLogo}>
-      {logo ? <img src={logo} alt="Logo" /> : <div className={styles.placeholderLogo}></div>}
+      {logo ? (
+        <img
+          src={logo}
+          alt="Logo"
+          onClick={() => url && window.open(url, "_blank")}
+          className={url ? styles.clickableLogo : ''}
+        />
+      ) : (
+        <div className={styles.placeholderLogo}></div>
+      )}
       </div>
-      
     </div>
     {tech_icons && tech_icons.length > 0 && (
       <div className={styles.techIcons}>
