@@ -4,6 +4,7 @@ import Photo from './photo';
 
 const PhotoGallery = ({ photos, mobile }) => {
   return (
+    <div>
     <div className={styles.photoGrid}>
       {photos.map(({ lowRes, highRes, alt, height}, index) => (
         <Photo
@@ -15,6 +16,7 @@ const PhotoGallery = ({ photos, mobile }) => {
           width={mobile ? '100%' : 'auto'}
         />
       ))}
+    </div>
     </div>
   );
 };

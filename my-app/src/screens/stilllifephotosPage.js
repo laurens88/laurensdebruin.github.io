@@ -2,6 +2,7 @@ import Navbar from "../components/navbar";
 import NavDrawer from "../components/drawer";
 import PhotoGallery from "../components/photogallery";
 import filenamesToArray from "../auxilaryFunctions/filenameToArray";
+import ScrollButton from "../components/scrollButton";
 
 function StillLifePhotosPage() {
 
@@ -24,6 +25,7 @@ function StillLifePhotosPage() {
         <PhotoGallery photos={filenamesToArray(still_life_photos, 'still_life')} mobile={false}/>
       </div>
       <div className="mobile-nav">
+        <ScrollButton />
         <NavDrawer activeItems={["Photography"]} />
         <h1>Still lifes</h1>
         <PhotoGallery photos={filenamesToArray(still_life_photos, 'still_life')} mobile={true}/>

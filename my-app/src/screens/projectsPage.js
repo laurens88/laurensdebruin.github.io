@@ -6,6 +6,7 @@ import "../App.css";
 import cardstyles from "../styles/card.module.css";
 import APK from "../assets/downloads/car_collection.apk";
 import Project from "../components/project";
+import ScrollButton from "../components/scrollButton";
 
 import { PiFileSqlThin } from "react-icons/pi";
 import { SiAndroidstudio } from "react-icons/si";
@@ -42,6 +43,7 @@ function Projects() {
         <NavDrawer activeItems={["Projects"]} />
       </div>
       <div className={pagestyles.summaryContainer}>
+        <ScrollButton />
         <div className={pagestyles.summary}>
           <h1>List of Projects</h1>
           <p>
