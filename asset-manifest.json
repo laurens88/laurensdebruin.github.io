@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f565e48b.css",
-    "main.js": "/static/js/main.9fe29e92.js",
+    "main.css": "/static/css/main.1ccb8984.css",
+    "main.js": "/static/js/main.0e68b072.js",
     "static/js/453.68693753.chunk.js": "/static/js/453.68693753.chunk.js",
     "static/media/car_collection.apk": "/static/media/car_collection.5577a22fb1d1b40e4e99.apk",
     "static/media/UU.jpg": "/static/media/UU.2580aeefecf6631dc422.jpg",
@@ -13,9 +13,9 @@
     "static/media/RobotoMono-VariableFont_wght.ttf": "/static/media/RobotoMono-VariableFont_wght.e14e25b7c497634efdfe.ttf",
     "static/media/UMC.jpg": "/static/media/UMC.fdd45cfc2070582547d3.jpg",
     "static/media/Pierson.png": "/static/media/Pierson.f7c23755a650f46b413d.png",
-    "static/media/ASReview.png": "/static/media/ASReview.72dad6e300f785032f2b.png",
     "static/media/github_dark.png": "/static/media/github_dark.c95b6275cece42c6384b.png",
     "static/media/Radboud.png": "/static/media/Radboud.a8fc67e46afbb6eb20d5.png",
+    "static/media/ASReview.png": "/static/media/ASReview.108c0beaeabe3635aaf2.png",
     "static/media/mediamarkt.png": "/static/media/mediamarkt.518560baf1bf5d84af68.png",
     "static/media/sandd.jpg": "/static/media/sandd.7b9a3711ed6ce1a63ae3.jpg",
     "static/media/linkedin_dark.png": "/static/media/linkedin_dark.53b7822a8073c0079f68.png",
@@ -28,12 +28,12 @@
     "index.html": "/index.html",
     "static/media/pattern.svg": "/static/media/pattern.5e444b952b7663525cb8.svg",
     "static/media/pattern_dark.svg": "/static/media/pattern_dark.12261c6123b153c43745.svg",
-    "main.f565e48b.css.map": "/static/css/main.f565e48b.css.map",
-    "main.9fe29e92.js.map": "/static/js/main.9fe29e92.js.map",
+    "main.1ccb8984.css.map": "/static/css/main.1ccb8984.css.map",
+    "main.0e68b072.js.map": "/static/js/main.0e68b072.js.map",
     "453.68693753.chunk.js.map": "/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f565e48b.css",
-    "static/js/main.9fe29e92.js"
+    "static/css/main.1ccb8984.css",
+    "static/js/main.0e68b072.js"
   ]
 }
