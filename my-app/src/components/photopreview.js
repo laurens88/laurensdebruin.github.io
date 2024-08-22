@@ -12,7 +12,7 @@ function PhotoPreview({ photolist, category, title }) {
         <h1 style={{paddingLeft: 10}}>{title}</h1>
         <div className={styles.preview}>
             {randomPhotos.map((photo, index) => (
-                path = '/photography/' + category + '/' + photo.slice(0, -4)+'_low'+photo.slice(-4),
+                path = '/photography/' + category + '/' + photo.slice(0, -5)+'_low'+photo.slice(-5),
                 <img key={index} src={path} alt="preview"  loading="lazy"/>
             ))}
         </div>
