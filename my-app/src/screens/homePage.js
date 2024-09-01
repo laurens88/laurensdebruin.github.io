@@ -54,7 +54,6 @@ function Home() {
             <Button
               variant="contained"
               endIcon={<Send />}
-              // style={{ margin: "10px", backgroundColor: "#1011F5" }}
               onClick={handleContactOpen}
             >
               Contact

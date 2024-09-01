@@ -3,22 +3,23 @@
   src: url("fonts/RobotoMono-VariableFont_wght.ttf") format("truetype");
 }
 
-:root{
+:root {
   --background-image: url('assets/images/pattern.svg');
+  --background-color: #fff;
 }
 
 [data-theme="dark"] {
   --background-image: url('assets/images/pattern_dark.svg');
+  --background-color: rgb(0,3,35);
   --text-color: white;
 }
 
 html, body {
   height: 100%;
+  min-height: 100%;
   margin: 0;
-}
-
-body {
   font-family: "Roboto Mono", monospace;
+  background-color: var(--background-color);
   background-image: var(--background-image);
   background-repeat: repeat;
   background-size: auto;
