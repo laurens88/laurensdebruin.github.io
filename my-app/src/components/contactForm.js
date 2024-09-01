@@ -5,44 +5,9 @@ import Modal from "@mui/material/Modal";
 import Typography from "@mui/material/Typography";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import styles from "../styles/contactform.module.css"; // Import the CSS module
 
 const theme = localStorage.getItem('theme')
-
-const modalStyle = {
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: "80%",
-  maxWidth: "400px",
-  background: theme === "light" ? "white" : "rgb(0,1,35)",
-  boxShadow: "0 4px 20px rgba(0, 0, 0, 0.3)",
-  p: 4,
-  borderRadius: "12px",
-};
-
-const buttonStyle = {
-  mb: 2,
-  backgroundColor: "#1011F5",
-  color: "white",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "flex-start",
-  width: "100%",
-  maxWidth: "250px",
-  paddingLeft: "16px",
-  "&:hover": {
-    backgroundColor: "#0d0fb8",
-  },
-};
-
-const iconStyle = {
-  minWidth: "24px",
-  marginRight: "8px",
-};
 
 const ContactForm = ({ open, handleClose }) => {
   return (
@@ -52,36 +17,28 @@ const ContactForm = ({ open, handleClose }) => {
       aria-labelledby="contact-modal-title"
       aria-describedby="contact-modal-description"
     >
-      <Box sx={modalStyle}>
-        <Box
-          display="flex"
-          flexDirection="column"
-          alignItems="center"
-          justifyContent="center"
-          width="100%"
-        >
+      <Box className={styles.modalStyle}>
+        <Box className={styles.boxStyle}>
           <Typography
             variant="h5"
             component="h2"
-            mb={2}
-            align="center"
-            sx={{ color: "#1011F5", fontWeight: "bold" }}
+            className={styles.typographyStyle}
           >
             Get in Touch:
           </Typography>
           <Button
             variant="contained"
             href="mailto:laurens.debruin@ru.nl"
-            sx={buttonStyle}
-            startIcon={<EmailIcon sx={iconStyle} />}
+            className={styles.buttonStyle}
+            startIcon={<EmailIcon className={styles.iconStyle} />}
           >
             Email Me
           </Button>
           <Button
             variant="contained"
             href="https://www.linkedin.com/in/laurens-debruin/"
-            sx={buttonStyle}
-            startIcon={<LinkedInIcon sx={iconStyle} />}
+            className={styles.buttonStyle}
+            startIcon={<LinkedInIcon className={styles.iconStyle} />}
           >
             Connect on LinkedIn
           </Button>

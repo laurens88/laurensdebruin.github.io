@@ -1,0 +1,56 @@
+.modalStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  [data-theme = 'dark'] .modalStyle{
+    background: rgb(0, 3, 35);
+  }
+  
+  .boxStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .typographyStyle {
+    margin-bottom: 16px;
+    text-align: center;
+    color: #1011F5;
+    font-weight: bold;
+  }
+  
+  .buttonStyle {
+    margin-bottom: 16px;
+    background-color: #1011F5;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 250px;
+    padding-left: 16px;
+  }
+  
+  .buttonStyle:hover {
+    background-color: #0d0fb8;
+  }
+  
+  .iconStyle {
+    min-width: 24px;
+    margin-right: 8px;
+  }
+  
