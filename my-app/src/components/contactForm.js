@@ -5,9 +5,7 @@ import Modal from "@mui/material/Modal";
 import Typography from "@mui/material/Typography";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import styles from "../styles/contactform.module.css"; // Import the CSS module
-
-const theme = localStorage.getItem('theme')
+import styles from "../styles/contactform.module.css";
 
 const ContactForm = ({ open, handleClose }) => {
   return (

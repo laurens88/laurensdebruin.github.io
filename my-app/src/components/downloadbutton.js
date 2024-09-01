@@ -3,20 +3,15 @@ import Button from "@mui/material/Button";
 import Download from "@mui/icons-material/Download";
 
 const FileDownloadButton = ({ text, file, filename }) => {
-  // Function to handle file download
   const downloadFile = () => {
-    // Create an anchor element
     const link = document.createElement("a");
     link.href = file;
-    link.setAttribute('download', filename); // Set the download attribute
+    link.setAttribute('download', filename);
 
-    // Append the anchor to the body
     document.body.appendChild(link);
 
-    // Trigger the download by simulating a click
     link.click();
 
-    // Remove the anchor from the document
     document.body.removeChild(link);
   };
 
@@ -24,7 +19,6 @@ const FileDownloadButton = ({ text, file, filename }) => {
     <Button
       variant="contained"
       endIcon={<Download />}
-      style={{ margin: "10px", backgroundColor: "#1011F5" }}
       onClick={downloadFile}
     >
       {text}

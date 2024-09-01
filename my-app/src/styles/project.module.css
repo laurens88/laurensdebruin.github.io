@@ -23,3 +23,25 @@
   justify-content: left;
   padding: 25px;
 }
+
+.buttons .readButton {
+  background-color: transparent;
+  color: #1011F5;
+  border-color: #1011F5;
+}
+
+.buttons .readButton:hover {
+  background-color: transparent;
+  color: #0d0fb8;
+  border-color: #0d0fb8;
+}
+
+.buttons Button {
+  margin: 10px;
+  background-color: #1011F5;
+}
+
+.buttons Button:hover {
+  background-color: #0d0fb8;
+}
+

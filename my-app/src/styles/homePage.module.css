@@ -25,6 +25,15 @@
     padding-left: 0;
 }
 
+.summary Button {
+  margin: 10px;
+  background-color: #1011F5;
+}
+
+.summary Button:hover {
+  background-color: #0d0fb8;
+}
+
 .mobilePortrait {
   display: none;
 }

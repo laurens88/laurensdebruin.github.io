@@ -29,7 +29,7 @@ const Project = ({ title, type, content, readmore, url, downloadable, downloadte
                     </div>
                 )}
                 <div className={styles.buttons}>
-                    {readmore ? <Button onClick={() => navigate(url)} variant="outlined" style={{ margin: '10px', color: '#1011F5', borderColor: '#1011F5' }}>Read more</Button> : null}
+                    {readmore ? <Button onClick={() => navigate(url)} variant="outlined" className={styles.readButton}>Read more</Button> : null}
                     {downloadable ? <FileDownloadButton text={downloadtext} file={file} filename={filename} /> : null}
                 </div>
 
