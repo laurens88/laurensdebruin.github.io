@@ -6,6 +6,7 @@ import ScrollButton from "../components/scrollButton";
 import styles from "../styles/resumePage.module.css";
 import "../App.css";
 
+import InfoSupport from "../assets/logos/infosupport.png"
 import ASReview from "../assets/logos/ASReview.png";
 import Radboud from "../assets/logos/Radboud.png";
 import Philips from "../assets/logos/Philips.png";
@@ -53,6 +54,17 @@ function Resume() {
       <ScrollButton />
         <div className={styles.content}>
           <h1>Experience</h1>
+
+          <ResumeItem
+            title="Graduate Student"
+            company="Info Support"
+            dates="9/2024 - Present"
+            description="Working on the automation of quality assessment of datasets for machine learning."
+            logo={InfoSupport}
+            tech_icons={[]}
+            url="https://www.infosupport.com/"
+          />
+
           <ResumeItem
             title="Software Developer"
             company="ASReview"
