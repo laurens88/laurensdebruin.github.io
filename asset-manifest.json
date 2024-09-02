@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.b5cd5641.css",
-    "main.js": "/static/js/main.dc319e13.js",
+    "main.js": "/static/js/main.33a5f110.js",
     "static/js/453.68693753.chunk.js": "/static/js/453.68693753.chunk.js",
     "static/media/car_collection.apk": "/static/media/car_collection.5577a22fb1d1b40e4e99.apk",
     "static/media/UU.jpg": "/static/media/UU.2580aeefecf6631dc422.jpg",
-    "static/media/Resume_LaurensdeBruin.pdf": "/static/media/Resume_LaurensdeBruin.12ed47175ec1e7a2910c.pdf",
+    "static/media/Resume_LaurensdeBruin.pdf": "/static/media/Resume_LaurensdeBruin.d711ccf2b07eefac4ec1.pdf",
     "static/media/Philips.png": "/static/media/Philips.5d0e6f6d1296a0feec2a.png",
     "static/media/portrait.jpg": "/static/media/portrait.30e6b7e464aac82eebf2.jpg",
     "static/media/worldmap.svg": "/static/media/worldmap.5ce88c8a1691000bc7c0.svg",
     "static/media/worldmap_dark.svg": "/static/media/worldmap_dark.8ca9d7413cbbfedcad5f.svg",
+    "static/media/infosupport.png": "/static/media/infosupport.8b984be70851ac48cf43.png",
     "static/media/RobotoMono-VariableFont_wght.ttf": "/static/media/RobotoMono-VariableFont_wght.e14e25b7c497634efdfe.ttf",
     "static/media/UMC.jpg": "/static/media/UMC.fdd45cfc2070582547d3.jpg",
     "static/media/Pierson.png": "/static/media/Pierson.f7c23755a650f46b413d.png",
@@ -29,11 +30,11 @@
     "static/media/pattern.svg": "/static/media/pattern.5e444b952b7663525cb8.svg",
     "static/media/pattern_dark.svg": "/static/media/pattern_dark.12261c6123b153c43745.svg",
     "main.b5cd5641.css.map": "/static/css/main.b5cd5641.css.map",
-    "main.dc319e13.js.map": "/static/js/main.dc319e13.js.map",
+    "main.33a5f110.js.map": "/static/js/main.33a5f110.js.map",
     "453.68693753.chunk.js.map": "/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b5cd5641.css",
-    "static/js/main.dc319e13.js"
+    "static/js/main.33a5f110.js"
   ]
 }
