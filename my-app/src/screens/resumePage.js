@@ -59,7 +59,7 @@ function Resume() {
             title="Graduate Student"
             company="Info Support"
             dates="9/2024 - Present"
-            description=""
+            description="Working on the automation of quality assessment of datasets for machine learning."
             logo={InfoSupport}
             tech_icons={[]}
             url="https://www.infosupport.com/"
