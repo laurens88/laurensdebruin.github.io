@@ -64,6 +64,7 @@
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   position: relative;
+  z-index: 1;
 }
 
 .portrait img {
@@ -82,7 +83,7 @@
   top: 49.7%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -1;
+  z-index: -2;
   padding: 0.15rem;
   animation: 3s spin linear infinite;
 }
