@@ -12,6 +12,7 @@ function WildlifePhotosPage() {
     "snake.jpg",
     "dragonfly6.jpg",
     "crab.jpg",
+    "owl0.jpg",
     "dragonfly.jpg",
     "lizard5.jpg",
     "lizard6.jpg",

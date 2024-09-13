@@ -88,6 +88,7 @@ function Photography() {
   ];
 
   const wildlife_photos = [
+    "owl0.jpg",
     "peacock.jpg",
     "swallow.jpg",
     "snake.jpg",
