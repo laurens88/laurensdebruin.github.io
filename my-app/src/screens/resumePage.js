@@ -18,6 +18,7 @@ import Mediamarkt from "../assets/logos/mediamarkt.png";
 import codecademy from "../assets/logos/codecademy.png";
 import Twente from "../assets/logos/university-of-twente.jpg";
 import UU from "../assets/logos/UU.jpg";
+import Unifesp from "../assets/logos/unifesp.jpeg";
 
 import { FaPython, FaGit, FaJava, FaReact, FaHtml5 } from "react-icons/fa6";
 import { VscVscode } from "react-icons/vsc";
@@ -188,6 +189,15 @@ Twitter data when combined with an intelligent pre-processor.' which was awarded
           />
 
           <h1>Presentations / Workshops</h1>
+
+          <ResumeItem
+            title="Workshop"
+            company="@University of São Paulo, Brazil"
+            dates="10/2024"
+            description="Gave a workshop on the use of ASReview software for medical students at the São Paulo University, teaching them how to use the software for writing systematic reviews and presenting my work on the ASReview project."
+            logo={Unifesp}
+            url="https://www.unifesp.br/world/"
+          />
 
           <ResumeItem
             title="TM Inhouse Day"
