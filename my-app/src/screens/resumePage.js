@@ -6,7 +6,7 @@ import ScrollButton from "../components/scrollButton";
 import styles from "../styles/resumePage.module.css";
 import "../App.css";
 
-import InfoSupport from "../assets/logos/infosupport.png"
+import InfoSupport from "../assets/logos/infosupport.png";
 import ASReview from "../assets/logos/ASReview.png";
 import Radboud from "../assets/logos/Radboud.png";
 import Philips from "../assets/logos/Philips.png";
@@ -22,24 +22,24 @@ import Unifesp from "../assets/logos/unifesp.jpeg";
 
 import { FaPython, FaGit, FaJava, FaReact, FaHtml5 } from "react-icons/fa6";
 import { VscVscode } from "react-icons/vsc";
-import { SiPycharm, SiCisco  } from "react-icons/si";
+import { SiPycharm, SiCisco } from "react-icons/si";
 import { PiFileSqlThin } from "react-icons/pi";
 import { DiCss3 } from "react-icons/di";
 import { SiMicrosoftexcel } from "react-icons/si";
 import { CgCPlusPlus } from "react-icons/cg";
 
-const Python = {icon: FaPython, name:"Python"}
-const React_ = {icon: FaReact, name: "React"}
-const Git = {icon: FaGit, name: "Git"}
-const VSCode = {icon: VscVscode, name: "VSCode"}
-const PyCharm = {icon: SiPycharm, name: "PyCharm"}
-const Java = {icon: FaJava, name: "Java"}
-const Cplusplus = {icon: CgCPlusPlus, name: "C++"}
-const HTML = {icon: FaHtml5, name: "HTML"}
-const CSS = {icon: DiCss3, name: "CSS"}
-const SQL = {icon: PiFileSqlThin, name: "SQL"}
-const Cisco = {icon: SiCisco, name: "Cisco"}
-const Excel = {icon: SiMicrosoftexcel, name: "Microsoft Excel"}
+const Python = { icon: FaPython, name: "Python" };
+const React_ = { icon: FaReact, name: "React" };
+const Git = { icon: FaGit, name: "Git" };
+const VSCode = { icon: VscVscode, name: "VSCode" };
+const PyCharm = { icon: SiPycharm, name: "PyCharm" };
+const Java = { icon: FaJava, name: "Java" };
+const Cplusplus = { icon: CgCPlusPlus, name: "C++" };
+const HTML = { icon: FaHtml5, name: "HTML" };
+const CSS = { icon: DiCss3, name: "CSS" };
+const SQL = { icon: PiFileSqlThin, name: "SQL" };
+const Cisco = { icon: SiCisco, name: "Cisco" };
+const Excel = { icon: SiMicrosoftexcel, name: "Microsoft Excel" };
 
 function Resume() {
   return (
@@ -50,9 +50,9 @@ function Resume() {
       <div className="mobile-nav">
         <NavDrawer activeItems={["Resume"]} />
       </div>
-      
+
       <div className={styles.container}>
-      <ScrollButton />
+        <ScrollButton />
         <div className={styles.content}>
           <h1>Experience</h1>
 
@@ -81,7 +81,7 @@ function Resume() {
             For both the FORAS and IMPROVE projects I have worked on <strong>data visualization</strong> to either present our results in 
             the upcoming publications or to give insight in the progress of the project so far."
             logo={ASReview}
-            tech_icons={[Python, React_, Git, VSCode,]}
+            tech_icons={[Python, React_, Git, VSCode]}
             url="https://asreview.ai/"
           />
 
@@ -154,7 +154,7 @@ function Resume() {
             I will combine my background in AI and my passion for software development to complete my master's thesis at Info Support which combines both fields.
             The project involves the automatic quality assessment of datasets for machine learning."
             logo={Radboud}
-            tech_icons={[Python, React_, Git, VSCode,]}
+            tech_icons={[Python, React_, Git, VSCode]}
             url="https://www.ru.nl/en/education/masters/artificial-intelligence-intelligent-technology"
           />
 
@@ -194,7 +194,7 @@ Twitter data when combined with an intelligent pre-processor.' which was awarded
             title="Workshop"
             company="@University of São Paulo, Brazil"
             dates="10/2024"
-            description="Gave a workshop on the use of ASReview software for medical students at the São Paulo University, teaching them how to use the software for writing systematic reviews and presenting my work on the ASReview project."
+            description="Gave a workshop on the use of ASReview software for medical students at the São Paulo University, teaching them how to use the software for writing systematic reviews and presenting my work on the datatools package of ASReview."
             logo={Unifesp}
             url="https://www.unifesp.br/world/"
           />
@@ -232,15 +232,15 @@ Twitter data when combined with an intelligent pre-processor.' which was awarded
           <h1>Certifications / Awards</h1>
 
           <ResumeItem
-           title="Advanced Java Course"
-           company="Codecademy"
-           dates="7/2024"
-           description="Completed the 'Advanced Java' course at Codecademy, 
+            title="Advanced Java Course"
+            company="Codecademy"
+            dates="7/2024"
+            description="Completed the 'Advanced Java' course at Codecademy, 
            where I learned about <strong>parallel and concurrent programming</strong>,
            using <strong>servlets and sockets</strong>, the Java Native Interface, 
            and how to implement <strong>Java Database Connectivity (JDBC)</strong>."
-          logo={codecademy}
-          url="https://www.codecademy.com/"
+            logo={codecademy}
+            url="https://www.codecademy.com/"
           />
 
           <ResumeItem
