@@ -15,6 +15,7 @@ import AstroPhotosPage from "./screens/astrophotosPage";
 import Projects from "./screens/projectsPage";
 import Placeholder from "./screens/placeholderPage";
 import Footer from "./components/footer";
+import Surprise from "./screens/surprisePage";
 
 ReactGA.initialize('G-VHK3J7BSQX');
 
@@ -42,6 +43,7 @@ function App() {
         <Route path="/travel" element={<Travel />} />
         <Route path="/projects/carcollection" element={<Placeholder />} />
         <Route path="/projects/bert" element={<Placeholder />} />
+        <Route path="/d888" element={<Surprise   />} />
       </Routes>
     <Footer />
     </div>
