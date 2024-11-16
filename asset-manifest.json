@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bc0bee82.css",
-    "main.js": "/static/js/main.25871310.js",
+    "main.css": "/static/css/main.6e21d68a.css",
+    "main.js": "/static/js/main.049a79be.js",
     "static/js/453.68693753.chunk.js": "/static/js/453.68693753.chunk.js",
     "static/media/car_collection.apk": "/static/media/car_collection.5577a22fb1d1b40e4e99.apk",
     "static/media/UU.jpg": "/static/media/UU.2580aeefecf6631dc422.jpg",
@@ -11,6 +11,7 @@
     "static/media/worldmap.svg": "/static/media/worldmap.8390003362af9df185fe.svg",
     "static/media/worldmap_dark.svg": "/static/media/worldmap_dark.92758dd760dda8964493.svg",
     "static/media/infosupport.png": "/static/media/infosupport.8b984be70851ac48cf43.png",
+    "static/media/steganography.png": "/static/media/steganography.f0bfd2d35f10f5de2051.png",
     "static/media/RobotoMono-VariableFont_wght.ttf": "/static/media/RobotoMono-VariableFont_wght.e14e25b7c497634efdfe.ttf",
     "static/media/UMC.jpg": "/static/media/UMC.fdd45cfc2070582547d3.jpg",
     "static/media/unifesp.jpeg": "/static/media/unifesp.224eaea60fc0996c052e.jpeg",
@@ -25,17 +26,18 @@
     "static/media/university-of-twente.jpg": "/static/media/university-of-twente.44c44413178edfbb1eb2.jpg",
     "static/media/github.png": "/static/media/github.1ff6d9646165b7f34af9.png",
     "static/media/codecademy.png": "/static/media/codecademy.cb79102443659f2e8321.png",
+    "static/media/code.png": "/static/media/code.35f1a4c41238acbac0a8.png",
     "static/media/easyway.jpg": "/static/media/easyway.da5dc54479a4450ea83a.jpg",
     "static/media/carcollection.webp": "/static/media/carcollection.3945157d39088f5c2f5e.webp",
     "index.html": "/index.html",
     "static/media/pattern.svg": "/static/media/pattern.5e444b952b7663525cb8.svg",
     "static/media/pattern_dark.svg": "/static/media/pattern_dark.12261c6123b153c43745.svg",
-    "main.bc0bee82.css.map": "/static/css/main.bc0bee82.css.map",
-    "main.25871310.js.map": "/static/js/main.25871310.js.map",
+    "main.6e21d68a.css.map": "/static/css/main.6e21d68a.css.map",
+    "main.049a79be.js.map": "/static/js/main.049a79be.js.map",
     "453.68693753.chunk.js.map": "/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc0bee82.css",
-    "static/js/main.25871310.js"
+    "static/css/main.6e21d68a.css",
+    "static/js/main.049a79be.js"
   ]
 }
