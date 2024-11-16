@@ -17,3 +17,8 @@
     justify-content: center;
     border: none;
 }
+
+.page h2 {
+    display: flex;
+    color: white;
+}
