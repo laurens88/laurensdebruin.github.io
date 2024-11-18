@@ -87,7 +87,6 @@ function Surprise() {
 
     const ScreenFour = ({ onSubmit }) => (
         <div>
-            <img src={steganography} style={{width: 400}} alt="steganography" />
             <h3>Q5: </h3>
             <form onSubmit={onSubmit}>
                 <input type="text" placeholder="" />
@@ -134,7 +133,8 @@ function Surprise() {
 
     const ScreenTen = ({ onSubmit }) => (
         <div>
-            <h3>Q10: </h3>
+            <img src={steganography} style={{width: 400}} alt="steganography" />
+            <h3>Q10: Password?</h3>
             <form onSubmit={onSubmit}>
                 <input type="text" placeholder="" />
             </form>
@@ -149,7 +149,7 @@ function Surprise() {
         </div>
     );
 
-    const answers = ["-", "42", "seven", "4195", "golf", "echo", "5275", "55", "609", "17", "placeholder"];
+    const answers = ["-", "42", "seven", "4195", "golf", "placeholder", "5275", "55", "609", "17", "echo"];
 
     const screens = [
         <ScreenOne key="screen1" onSubmit={(e) => handleAnswer(e, 0)} />,
@@ -187,7 +187,7 @@ function Surprise() {
                 <>
                     <h1>Welcome</h1>
                     <p>You have been selected by <ObfuscatedText text="Laurens"/> to solve this mystery...<br></br>
-                    For each question you can ask a single person for help (except <ObfuscatedText text="Laurens"/>).<br></br>
+                    For each question, you can ask a single person for help (except <ObfuscatedText text="Laurens"/>).<br></br>
                     Others can google the answers, but you can't. Good luck!
                     </p>
                     <CustomButton onClick={() => setCurrentScreen(1)}>
