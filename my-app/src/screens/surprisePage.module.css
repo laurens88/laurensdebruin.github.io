@@ -6,9 +6,9 @@
     height: 100vh;
 }
 
-.page p {
-    padding-bottom: 7rem;
-}
+.page Button {
+    margin-top: 5rem;
+} 
 
 .page form {
     display: flex;
@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: center;
     border: none;
+    margin-top: 1rem;
 }
 
 .page h2 {

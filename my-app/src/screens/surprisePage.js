@@ -63,9 +63,9 @@ function Surprise() {
   const ScreenTwo = ({ onSubmit }) => (
     <div>
       <h3>
-        Q2: I am an odd number. Take away one letter, and I become even. What
+        Q2:</h3><p> I am an odd number.<br></br> Take away one letter, and I become even.<br></br> What
         number am I?
-      </h3>
+      </p>
       <form onSubmit={onSubmit}>
         <input type="text" placeholder="" />
       </form>
@@ -85,30 +85,6 @@ function Surprise() {
   const ScreenFour = ({ onSubmit }) => (
     <div>
       <h3>Q4: What do people do at Loonsche Duynen?</h3>
-      <form onSubmit={onSubmit}>
-        <input type="text" placeholder="" />
-      </form>
-    </div>
-  );
-
-  const ScreenTen = ({ onSubmit }) => (
-    <div>
-      <h3>Q10: -4197599622191908127</h3>
-      <p>
-        <br></br>Beneath the azure, the blossoms sway,<br></br>A northern path
-        bids you away.<br></br>
-        Through meadows vast, let petals lead,<br></br>
-        For crimson gates mark your creed.<br></br>
-        <br></br>
-        The scent of spring, a guiding lore,<br></br>
-        'Til flames beyond reveal their door.<br></br>A chest awaits, its secret
-        sealed,<br></br>A fruit of summer, truth revealed.<br></br>
-        <br></br>
-        Count the glistering, the slices fair,<br></br>
-        The answer lies beyond compare.<br></br>
-        From cherry blooms to nether's glow,<br></br>
-        Your quest begins with what you know.{" "}
-      </p>
       <form onSubmit={onSubmit}>
         <input type="text" placeholder="" />
       </form>
@@ -156,6 +132,30 @@ function Surprise() {
     <div>
       <img src={steganography} style={{ width: 400 }} alt="steganography" />
       <h3>Q10: Enter the password</h3>
+      <form onSubmit={onSubmit}>
+        <input type="text" placeholder="" />
+      </form>
+    </div>
+  );
+
+  const ScreenTen = ({ onSubmit }) => (
+    <div>
+      <h3>Q10: -4197599622191908127</h3>
+      <p>
+        <br></br>Beneath the azure, the blossoms sway,<br></br>A northern path
+        bids you away.<br></br>
+        Through meadows vast, let petals lead,<br></br>
+        For crimson gates mark your creed.<br></br>
+        <br></br>
+        The scent of spring, a guiding lore,<br></br>
+        'Til flames beyond reveal their door.<br></br>A chest awaits, its secret
+        sealed,<br></br>A fruit of summer, truth revealed.<br></br>
+        <br></br>
+        Count the glistering, the slices fair,<br></br>
+        The answer lies beyond compare.<br></br>
+        From cherry blooms to nether's glow,<br></br>
+        Your quest begins with what you know.{" "}
+      </p>
       <form onSubmit={onSubmit}>
         <input type="text" placeholder="" />
       </form>
