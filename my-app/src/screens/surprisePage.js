@@ -102,7 +102,7 @@ function Surprise() {
 
   const ScreenSix = ({ onSubmit }) => (
     <div>
-      <h3>Q6: +BIAB + -BIAB</h3>
+      <h3>Q6: (+BIAB) + (-BIAB)</h3>
       <form onSubmit={onSubmit}>
         <input type="text" placeholder="" />
       </form>
@@ -140,7 +140,7 @@ function Surprise() {
 
   const ScreenTen = ({ onSubmit }) => (
     <div>
-      <h3>Q10: -4197599622191908127</h3>
+      <h3>Q10: -4197599622191908127 1.20</h3>
       <p>
         <br></br>Beneath the azure, the blossoms sway,<br></br>A northern path
         bids you away.<br></br>
