@@ -67,7 +67,7 @@ function Resume() {
           />
 
           <ResumeItem
-            title="Software Developer"
+            title="Student Assistant Data & AI"
             company="ASReview"
             dates="10/2023 - Present"
             description="ASReview is the largest open-source software project of the University of Utrecht. 
