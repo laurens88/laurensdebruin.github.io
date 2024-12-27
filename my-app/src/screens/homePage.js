@@ -43,11 +43,11 @@ function Home() {
           <Grid item xs={2} md={2}></Grid>
           <Grid item xs={7} md={6}>
             <h1 className={styles.blinkingCursor}>Laurens de&nbsp;Bruin</h1>
-            <h2>AI Graduate Student / Software Developer</h2>
+            <h2>AI Graduate Student / Data Scientist</h2>
             <p>
             Welcome to my personal website. Here, you will find an overview of my professional experience, 
             including a comprehensive resume and various coding projects I've worked on. 
-            These projects reflect my background in AI and my passion for software development. 
+            These projects reflect my background in AI and my passion for data science. 
             Additionally, I have included a page dedicated to showcasing my photography hobby and another page focused on my travels. 
             Feel free to explore and learn more about my work and interests.
             </p>

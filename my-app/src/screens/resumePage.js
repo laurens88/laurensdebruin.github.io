@@ -60,7 +60,7 @@ function Resume() {
             title="Graduate Student"
             company="Info Support"
             dates="9/2024 - Present"
-            description="Working on the automation of quality assessment of datasets for machine learning."
+            description="Developed an automated framework for assessing <strong>dataset quality</strong> to predict its impact on <strong>machine learning</strong> performance. The project focused on key data quality dimensions—completeness, consistency, and accuracy—by designing novel metrics and degradation techniques. Implemented machine learning experiments to evaluate how dataset quality affects classification and regression models. The framework takes a dataset as input and yields a data quality score which serves as a predictor for machine learning performance when the input dataset is used as training data. The framework supports scalable, domain-agnostic quality assessment for improving AI model reliability."
             logo={InfoSupport}
             tech_icons={[]}
             url="https://www.infosupport.com/"

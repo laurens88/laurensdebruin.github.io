@@ -15,6 +15,7 @@ import { VscVscode } from "react-icons/vsc";
 import { SiJavascript, SiMicrosoftexcel, SiHuggingface, SiJupyter} from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { DiNpm, DiCss3, DiAndroid } from "react-icons/di";
+import { SiScikitlearn } from "react-icons/si";
 
 const Python = {icon: FaPython, name:"Python"}
 const React_ = {icon: FaReact, name: "React"}
@@ -32,6 +33,7 @@ const Twitter = {icon: FaTwitter, name: "Twitter"}
 const API = {icon: TbApi, name: "API"}
 const HuggingFace = {icon: SiHuggingface, name: "HuggingFace"}
 const Excel = {icon: SiMicrosoftexcel, name: "Microsoft Excel"}
+const Scikitlearn = {icon: SiScikitlearn, name: "Scikit-learn"}
 
 function Projects() {
   return (
@@ -61,6 +63,16 @@ function Projects() {
       </div>
       <div className={pagestyles.projects}>
         <div className={cardstyles.cardcontainers}>
+          <Project
+            title="Automatic Quality Assessment of Datasets for Machine Learning"
+            type="Data & AI Research"
+            content="A research project that aims to automate the quality assessment of datasets for machine learning. Data quality can be split into data quality dimensions. A framework was developed that evaluates the completeness, consistency, and accuracy of a dataset. To do this automatically and in such a way that it can be applied to a dataset of any domain, a large language model is used to obtain certain statistics from the dataset. These statistics are then used to calculate the quality score of the dataset, which can be used as a predictor for machine learning performance when used as training data for a model. The framework was tested on a range of datasets and showed promising results."
+            readmore={false}
+            url={"/projects/qualityassessment"}
+            downloadable={false}
+            tech_icons={[Python, Scikitlearn, HuggingFace, Jupyter, Git]} 
+          />
+
           <Project
             title="Movie Recommender - Frontend"
             type="React Web App"

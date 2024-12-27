@@ -131,7 +131,7 @@ function Surprise() {
   const ScreenNine = ({ onSubmit }) => (
     <div>
       <img src={steganography} style={{ width: 400 }} alt="steganography" />
-      <h3>Q10: Enter the password</h3>
+      <h3>Q9: Enter the password</h3>
       <form onSubmit={onSubmit}>
         <input type="text" placeholder="" />
       </form>
@@ -166,7 +166,7 @@ function Surprise() {
     <div>
       <h1>🎉 Congratulations! 🎉</h1>
       <p>You have solved the mystery!</p>
-      <p>Now you can find your reward at ...</p>
+      <p>Now you can find your reward in the toilet of the first floor.</p>
     </div>
   );
 
