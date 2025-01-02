@@ -17,6 +17,7 @@ function AstroPhotosPage() {
     'milkyway4.jpg',
     'milkyway5.jpg',
     'bloodmoon100.jpg',
+    'moon10.jpg',
   ];
   
   return (
