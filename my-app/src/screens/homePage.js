@@ -43,7 +43,7 @@ function Home() {
           <Grid item xs={2} md={2}></Grid>
           <Grid item xs={7} md={6}>
             <h1 className={styles.blinkingCursor}>Laurens de&nbsp;Bruin</h1>
-            <h2>AI Graduate Student / Data Scientist</h2>
+            <h2>Data Scientist / MSc Artificial Intelligence</h2>
             <p>
             Welcome to my personal website. Here, you will find an overview of my professional experience, 
             including a comprehensive resume and various coding projects I've worked on. 
