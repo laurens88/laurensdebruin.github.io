@@ -6,6 +6,7 @@ import ScrollButton from "../components/scrollButton";
 import styles from "../styles/resumePage.module.css";
 import "../App.css";
 
+import Engie from "../assets/logos/engie.png";
 import InfoSupport from "../assets/logos/infosupport.png";
 import ASReview from "../assets/logos/ASReview.png";
 import Radboud from "../assets/logos/Radboud.png";
@@ -22,7 +23,7 @@ import Unifesp from "../assets/logos/unifesp.jpeg";
 
 import { FaPython, FaGit, FaJava, FaReact, FaHtml5 } from "react-icons/fa6";
 import { VscVscode } from "react-icons/vsc";
-import { SiPycharm, SiCisco } from "react-icons/si";
+import { SiPycharm, SiCisco, SiMlflow } from "react-icons/si";
 import { PiFileSqlThin } from "react-icons/pi";
 import { DiCss3 } from "react-icons/di";
 import { SiMicrosoftexcel } from "react-icons/si";
@@ -40,6 +41,7 @@ const CSS = { icon: DiCss3, name: "CSS" };
 const SQL = { icon: PiFileSqlThin, name: "SQL" };
 const Cisco = { icon: SiCisco, name: "Cisco" };
 const Excel = { icon: SiMicrosoftexcel, name: "Microsoft Excel" };
+const MLFlow = { icon: SiMlflow, name: "MLFlow"};
 
 function Resume() {
   return (
@@ -57,19 +59,29 @@ function Resume() {
           <h1>Experience</h1>
 
           <ResumeItem
+            title="Data Scientist"
+            company="ENGIE Nederland"
+            dates="6/2025 - present"
+            description=""
+            logo={Engie}
+            tech_icons={[]}
+            url="https://www.engie.nl/"
+          />          
+
+          <ResumeItem
             title="Graduate Student"
             company="Info Support"
-            dates="9/2024 - Present"
+            dates="9/2024 - 4/2025"
             description="Developed an automated framework for assessing <strong>dataset quality</strong> to predict its impact on <strong>machine learning</strong> performance. The project focused on key data quality dimensions—completeness, consistency, and accuracy—by designing novel metrics and degradation techniques. Implemented machine learning experiments to evaluate how dataset quality affects classification and regression models. The framework takes a dataset as input and yields a data quality score which serves as a predictor for machine learning performance when the input dataset is used as training data. The framework supports scalable, domain-agnostic quality assessment for improving AI model reliability."
             logo={InfoSupport}
-            tech_icons={[]}
+            tech_icons={[Python, Git, MLFlow]}
             url="https://www.infosupport.com/"
           />
 
           <ResumeItem
             title="Student Assistant Data & AI"
             company="ASReview"
-            dates="10/2023 - Present"
+            dates="10/2023 - 3/2025"
             description="ASReview is the largest open-source software project of the University of Utrecht. 
             The software is used to speed up the process of screening scientific literature for systematic reviews using active learning. 
             As a software developer I am responsible for the development of new features, bug fixes and the maintenance of the software. 
