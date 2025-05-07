@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.6d606283.css",
-    "main.js": "/static/js/main.dc7f4f1f.js",
+    "main.js": "/static/js/main.47272c3c.js",
     "static/js/453.68693753.chunk.js": "/static/js/453.68693753.chunk.js",
     "static/media/car_collection.apk": "/static/media/car_collection.5577a22fb1d1b40e4e99.apk",
     "static/media/UU.jpg": "/static/media/UU.2580aeefecf6631dc422.jpg",
-    "static/media/Resume_LaurensdeBruin.pdf": "/static/media/Resume_LaurensdeBruin.d711ccf2b07eefac4ec1.pdf",
+    "static/media/Resume_LaurensdeBruin.pdf": "/static/media/Resume_LaurensdeBruin.3415d571a03b7b84b7b9.pdf",
     "static/media/Philips.png": "/static/media/Philips.5d0e6f6d1296a0feec2a.png",
     "static/media/portrait.jpg": "/static/media/portrait.30e6b7e464aac82eebf2.jpg",
     "static/media/worldmap.svg": "/static/media/worldmap.8390003362af9df185fe.svg",
@@ -25,6 +25,7 @@
     "static/media/linkedin.png": "/static/media/linkedin.cbaa79687b29c981cb1e.png",
     "static/media/university-of-twente.jpg": "/static/media/university-of-twente.44c44413178edfbb1eb2.jpg",
     "static/media/github.png": "/static/media/github.1ff6d9646165b7f34af9.png",
+    "static/media/engie.png": "/static/media/engie.849cf4dcc740a09532d4.png",
     "static/media/codecademy.png": "/static/media/codecademy.cb79102443659f2e8321.png",
     "static/media/code.png": "/static/media/code.35f1a4c41238acbac0a8.png",
     "static/media/easyway.jpg": "/static/media/easyway.da5dc54479a4450ea83a.jpg",
@@ -33,11 +34,11 @@
     "static/media/pattern.svg": "/static/media/pattern.5e444b952b7663525cb8.svg",
     "static/media/pattern_dark.svg": "/static/media/pattern_dark.12261c6123b153c43745.svg",
     "main.6d606283.css.map": "/static/css/main.6d606283.css.map",
-    "main.dc7f4f1f.js.map": "/static/js/main.dc7f4f1f.js.map",
+    "main.47272c3c.js.map": "/static/js/main.47272c3c.js.map",
     "453.68693753.chunk.js.map": "/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6d606283.css",
-    "static/js/main.dc7f4f1f.js"
+    "static/js/main.47272c3c.js"
   ]
 }
