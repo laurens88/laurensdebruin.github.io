@@ -66,7 +66,7 @@ function Travel() {
         <NavDrawer activeItems={["Travel"]} />
       </div>
       <div className={styles.container}>
-        <h2 style={{ textAlign: "center"}}>So far I've visited 22&nbsp;countries:</h2>
+        <h2 style={{ textAlign: "center"}}>So far I've visited 23&nbsp;countries:</h2>
 
         <img src={mapSrc} alt="map" style={{ width: "100%", height: "auto" }} />
         <div className={styles.countries}>
