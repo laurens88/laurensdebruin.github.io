@@ -43,7 +43,7 @@ function Travel() {
   const AsiaVisited = 2;
   const AsiaTotal = 48;
 
-  const AfricaVisited = 0;
+  const AfricaVisited = 1;
   const AfricaTotal = 54;
 
   const OceaniaVisited = 0;
@@ -66,7 +66,7 @@ function Travel() {
         <NavDrawer activeItems={["Travel"]} />
       </div>
       <div className={styles.container}>
-        <h2 style={{ textAlign: "center"}}>So far I've visited 23&nbsp;countries:</h2>
+        <h2 style={{ textAlign: "center"}}>So far I've visited 24&nbsp;countries:</h2>
 
         <img src={mapSrc} alt="map" style={{ width: "100%", height: "auto" }} />
         <div className={styles.countries}>
@@ -92,6 +92,7 @@ function Travel() {
           <Country name="Qatar" abbreviation="qa" />
           <Country name="Brazil" abbreviation="br" />
           <Country name="Costa Rica" abbreviation="cr" />
+          <Country name="Morocco" abbreviation="ma" />
         </div>
 
         <h2 style={{ textAlign: "center" }}>In {continentCount()} continents:</h2>
