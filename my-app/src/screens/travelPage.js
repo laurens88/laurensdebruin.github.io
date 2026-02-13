@@ -37,7 +37,7 @@ function Travel() {
   const SAVisited = 1;
   const SATotal = 12;
 
-  const EuropeVisited = 16;
+  const EuropeVisited = 17;
   const EuropeTotal = 44;
 
   const AsiaVisited = 2;
@@ -57,6 +57,10 @@ function Travel() {
     return !!NAVisited + !!SAVisited + !!EuropeVisited + !!AsiaVisited + !!AfricaVisited + !!OceaniaVisited;
   }
 
+  function countryCount() {
+    return NAVisited + SAVisited + EuropeVisited + AsiaVisited + AfricaVisited + OceaniaVisited;
+  }
+
   return (
     <div>
       <div className="desktop-nav">
@@ -66,7 +70,7 @@ function Travel() {
         <NavDrawer activeItems={["Travel"]} />
       </div>
       <div className={styles.container}>
-        <h2 style={{ textAlign: "center"}}>So far I've visited 23&nbsp;countries:</h2>
+        <h2 style={{ textAlign: "center"}}>So far I've visited {countryCount()} countries:</h2>
 
         <img src={mapSrc} alt="map" style={{ width: "100%", height: "auto" }} />
         <div className={styles.countries}>
@@ -93,6 +97,7 @@ function Travel() {
           <Country name="Brazil" abbreviation="br" />
           <Country name="Costa Rica" abbreviation="cr" />
           <Country name="Morocco" abbreviation="ma" />
+          <Country name="Andorra" abbreviation="ad" />
         </div>
 
         <h2 style={{ textAlign: "center" }}>In {continentCount()} continents:</h2>
