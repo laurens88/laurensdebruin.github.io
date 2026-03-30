@@ -43,7 +43,7 @@ function Travel() {
   const AsiaVisited = 2;
   const AsiaTotal = 48;
 
-  const AfricaVisited = 1;
+  const AfricaVisited = 2;
   const AfricaTotal = 54;
 
   const OceaniaVisited = 0;
@@ -98,6 +98,7 @@ function Travel() {
           <Country name="Costa Rica" abbreviation="cr" />
           <Country name="Morocco" abbreviation="ma" />
           <Country name="Andorra" abbreviation="ad" />
+          <Country name="Egypt" abbreviation="eg" />
         </div>
 
         <h2 style={{ textAlign: "center" }}>In {continentCount()} continents:</h2>
