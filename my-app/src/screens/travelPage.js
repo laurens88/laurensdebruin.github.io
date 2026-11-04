@@ -31,7 +31,7 @@ function Travel() {
     };
   }, []);
 
-  const NAVisited = 3;
+  const NAVisited = 2;
   const NATotal = 23;
 
   const SAVisited = 1;
@@ -40,7 +40,7 @@ function Travel() {
   const EuropeVisited = 18;
   const EuropeTotal = 44;
 
-  const AsiaVisited = 2;
+  const AsiaVisited = 4;
   const AsiaTotal = 48;
 
   const AfricaVisited = 2;
@@ -70,7 +70,7 @@ function Travel() {
         <NavDrawer activeItems={["Travel"]} />
       </div>
       <div className={styles.container}>
-        <h2 style={{ textAlign: "center"}}>So far I've visited {countryCount()} countries:</h2>
+        <h2 style={{ textAlign: "center"}}>A map of the {countryCount()} countries I've visited so far:</h2>
 
         <img src={mapSrc} alt="map" style={{ width: "100%", height: "auto" }} />
         <div className={styles.countries}>
@@ -91,7 +91,6 @@ function Travel() {
           <Country name="Norway" abbreviation="no" />
           <Country name="England" abbreviation="gb-eng" />
           <Country name="U.S.A" abbreviation="us" />
-          <Country name="Canada" abbreviation="ca" />
           <Country name="Thailand" abbreviation="th" />
           <Country name="Qatar" abbreviation="qa" />
           <Country name="Brazil" abbreviation="br" />
@@ -100,6 +99,8 @@ function Travel() {
           <Country name="Andorra" abbreviation="ad" />
           <Country name="Egypt" abbreviation="eg" />
           <Country name="Ireland" abbreviation="ie" />
+          <Country name="South Korea" abbreviation="kr" />
+          <Country name="Japan" abbreviation="jp" />
         </div>
 
         <h2 style={{ textAlign: "center" }}>In {continentCount()} continents:</h2>
