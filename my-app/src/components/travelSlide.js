@@ -1,32 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styles from '../styles/travelslide.module.css';
 import Grid from "@mui/material/Grid";
 import { useNavigate } from "react-router-dom";
+import WorldMap from "./worldMap";
 
 function TravelSlide() {
-    const [mapSrc, setMapSrc] = useState('');
-
-  const updateMapSrc = () => {
-    const rootStyle = getComputedStyle(document.documentElement);
-    const mapImage = rootStyle.getPropertyValue('--map-image').trim().replace(/^url\(['"]?/, '').replace(/['"]?\)$/, '');
-    setMapSrc(mapImage);
-  };
-
-  useEffect(() => {
-    updateMapSrc();
-
-    const observer = new MutationObserver(updateMapSrc);
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["data-theme"],
-    });
-
-    return () => {
-        observer.disconnect();
-      };
-    }, []);
-
-
     let navigate = useNavigate();
 
     const handleNavigate = () => {
@@ -49,7 +27,7 @@ function TravelSlide() {
         </div>
         </Grid>
         <Grid item md={7} className={styles.logo}>
-        <img src={mapSrc} alt="travel map" />
+        <WorldMap />
         </Grid>
         </Grid>
     </div>

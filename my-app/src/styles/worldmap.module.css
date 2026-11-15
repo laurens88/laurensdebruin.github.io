@@ -1,0 +1,22 @@
+.map {
+    --map-land: #dbdbdb;
+    --map-visited: #1101fa;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.placeholder {
+    aspect-ratio: 1120 / 480;
+}
+
+[data-theme="dark"] .map {
+    --map-land: #101560;
+}
+
+.map path {
+    fill: var(--map-land);
+    stroke: var(--map-land);
+    stroke-width: 0.5;
+    stroke-miterlimit: 10;
+}

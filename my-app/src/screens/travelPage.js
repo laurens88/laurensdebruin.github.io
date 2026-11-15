@@ -1,65 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Navbar from "../components/navbar";
 import NavDrawer from "../components/drawer";
 import "../App.css";
 import styles from "../styles/travelPage.module.css";
 import Country from "../components/country";
 import PChart from "../components/piechart";
+import WorldMap from "../components/worldMap";
 import { Typography } from "@mui/material";
 import Grid from '@mui/material/Grid';
+import travel from "../data/travel.json";
+
+function percentage(part, total) {
+  return ((part / total) * 100).toFixed(0) + '%';
+}
 
 function Travel() {
-  const [mapSrc, setMapSrc] = useState('');
-
-  const updateMapSrc = () => {
-    const rootStyle = getComputedStyle(document.documentElement);
-    const mapImage = rootStyle.getPropertyValue('--map-image').trim().replace(/^url\(['"]?/, '').replace(/['"]?\)$/, '');
-    setMapSrc(mapImage);
-  };
-
-  useEffect(() => {
-    updateMapSrc();
-
-    const observer = new MutationObserver(updateMapSrc);
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["data-theme"],
-    });
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
-
-  const NAVisited = 2;
-  const NATotal = 23;
-
-  const SAVisited = 1;
-  const SATotal = 12;
-
-  const EuropeVisited = 18;
-  const EuropeTotal = 44;
-
-  const AsiaVisited = 4;
-  const AsiaTotal = 48;
-
-  const AfricaVisited = 2;
-  const AfricaTotal = 54;
-
-  const OceaniaVisited = 0;
-  const OceaniaTotal = 14;
-
-  function percentage(part, total) {
-    return ((part / total) * 100).toFixed(0) + '%';
-  }
-
-  function continentCount() {
-    return !!NAVisited + !!SAVisited + !!EuropeVisited + !!AsiaVisited + !!AfricaVisited + !!OceaniaVisited;
-  }
-
-  function countryCount() {
-    return NAVisited + SAVisited + EuropeVisited + AsiaVisited + AfricaVisited + OceaniaVisited;
-  }
+  const continents = travel.continents.map((continent) => ({
+    ...continent,
+    visited: travel.countries.filter((c) => c.continent === continent.name).length,
+  }));
+  const visitedContinents = continents.filter((c) => c.visited > 0).length;
 
   return (
     <div>
@@ -70,86 +30,27 @@ function Travel() {
         <NavDrawer activeItems={["Travel"]} />
       </div>
       <div className={styles.container}>
-        <h2 style={{ textAlign: "center"}}>A map of the {countryCount()} countries I've visited so far:</h2>
+        <h2 style={{ textAlign: "center"}}>A map of the {travel.countries.length} countries I've visited so far:</h2>
 
-        <img src={mapSrc} alt="map" style={{ width: "100%", height: "auto" }} />
+        <WorldMap />
         <div className={styles.countries}>
-          <Country name="Netherlands" abbreviation="nl" />
-          <Country name="Belgium" abbreviation="be" />
-          <Country name="France" abbreviation="fr" />
-          <Country name="Germany" abbreviation="de" />
-          <Country name="Italy" abbreviation="it" />
-          <Country name="Spain" abbreviation="es" />
-          <Country name="Portugal" abbreviation="pt" />
-          <Country name="Cyprus" abbreviation="cy" />
-          <Country name="Switzerland" abbreviation="ch" />
-          <Country name="Greece" abbreviation="gr" />
-          <Country name="Luxembourg" abbreviation="lu" />
-          <Country name="Austria" abbreviation="at" />
-          <Country name="Denmark" abbreviation="dk" />
-          <Country name="Sweden" abbreviation="se" />
-          <Country name="Norway" abbreviation="no" />
-          <Country name="England" abbreviation="gb-eng" />
-          <Country name="U.S.A" abbreviation="us" />
-          <Country name="Thailand" abbreviation="th" />
-          <Country name="Qatar" abbreviation="qa" />
-          <Country name="Brazil" abbreviation="br" />
-          <Country name="Costa Rica" abbreviation="cr" />
-          <Country name="Morocco" abbreviation="ma" />
-          <Country name="Andorra" abbreviation="ad" />
-          <Country name="Egypt" abbreviation="eg" />
-          <Country name="Ireland" abbreviation="ie" />
-          <Country name="South Korea" abbreviation="kr" />
-          <Country name="Japan" abbreviation="jp" />
+          {travel.countries.map((country) => (
+            <Country key={country.code} name={country.name} abbreviation={country.code} />
+          ))}
         </div>
 
-        <h2 style={{ textAlign: "center" }}>In {continentCount()} continents:</h2>
+        <h2 style={{ textAlign: "center" }}>In {visitedContinents} continents:</h2>
 
         <div className={styles.continents}>
           <Grid container spacing={2}>
-
-            <Grid item xs={12} md={4}>
-              <p>North America: {percentage(NAVisited, NATotal)}</p>
-              <PChart 
-                data={[{id: "Visited", value: NAVisited, label: "Visited"}, {id: "Not visited", value: NATotal-NAVisited, label: "Not Visited"}]} 
-              />
-            </Grid>
-
-            <Grid item xs={12} md={4}>
-              <Typography>Europe: {percentage(EuropeVisited, EuropeTotal)}</Typography>
-              <PChart 
-                data={[{id: "Visited", value: EuropeVisited, label: "Visited"}, {id: "Not visited", value: EuropeTotal-EuropeVisited, label: "Not Visited"}]} 
-              />
-            </Grid>
-
-            <Grid item xs={12} md={4}>
-              <Typography>Asia: {percentage(AsiaVisited, AsiaTotal)}</Typography>
-              <PChart 
-                data={[{id: "Visited", value: AsiaVisited, label: "Visited"}, {id: "Not visited", value: AsiaTotal-AsiaVisited, label: "Not Visited"}]} 
-              />
-            </Grid>
-
-            <Grid item xs={12} md={4}>
-              <Typography>South America: {percentage(SAVisited, SATotal)}</Typography>
-              <PChart 
-                data={[{id: "Visited", value: SAVisited, label: "Visited"}, {id: "Not visited", value: SATotal-SAVisited, label: "Not Visited"}]} 
-              />
-            </Grid>
-
-            <Grid item xs={12} md={4}>
-              <Typography>Africa: {percentage(AfricaVisited, AfricaTotal)}</Typography>
-              <PChart 
-                data={[{id: "Visited", value: AfricaVisited, label: "Visited"}, {id: "Not visited", value: AfricaTotal-AfricaVisited, label: "Not Visited"}]} 
-              />
-            </Grid>
-
-            <Grid item xs={12} md={4}>
-              <Typography>Oceania: {percentage(OceaniaVisited, OceaniaTotal)}</Typography>
-              <PChart 
-                data={[{id: "Visited", value: OceaniaVisited, label: "Visited"}, {id: "Not visited", value: OceaniaTotal-OceaniaVisited, label: "Not Visited"}]} 
-              />
-            </Grid>
-
+            {continents.map(({ name, visited, total }) => (
+              <Grid item xs={12} md={4} key={name}>
+                <Typography>{name}: {percentage(visited, total)}</Typography>
+                <PChart
+                  data={[{id: "Visited", value: visited, label: "Visited"}, {id: "Not visited", value: total - visited, label: "Not Visited"}]}
+                />
+              </Grid>
+            ))}
           </Grid>
         </div>
       </div>

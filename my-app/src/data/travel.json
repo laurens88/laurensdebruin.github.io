@@ -1,0 +1,39 @@
+{
+  "continents": [
+    { "name": "North America", "total": 23 },
+    { "name": "Europe", "total": 44 },
+    { "name": "Asia", "total": 48 },
+    { "name": "South America", "total": 12 },
+    { "name": "Africa", "total": 54 },
+    { "name": "Oceania", "total": 14 }
+  ],
+  "countries": [
+    { "name": "Netherlands", "code": "nl", "continent": "Europe" },
+    { "name": "Belgium", "code": "be", "continent": "Europe" },
+    { "name": "France", "code": "fr", "continent": "Europe" },
+    { "name": "Germany", "code": "de", "continent": "Europe" },
+    { "name": "Italy", "code": "it", "continent": "Europe" },
+    { "name": "Spain", "code": "es", "continent": "Europe" },
+    { "name": "Portugal", "code": "pt", "continent": "Europe" },
+    { "name": "Cyprus", "code": "cy", "continent": "Europe" },
+    { "name": "Switzerland", "code": "ch", "continent": "Europe" },
+    { "name": "Greece", "code": "gr", "continent": "Europe" },
+    { "name": "Luxembourg", "code": "lu", "continent": "Europe" },
+    { "name": "Austria", "code": "at", "continent": "Europe" },
+    { "name": "Denmark", "code": "dk", "continent": "Europe" },
+    { "name": "Sweden", "code": "se", "continent": "Europe" },
+    { "name": "Norway", "code": "no", "continent": "Europe" },
+    { "name": "England", "code": "gb-eng", "continent": "Europe", "map": ["gb"] },
+    { "name": "U.S.A", "code": "us", "continent": "North America" },
+    { "name": "Thailand", "code": "th", "continent": "Asia" },
+    { "name": "Qatar", "code": "qa", "continent": "Asia" },
+    { "name": "Brazil", "code": "br", "continent": "South America" },
+    { "name": "Costa Rica", "code": "cr", "continent": "North America" },
+    { "name": "Morocco", "code": "ma", "continent": "Africa", "map": ["ma", "eh"] },
+    { "name": "Andorra", "code": "ad", "continent": "Europe" },
+    { "name": "Egypt", "code": "eg", "continent": "Africa" },
+    { "name": "Ireland", "code": "ie", "continent": "Europe" },
+    { "name": "South Korea", "code": "kr", "continent": "Asia" },
+    { "name": "Japan", "code": "jp", "continent": "Asia" }
+  ]
+}
