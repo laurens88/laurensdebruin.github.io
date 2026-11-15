@@ -51,7 +51,7 @@ function encodeBase64Utf8(text) {
 export async function verifyToken(token) {
   const [user, repo] = await Promise.all([github("/user", { token }), github(`/repos/${REPO}`, { token })]);
   if (!repo.permissions || !repo.permissions.push) {
-    throw new Error("This token cannot write to the repository. Give it \"Contents: read and write\" access.");
+    throw new Error("This token does not have write access.");
   }
   return user.login;
 }

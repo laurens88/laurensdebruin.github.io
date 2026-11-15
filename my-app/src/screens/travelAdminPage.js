@@ -13,7 +13,6 @@ import {
 
 const TOKEN_KEY = "travel-admin-token";
 const CONTINENTS = bundledTravel.continents.map((c) => c.name);
-const TOKEN_URL = "https://github.com/settings/personal-access-tokens/new";
 
 function readToken() {
   try { return localStorage.getItem(TOKEN_KEY) || ""; } catch { return ""; }
@@ -229,7 +228,7 @@ function TravelAdmin() {
         <h1>Travel admin</h1>
 
         <section className={styles.card}>
-          <h2>GitHub access</h2>
+          <h2>Access</h2>
           {token && login ? (
             <p className={styles.row}>
               <span>Connected as <b>{login}</b>. Saving commits to <code>{REPO}</code> ({BRANCH}).</span>
@@ -237,13 +236,9 @@ function TravelAdmin() {
             </p>
           ) : (
             <form onSubmit={connect}>
-              <p className={styles.muted}>
-                Saving needs a <a href={TOKEN_URL} target="_blank" rel="noreferrer">fine-grained GitHub token</a> with access
-                to only <code>{REPO}</code> and the permission <b>Contents: Read and write</b>. It is stored in this browser only.
-              </p>
               <div className={styles.row}>
-                <input type="password" className={styles.input} placeholder="github_pat_…" value={tokenInput}
-                  onChange={(e) => setTokenInput(e.target.value)} autoComplete="off" aria-label="GitHub token" />
+                <input type="password" className={styles.input} placeholder="Access token" value={tokenInput}
+                  onChange={(e) => setTokenInput(e.target.value)} autoComplete="off" aria-label="Access token" />
                 <button className={styles.primary} type="submit">Connect</button>
               </div>
               {token && !login && !authError && <p className={styles.muted}>Checking token…</p>}
@@ -338,7 +333,7 @@ function TravelAdmin() {
                   {saving ? "Saving…" : "Save and publish"}
                 </button>
               </div>
-              {!login && <p className={styles.muted}>Connect a GitHub token above to save.</p>}
+              {!login && <p className={styles.muted}>Enter an access token above to save.</p>}
             </>
           ) : (
             <span className={styles.muted}>No unsaved changes.</span>
