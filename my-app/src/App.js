@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { lazy, Suspense, useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import ReactGA from 'react-ga4'; // Note the change to react-ga4
 import Home from "./screens/homePage";
@@ -16,6 +16,9 @@ import Projects from "./screens/projectsPage";
 import Placeholder from "./screens/placeholderPage";
 import Footer from "./components/footer";
 import Surprise from "./screens/surprisePage";
+
+// Unlinked admin page for editing travel.json; loaded only when visited.
+const TravelAdmin = lazy(() => import("./screens/travelAdminPage"));
 
 ReactGA.initialize('G-VHK3J7BSQX');
 
@@ -41,6 +44,7 @@ function App() {
         <Route path="/photography/nature" element={<NaturePhotosPage />} />
         <Route path="/photography/astro" element={<AstroPhotosPage />} />
         <Route path="/travel" element={<Travel />} />
+        <Route path="/travel/admin" element={<Suspense fallback={null}><TravelAdmin /></Suspense>} />
         <Route path="/projects/carcollection" element={<Placeholder />} />
         <Route path="/projects/bert" element={<Placeholder />} />
         <Route path="/d888" element={<Surprise   />} />

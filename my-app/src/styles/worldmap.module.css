@@ -1,6 +1,8 @@
 .map {
     --map-land: #dbdbdb;
     --map-visited: #1101fa;
+    --map-selected: #ff8c00;
+    --map-hover: #8f8af5;
     display: block;
     width: 100%;
     height: auto;
@@ -12,6 +14,7 @@
 
 [data-theme="dark"] .map {
     --map-land: #101560;
+    --map-hover: #4b47c9;
 }
 
 .map path {
@@ -19,4 +22,12 @@
     stroke: var(--map-land);
     stroke-width: 0.5;
     stroke-miterlimit: 10;
+}
+
+.interactive path[data-country] {
+    cursor: pointer;
+}
+
+.interactive path[data-country]:hover {
+    fill: var(--map-hover);
 }
