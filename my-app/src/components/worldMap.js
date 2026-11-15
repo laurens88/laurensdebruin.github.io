@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useId } from "react";
 import styles from "../styles/worldmap.module.css";
 import travel from "../data/travel.json";
 
@@ -13,20 +13,38 @@ export function mapCodes(country) {
   return country.map || [country.code];
 }
 
-const visitedSelector = travel.countries
-  .flatMap(mapCodes)
-  .map((code) => `svg[data-worldmap] [data-country="${code}"]`)
-  .join(",\n");
+function selector(scope, codes) {
+  return codes.map((code) => `svg[data-worldmap="${scope}"] [data-country="${code}"]`).join(",\n");
+}
 
-function WorldMap({ className }) {
-  const classes = [styles.map, className].filter(Boolean).join(" ");
+/**
+ * The world map with visited countries highlighted.
+ * - countries: entries to colour as visited (defaults to travel.json)
+ * - selected: shape codes to highlight as selected
+ * - onSelect: makes labelled shapes clickable; called with the clicked shape's code
+ */
+function WorldMap({ className, countries = travel.countries, selected = [], onSelect }) {
+  const scope = useId();
+  const classes = [styles.map, onSelect && styles.interactive, className].filter(Boolean).join(" ");
+  const visited = countries.flatMap(mapCodes);
+
+  let css = "";
+  if (visited.length) css += `${selector(scope, visited)} { fill: var(--map-visited); }\n`;
+  if (selected.length) css += `${selector(scope, selected)} { fill: var(--map-selected); }\n`;
+
+  const handleClick = (event) => {
+    const shape = event.target.closest("[data-country]");
+    if (shape && onSelect) onSelect(shape.getAttribute("data-country"));
+  };
+
   return (
     <>
-      <style>{`${visitedSelector} { fill: var(--map-visited); }`}</style>
+      <style>{css}</style>
       <Suspense fallback={<div className={`${classes} ${styles.placeholder}`} />}>
         <WorldMapSvg
           className={classes}
-          data-worldmap=""
+          data-worldmap={scope}
+          onClick={onSelect ? handleClick : undefined}
           role="img"
           aria-label="World map with the countries I have visited highlighted"
         />
