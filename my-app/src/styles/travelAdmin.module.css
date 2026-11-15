@@ -173,18 +173,62 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 4px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
 .list li {
     display: grid;
-    grid-template-columns: 34px 1fr auto auto;
+    grid-template-columns: 16px 34px minmax(0, 1fr) auto auto;
     align-items: center;
     gap: 8px;
     padding: 4px 6px;
     border-radius: 6px;
+    border: 1px solid transparent;
+}
+
+.list li[draggable="true"] {
+    cursor: grab;
+}
+
+.list li[draggable="true"]:hover {
+    border-color: var(--admin-border);
+}
+
+.handle {
+    color: var(--admin-muted);
+    font-size: 0.9rem;
+    user-select: none;
+}
+
+.dragging {
+    opacity: 0.5;
+    border: 1px dashed var(--admin-accent) !important;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.icon {
+    font: inherit;
+    font-size: 0.85rem;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid var(--admin-border);
+    background: transparent;
+    color: var(--admin-fg);
+}
+
+.icon:disabled {
+    opacity: 0.3;
+    cursor: default;
 }
 
 .list li .muted {
@@ -216,7 +260,15 @@
 }
 
 @media (max-width: 768px) {
-    .grid, .list {
+    .grid {
         grid-template-columns: 1fr;
+    }
+
+    .list li {
+        grid-template-columns: 16px 30px minmax(0, 1fr) auto;
+    }
+
+    .list li > .muted {
+        display: none;
     }
 }

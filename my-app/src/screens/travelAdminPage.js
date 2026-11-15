@@ -5,7 +5,8 @@ import WorldMap, { mapCodes } from "../components/worldMap";
 import "../App.css";
 import styles from "../styles/travelAdmin.module.css";
 import bundledTravel from "../data/travel.json";
-import { allCountryCodes, continentOf, countryName } from "../data/countryContinents";
+import { continentOf, countryName } from "../data/countryContinents";
+import CountrySearch from "../components/countrySearch";
 import {
   BRANCH, REPO, ConflictError, latestDeployRun, loadTravel, saveTravel, verifyToken,
 } from "../admin/githubTravel";
@@ -21,19 +22,22 @@ function writeToken(token) {
   try { token ? localStorage.setItem(TOKEN_KEY, token) : localStorage.removeItem(TOKEN_KEY); } catch {}
 }
 
-const optionLabel = (code) => `${countryName(code)} (${code})`;
-const parseOption = (text) => {
-  const match = text.trim().toLowerCase().match(/\(([a-z]{2}(?:-[a-z]{3})?)\)$/) || text.trim().toLowerCase().match(/^([a-z]{2}(?:-[a-z]{3})?)$/);
-  return match && continentOf[match[1]] ? match[1] : null;
-};
-
-// Builds a commit message such as "Travel page: add Peru and Chile, remove Andorra".
-function commitMessage(added, removed) {
+// Builds a commit message such as "Travel page: add Peru and Chile, remove Andorra, reorder countries".
+function commitMessage(added, removed, reordered) {
   const list = (items) => items.length <= 2 ? items.join(" and ") : `${items.slice(0, -1).join(", ")} and ${items[items.length - 1]}`;
   const parts = [];
   if (added.length) parts.push(`add ${list(added.map((c) => c.name))}`);
   if (removed.length) parts.push(`remove ${list(removed.map((c) => c.name))}`);
+  if (reordered) parts.push("reorder countries");
   return `Travel page: ${parts.join(", ")}`;
+}
+
+// Moves the item at index `from` so that it ends up at index `to`.
+function moveItem(items, from, to) {
+  const next = [...items];
+  const [item] = next.splice(from, 1);
+  next.splice(to, 0, item);
+  return next;
 }
 
 function TravelAdmin() {
@@ -118,12 +122,19 @@ function TravelAdmin() {
   const original = useMemo(() => (remote ? remote.data.countries : []), [remote]);
   const added = useMemo(() => (countries || []).filter((c) => !original.some((o) => o.code === c.code)), [countries, original]);
   const removed = useMemo(() => original.filter((o) => !(countries || []).some((c) => c.code === o.code)), [countries, original]);
-  const dirty = added.length > 0 || removed.length > 0;
+  // Reordered: the countries present both before and after are in a different order.
+  const reordered = useMemo(() => {
+    const kept = (countries || []).filter((c) => !added.includes(c)).map((c) => c.code).join();
+    const before = original.filter((o) => !removed.includes(o)).map((c) => c.code).join();
+    return kept !== before;
+  }, [countries, original, added, removed]);
+  const dirty = added.length > 0 || removed.length > 0 || reordered;
+  const [drag, setDrag] = useState(null); // { from, to } while dragging a list row
   const visitedCodes = new Set((countries || []).map((c) => c.code));
 
   const chooseCode = (code) => {
     const shape = labelledShapes && labelledShapes.has(code) ? code : code.split("-")[0];
-    setForm({ search: optionLabel(code), code, name: countryName(code), continent: continentOf[code] || "", shapes: shape });
+    setForm({ search: countryName(code), code, name: countryName(code), continent: continentOf[code] || "", shapes: shape });
   };
 
   const onMapSelect = (shape) => {
@@ -147,14 +158,35 @@ function TravelAdmin() {
 
   const removeCountry = (code) => { setCountries(countries.filter((c) => c.code !== code)); setSaveResult(null); };
   const undoRemove = (code) => {
-    // Put it back in its original position.
-    const order = original.map((c) => c.code);
-    const entry = original.find((c) => c.code === code);
-    setCountries([...countries, entry].sort((a, b) => {
-      const ia = order.indexOf(a.code), ib = order.indexOf(b.code);
-      return (ia < 0 ? Infinity : ia) - (ib < 0 ? Infinity : ib);
-    }));
+    // Put it back at its original position (or at the end if the list got shorter).
+    const index = original.findIndex((c) => c.code === code);
+    const next = [...countries];
+    next.splice(Math.min(index, next.length), 0, original[index]);
+    setCountries(next);
   };
+
+  const moveCountry = (from, to) => {
+    if (to < 0 || to >= countries.length || from === to) return;
+    setCountries(moveItem(countries, from, to));
+    setSaveResult(null);
+  };
+
+  // Drag and drop: rows are shown in their would-be order while dragging (see shownCountries),
+  // so hovering over the row at position `index` moves the dragged row to that position.
+  const dragProps = (index) => ({
+    draggable: true,
+    onDragStart: (e) => { e.dataTransfer.effectAllowed = "move"; e.dataTransfer.setData("text/plain", String(index)); setDrag({ from: index, to: index }); },
+    onDragOver: (e) => {
+      if (!drag) return;
+      e.preventDefault();
+      if (index !== drag.to) setDrag({ ...drag, to: index });
+    },
+    onDrop: (e) => { e.preventDefault(); if (drag) moveCountry(drag.from, drag.to); setDrag(null); },
+    onDragEnd: () => setDrag(null),
+  });
+
+  // Preview the list in its dropped order while dragging.
+  const shownCountries = drag && countries ? moveItem(countries, drag.from, drag.to) : countries || [];
 
   const connect = (event) => {
     event.preventDefault();
@@ -169,7 +201,7 @@ function TravelAdmin() {
   const save = async () => {
     setSaving(true);
     setSaveError("");
-    const message = commitMessage(added, removed);
+    const message = commitMessage(added, removed, reordered);
     try {
       const result = await saveTravel(token, { ...remote.data, countries }, remote.sha, message);
       setRemote({ data: { ...remote.data, countries }, sha: result.sha });
@@ -231,14 +263,13 @@ function TravelAdmin() {
           <h2>Add a country</h2>
           <div className={styles.grid}>
             <label>Country
-              <input className={styles.input} list="admin-country-options" value={form.search} placeholder="Search…"
-                onChange={(e) => {
-                  const code = parseOption(e.target.value);
-                  if (code) chooseCode(code); else setForm({ ...form, search: e.target.value, code: null });
-                }} />
-              <datalist id="admin-country-options">
-                {allCountryCodes.map((code) => <option key={code} value={optionLabel(code)} />)}
-              </datalist>
+              <CountrySearch
+                inputClassName={styles.input}
+                value={form.search}
+                visited={visitedCodes}
+                onTextChange={(text) => setForm({ search: text, code: null, name: "", continent: "", shapes: "" })}
+                onSelect={chooseCode}
+              />
             </label>
             <label>Name shown on the page
               <input className={styles.input} value={form.name} disabled={!form.code} onChange={(e) => setForm({ ...form, name: e.target.value })} />
@@ -269,17 +300,25 @@ function TravelAdmin() {
         <section className={styles.card}>
           <h2>Visited countries ({(countries || []).length})</h2>
           <p className={styles.muted}>{counts.map((c) => `${c.name}: ${c.n}`).join(" · ")}</p>
+          <p className={styles.muted}>Drag a row (or use ↑ ↓) to change the order on the travel page.</p>
           <ul className={styles.list}>
-            {(countries || []).map((c) => (
-              <li key={c.code} className={added.includes(c) ? styles.added : undefined}>
-                <img src={`/flags/${c.code}.png`} alt="" />
+            {shownCountries.map((c, i) => (
+              <li key={c.code} {...dragProps(i)}
+                className={[added.includes(c) && styles.added, drag && shownCountries[i] === countries[drag.from] && styles.dragging].filter(Boolean).join(" ") || undefined}>
+                <span className={styles.handle} aria-hidden="true">⠿</span>
+                <img src={`/flags/${c.code}.png`} alt="" draggable={false} />
                 <span>{c.name}</span>
                 <span className={styles.muted}>{c.continent}{added.includes(c) ? " · new" : ""}</span>
-                <button className={styles.link} onClick={() => removeCountry(c.code)} aria-label={`Remove ${c.name}`}>Remove</button>
+                <span className={styles.actions}>
+                  <button className={styles.icon} onClick={() => moveCountry(i, i - 1)} disabled={i === 0} aria-label={`Move ${c.name} up`}>↑</button>
+                  <button className={styles.icon} onClick={() => moveCountry(i, i + 1)} disabled={i === shownCountries.length - 1} aria-label={`Move ${c.name} down`}>↓</button>
+                  <button className={styles.link} onClick={() => removeCountry(c.code)} aria-label={`Remove ${c.name}`}>Remove</button>
+                </span>
               </li>
             ))}
             {removed.map((c) => (
               <li key={c.code} className={styles.removed}>
+                <span className={styles.handle} aria-hidden="true" />
                 <img src={`/flags/${c.code}.png`} alt="" />
                 <span>{c.name}</span>
                 <span className={styles.muted}>will be removed</span>
@@ -292,7 +331,7 @@ function TravelAdmin() {
         <section className={`${styles.card} ${styles.saveBar} ${dirty || saveResult ? styles.sticky : ""}`}>
           {dirty ? (
             <>
-              <span><b>{commitMessage(added, removed)}</b></span>
+              <span><b>{commitMessage(added, removed, reordered)}</b></span>
               <div className={styles.row}>
                 <button className={styles.secondary} onClick={() => setCountries(original)} disabled={saving}>Discard</button>
                 <button className={styles.primary} onClick={save} disabled={!login || saving}>
