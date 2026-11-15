@@ -34,6 +34,7 @@
     { "name": "Egypt", "code": "eg", "continent": "Africa" },
     { "name": "Ireland", "code": "ie", "continent": "Europe" },
     { "name": "South Korea", "code": "kr", "continent": "Asia" },
-    { "name": "Japan", "code": "jp", "continent": "Asia" }
+    { "name": "Japan", "code": "jp", "continent": "Asia" },
+    { "name": "South Africa", "code": "za", "continent": "Africa" }
   ]
 }
