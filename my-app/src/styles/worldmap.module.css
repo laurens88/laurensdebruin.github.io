@@ -3,6 +3,9 @@
     --map-visited: #1101fa;
     --map-selected: #ff8c00;
     --map-hover: #8f8af5;
+    --map-other: #f0f0f0;
+    --map-other-visited: #bdb9fd;
+    --map-border: #ffffff;
     display: block;
     width: 100%;
     height: auto;
@@ -15,6 +18,9 @@
 [data-theme="dark"] .map {
     --map-land: #101560;
     --map-hover: #4b47c9;
+    --map-other: #05082e;
+    --map-other-visited: #2c2a8a;
+    --map-border: #000323;
 }
 
 .map path {

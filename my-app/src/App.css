@@ -81,3 +81,14 @@ html, body {
     transform: rotate(360deg);
   }
 }
+
+/* Site-wide rules that used to live in styles/country.module.css (CSS modules leave element selectors global). */
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+p {
+  margin: 0;
+  text-align: left;
+}
