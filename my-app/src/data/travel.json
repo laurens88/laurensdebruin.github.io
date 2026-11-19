@@ -5,7 +5,8 @@
     { "name": "Asia", "total": 48 },
     { "name": "South America", "total": 12 },
     { "name": "Africa", "total": 54 },
-    { "name": "Oceania", "total": 14 }
+    { "name": "Oceania", "total": 14 },
+    { "name": "Antarctica", "total": 1 }
   ],
   "countries": [
     { "name": "Netherlands", "code": "nl", "continent": "Europe" },
